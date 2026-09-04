@@ -1,4 +1,4 @@
-const { Button: XButton } = window.HKUSTWebDesignSystem_46d20c;
+const { Button: XButton } = (window.HKUSTWebDesignSystem_46d20c || {});
 function RcApp() {
   const [page, setPage] = React.useState('dashboard');
   const [toast, setToast] = React.useState('');
@@ -9,4 +9,4 @@ function RcApp() {
   const actions = page === 'projects' ? <XButton icon="circle-plus" onClick={() => go('wizard')}>New request</XButton> : page === 'dashboard' ? <XButton variant="ghost" icon="download">Monthly report</XButton> : null;
   return <RcShell page={page} go={go} toast={toast} title={custom && custom[0]} subtitle={custom && custom[1]} actions={actions}>{body}</RcShell>;
 }
-ReactDOM.createRoot(document.getElementById('root')).render(<RcApp />);
+{ const r = document.getElementById('root'); if (r && !r.dataset.mounted) { r.dataset.mounted = '1'; ReactDOM.createRoot(r).render(<RcApp />); } }

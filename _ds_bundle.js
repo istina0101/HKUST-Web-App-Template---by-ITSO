@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"HKUSTWebDesignSystem_46d20c","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"TINTS","sourcePath":"components/core/Badge.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"CardHeader","sourcePath":"components/core/Card.jsx"},{"name":"CardFooter","sourcePath":"components/core/Card.jsx"},{"name":"SectionTitle","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Card.jsx"},{"name":"Chip","sourcePath":"components/core/Chip.jsx"},{"name":"ChipGroup","sourcePath":"components/core/Chip.jsx"},{"name":"ICONS","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconBox","sourcePath":"components/core/IconBox.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Accordion","sourcePath":"components/data/Accordion.jsx"},{"name":"Disclosure","sourcePath":"components/data/Accordion.jsx"},{"name":"ActivityList","sourcePath":"components/data/ActivityList.jsx"},{"name":"ChartTooltip","sourcePath":"components/data/BarChart.jsx"},{"name":"BarChart","sourcePath":"components/data/BarChart.jsx"},{"name":"KeyValueList","sourcePath":"components/data/KeyValueList.jsx"},{"name":"KpiDelta","sourcePath":"components/data/KpiDelta.jsx"},{"name":"LineChart","sourcePath":"components/data/LineChart.jsx"},{"name":"StatTile","sourcePath":"components/data/StatTile.jsx"},{"name":"StepTracker","sourcePath":"components/data/StepTracker.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"SortRows","sourcePath":"components/data/Table.jsx"},{"name":"BulkBar","sourcePath":"components/data/Table.jsx"},{"name":"Callout","sourcePath":"components/feedback/Callout.jsx"},{"name":"Drawer","sourcePath":"components/feedback/Drawer.jsx"},{"name":"EmptyState","sourcePath":"components/feedback/EmptyState.jsx"},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx"},{"name":"CloseButton","sourcePath":"components/feedback/Modal.jsx"},{"name":"NotificationBanner","sourcePath":"components/feedback/NotificationBanner.jsx"},{"name":"NotificationPanel","sourcePath":"components/feedback/NotificationPanel.jsx"},{"name":"Progress","sourcePath":"components/feedback/Progress.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"SkeletonTable","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"SkeletonCard","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Combobox","sourcePath":"components/forms/Combobox.jsx"},{"name":"Field","sourcePath":"components/forms/Field.jsx"},{"name":"FileUpload","sourcePath":"components/forms/FileUpload.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"MultiSelect","sourcePath":"components/forms/MultiSelect.jsx"},{"name":"OptionRow","sourcePath":"components/forms/OptionRow.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SegmentedControl","sourcePath":"components/forms/SegmentedControl.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"DropdownMenu","sourcePath":"components/navigation/DropdownMenu.jsx"},{"name":"MenuItem","sourcePath":"components/navigation/DropdownMenu.jsx"},{"name":"PageHead","sourcePath":"components/navigation/PageHead.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Sidebar","sourcePath":"components/navigation/Sidebar.jsx"},{"name":"NavLabel","sourcePath":"components/navigation/Sidebar.jsx"},{"name":"NavItem","sourcePath":"components/navigation/Sidebar.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"TopBand","sourcePath":"components/navigation/TopBand.jsx"},{"name":"BandSwitch","sourcePath":"components/navigation/TopBand.jsx"}],"sourceHashes":{"assets/chartjs/hkust-chartjs-theme.js":"f223466e1a39","components/core/Avatar.jsx":"737b81e456a0","components/core/Badge.jsx":"b195c8598257","components/core/Button.jsx":"ae1882059d74","components/core/Card.jsx":"273f74951960","components/core/Chip.jsx":"369ba75af9e1","components/core/Icon.jsx":"ce797b4f478a","components/core/IconBox.jsx":"2b2d790f9760","components/core/IconButton.jsx":"cef9ea4e2acb","components/core/Tag.jsx":"30de0719874c","components/data/Accordion.jsx":"687304c5615e","components/data/ActivityList.jsx":"ddaee676a065","components/data/BarChart.jsx":"540546b2df4c","components/data/KeyValueList.jsx":"1170c6184084","components/data/KpiDelta.jsx":"0fe308fba17b","components/data/LineChart.jsx":"f114842a59cc","components/data/StatTile.jsx":"4cac50cd2b4f","components/data/StepTracker.jsx":"b2f6439f60d8","components/data/Table.jsx":"121601c883cd","components/feedback/Callout.jsx":"458e618be081","components/feedback/Drawer.jsx":"3bbc958ad06d","components/feedback/EmptyState.jsx":"f436b4301fbf","components/feedback/Modal.jsx":"12a37b04e33c","components/feedback/NotificationBanner.jsx":"a0b48069208a","components/feedback/NotificationPanel.jsx":"7b8c041774b0","components/feedback/Progress.jsx":"626c110ae917","components/feedback/Skeleton.jsx":"89c933bfa92b","components/feedback/Spinner.jsx":"bf40e860568b","components/feedback/Toast.jsx":"047fe58a3c3b","components/feedback/Tooltip.jsx":"d17bf9d2aa96","components/forms/Checkbox.jsx":"e675cf213234","components/forms/Combobox.jsx":"60ed7e676115","components/forms/Field.jsx":"8818b7b12193","components/forms/FileUpload.jsx":"c2e446dae65e","components/forms/Input.jsx":"d28735979410","components/forms/MultiSelect.jsx":"5bfb90db5aa9","components/forms/OptionRow.jsx":"4eab743dea85","components/forms/Radio.jsx":"ffc070223083","components/forms/SegmentedControl.jsx":"89bf0e415c18","components/forms/Select.jsx":"d2a8e14fce0d","components/forms/Switch.jsx":"c200b9c96a2a","components/forms/Textarea.jsx":"4c14aa9774b7","components/navigation/Breadcrumb.jsx":"1e0c096e8f86","components/navigation/DropdownMenu.jsx":"f245bddf3a06","components/navigation/PageHead.jsx":"fc8f87bb825c","components/navigation/Pagination.jsx":"3ed11212bfe3","components/navigation/Sidebar.jsx":"d28db039c90a","components/navigation/Tabs.jsx":"e3850796d5fa","components/navigation/TopBand.jsx":"7769a9c16a2b","site/docs-data-1.js":"12304505ced2","site/docs-data-2.js":"39832ba0f684","site/docs.js":"b9414ef031a5","site/site.js":"913723279078","ui_kits/hkust-web-app/app.jsx":"a9bbdd3e343b","ui_kits/hkust-web-app/dashboard.jsx":"b53e46bd40d3","ui_kits/hkust-web-app/data.js":"15a22b1df420","ui_kits/hkust-web-app/project-detail.jsx":"c7e1d2690e8d","ui_kits/hkust-web-app/projects-list.jsx":"42b0b42a7725","ui_kits/hkust-web-app/request-wizard.jsx":"9b70a829037d","ui_kits/hkust-web-app/settings-page.jsx":"5ea12869af15","ui_kits/hkust-web-app/shell.jsx":"7e38bde0bd23","ui_kits/hkust-web-app/states-page.jsx":"8811ca08a3ce","ui_kits/iam-portal/app.jsx":"82c195fb04dd","ui_kits/iam-portal/case-selector.jsx":"228b6acb579a","ui_kits/iam-portal/data.js":"80362bcebb86","ui_kits/iam-portal/home-page.jsx":"93e78255b3d0","ui_kits/iam-portal/request-page.jsx":"2fd7b613904d","ui_kits/iam-portal/shell.jsx":"6c2a5326ecbc","ui_kits/iam-portal/team-page.jsx":"3fd45e3b071e"},"inlinedExternals":[],"unexposedExports":[{"name":"sortRows","sourcePath":"components/data/Table.jsx"},{"name":"useFocusStyle","sourcePath":"components/forms/Input.jsx"}]} */
+/* @ds-bundle: {"format":4,"namespace":"HKUSTWebDesignSystem_46d20c","components":[{"name":"Avatar","sourcePath":"components/core/Avatar.jsx"},{"name":"TINTS","sourcePath":"components/core/Badge.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"CardHeader","sourcePath":"components/core/Card.jsx"},{"name":"CardFooter","sourcePath":"components/core/Card.jsx"},{"name":"SectionTitle","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Card.jsx"},{"name":"Chip","sourcePath":"components/core/Chip.jsx"},{"name":"ChipGroup","sourcePath":"components/core/Chip.jsx"},{"name":"ICONS","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconBox","sourcePath":"components/core/IconBox.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Accordion","sourcePath":"components/data/Accordion.jsx"},{"name":"Disclosure","sourcePath":"components/data/Accordion.jsx"},{"name":"ActivityList","sourcePath":"components/data/ActivityList.jsx"},{"name":"ChartTooltip","sourcePath":"components/data/BarChart.jsx"},{"name":"BarChart","sourcePath":"components/data/BarChart.jsx"},{"name":"KeyValueList","sourcePath":"components/data/KeyValueList.jsx"},{"name":"KpiDelta","sourcePath":"components/data/KpiDelta.jsx"},{"name":"LineChart","sourcePath":"components/data/LineChart.jsx"},{"name":"StatTile","sourcePath":"components/data/StatTile.jsx"},{"name":"StepTracker","sourcePath":"components/data/StepTracker.jsx"},{"name":"Table","sourcePath":"components/data/Table.jsx"},{"name":"SortRows","sourcePath":"components/data/Table.jsx"},{"name":"BulkBar","sourcePath":"components/data/Table.jsx"},{"name":"Callout","sourcePath":"components/feedback/Callout.jsx"},{"name":"Drawer","sourcePath":"components/feedback/Drawer.jsx"},{"name":"EmptyState","sourcePath":"components/feedback/EmptyState.jsx"},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx"},{"name":"CloseButton","sourcePath":"components/feedback/Modal.jsx"},{"name":"NotificationBanner","sourcePath":"components/feedback/NotificationBanner.jsx"},{"name":"NotificationPanel","sourcePath":"components/feedback/NotificationPanel.jsx"},{"name":"Progress","sourcePath":"components/feedback/Progress.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"SkeletonTable","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"SkeletonCard","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Combobox","sourcePath":"components/forms/Combobox.jsx"},{"name":"Field","sourcePath":"components/forms/Field.jsx"},{"name":"FileUpload","sourcePath":"components/forms/FileUpload.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"MultiSelect","sourcePath":"components/forms/MultiSelect.jsx"},{"name":"OptionRow","sourcePath":"components/forms/OptionRow.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SegmentedControl","sourcePath":"components/forms/SegmentedControl.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx"},{"name":"DropdownMenu","sourcePath":"components/navigation/DropdownMenu.jsx"},{"name":"MenuItem","sourcePath":"components/navigation/DropdownMenu.jsx"},{"name":"PageHead","sourcePath":"components/navigation/PageHead.jsx"},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx"},{"name":"Sidebar","sourcePath":"components/navigation/Sidebar.jsx"},{"name":"NavLabel","sourcePath":"components/navigation/Sidebar.jsx"},{"name":"NavItem","sourcePath":"components/navigation/Sidebar.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"TopBand","sourcePath":"components/navigation/TopBand.jsx"},{"name":"BandSwitch","sourcePath":"components/navigation/TopBand.jsx"}],"sourceHashes":{"assets/chartjs/hkust-chartjs-theme.js":"f223466e1a39","components/core/Avatar.jsx":"737b81e456a0","components/core/Badge.jsx":"b195c8598257","components/core/Button.jsx":"ae1882059d74","components/core/Card.jsx":"273f74951960","components/core/Chip.jsx":"369ba75af9e1","components/core/Icon.jsx":"ce797b4f478a","components/core/IconBox.jsx":"2b2d790f9760","components/core/IconButton.jsx":"cef9ea4e2acb","components/core/Tag.jsx":"30de0719874c","components/data/Accordion.jsx":"687304c5615e","components/data/ActivityList.jsx":"ddaee676a065","components/data/BarChart.jsx":"540546b2df4c","components/data/KeyValueList.jsx":"1170c6184084","components/data/KpiDelta.jsx":"0fe308fba17b","components/data/LineChart.jsx":"f114842a59cc","components/data/StatTile.jsx":"4cac50cd2b4f","components/data/StepTracker.jsx":"b2f6439f60d8","components/data/Table.jsx":"121601c883cd","components/feedback/Callout.jsx":"458e618be081","components/feedback/Drawer.jsx":"3bbc958ad06d","components/feedback/EmptyState.jsx":"f436b4301fbf","components/feedback/Modal.jsx":"12a37b04e33c","components/feedback/NotificationBanner.jsx":"a0b48069208a","components/feedback/NotificationPanel.jsx":"7b8c041774b0","components/feedback/Progress.jsx":"626c110ae917","components/feedback/Skeleton.jsx":"89c933bfa92b","components/feedback/Spinner.jsx":"bf40e860568b","components/feedback/Toast.jsx":"047fe58a3c3b","components/feedback/Tooltip.jsx":"d17bf9d2aa96","components/forms/Checkbox.jsx":"e675cf213234","components/forms/Combobox.jsx":"60ed7e676115","components/forms/Field.jsx":"8818b7b12193","components/forms/FileUpload.jsx":"c2e446dae65e","components/forms/Input.jsx":"d28735979410","components/forms/MultiSelect.jsx":"5bfb90db5aa9","components/forms/OptionRow.jsx":"4eab743dea85","components/forms/Radio.jsx":"ffc070223083","components/forms/SegmentedControl.jsx":"89bf0e415c18","components/forms/Select.jsx":"d2a8e14fce0d","components/forms/Switch.jsx":"c200b9c96a2a","components/forms/Textarea.jsx":"4c14aa9774b7","components/navigation/Breadcrumb.jsx":"1e0c096e8f86","components/navigation/DropdownMenu.jsx":"f245bddf3a06","components/navigation/PageHead.jsx":"fc8f87bb825c","components/navigation/Pagination.jsx":"3ed11212bfe3","components/navigation/Sidebar.jsx":"d28db039c90a","components/navigation/Tabs.jsx":"e3850796d5fa","components/navigation/TopBand.jsx":"7769a9c16a2b","site/_static/docs-data-1.js":"ee8c5bf03536","site/_static/docs-data-2.js":"84bbd7f9bd6c","site/_static/docs.js":"880682924925","site/_static/site.js":"d94f21d11616","ui_kits/hkust-web-app/app.jsx":"15c16a1d152e","ui_kits/hkust-web-app/dashboard.jsx":"8b1ae020bd6e","ui_kits/hkust-web-app/data.js":"15a22b1df420","ui_kits/hkust-web-app/project-detail.jsx":"cc6d8c311e60","ui_kits/hkust-web-app/projects-list.jsx":"b8abac1148bf","ui_kits/hkust-web-app/request-wizard.jsx":"374a712cb4a3","ui_kits/hkust-web-app/settings-page.jsx":"f14734d9325d","ui_kits/hkust-web-app/shell.jsx":"6f85339c322f","ui_kits/hkust-web-app/states-page.jsx":"7fe40244cae2","ui_kits/iam-portal/app.jsx":"285c6249df64","ui_kits/iam-portal/case-selector.jsx":"228b6acb579a","ui_kits/iam-portal/data.js":"80362bcebb86","ui_kits/iam-portal/home-page.jsx":"cde4f94cdf47","ui_kits/iam-portal/request-page.jsx":"1326270f15b4","ui_kits/iam-portal/shell.jsx":"fba6ebb6c06f","ui_kits/iam-portal/team-page.jsx":"d4f080198374"},"inlinedExternals":[],"unexposedExports":[{"name":"sortRows","sourcePath":"components/data/Table.jsx"},{"name":"useFocusStyle","sourcePath":"components/forms/Input.jsx"}]} */
 
 (() => {
 
@@ -4856,1454 +4856,1461 @@ function BandSwitch({
 Object.assign(__ds_scope, { TopBand, BandSwitch });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/navigation/TopBand.jsx", error: String((e && e.message) || e) }); }
 
-// site/docs-data-1.js
+// site/_static/docs-data-1.js
 try { (() => {
-/* Component docs · core + forms. Each entry: name, desc, addition?, col?, props [[name,type,default,desc]], code (JSX), render({NS}) → React element. */
-const h = React.createElement;
-const L = ({
-  t
-}) => h('div', {
-  className: 'ex-lbl'
-}, t);
-window.DOCS = window.DOCS || {};
-window.DOCS.core = [{
-  name: 'Button',
-  desc: 'Primary action control. 14px bold, 4px radius, 40px tall (32px small); presses sink 1px. One primary per section.',
-  props: [['variant', "'primary'|'ghost'|'danger'|'danger-solid'|'success'|'link'", 'primary', 'Visual role'], ['size', "'md'|'sm'", 'md', '40px / 32px'], ['icon', 'string', '', 'Leading Lucide id (16px)'], ['iconRight', 'string', '', 'Trailing Lucide id'], ['block', 'boolean', 'false', 'Full width'], ['disabled', 'boolean', 'false', '50% opacity'], ['onClick', 'MouseEventHandler', '', '']],
-  code: `<Button icon="circle-plus">Request an app</Button>\n<Button variant="ghost" size="sm" icon="eye">View</Button>\n<Button variant="danger-solid" icon="trash-2">Remove access</Button>\n<Button variant="link">Cancel</Button>`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h(L, {
-    t: 'Variants'
-  }), h(NS.Button, {
-    icon: 'circle-plus'
-  }, 'Primary'), h(NS.Button, {
-    variant: 'ghost',
-    icon: 'eye'
-  }, 'Ghost'), h(NS.Button, {
-    variant: 'success',
-    icon: 'check'
-  }, 'Success'), h(NS.Button, {
-    variant: 'danger',
-    icon: 'trash-2'
-  }, 'Danger'), h(NS.Button, {
-    variant: 'danger-solid'
-  }, 'Danger solid'), h(NS.Button, {
-    variant: 'link'
-  }, 'Link'), h(L, {
-    t: 'Small · disabled'
-  }), h(NS.Button, {
-    size: 'sm',
-    icon: 'plus'
-  }, 'Small'), h(NS.Button, {
-    size: 'sm',
-    variant: 'ghost'
-  }, 'Small ghost'), h(NS.Button, {
-    disabled: true
-  }, 'Disabled'))
-}, {
-  name: 'IconButton',
-  desc: '36px icon-only button. tone navy for the band (pale icon → white), light for white surfaces. dot = orange unread pip; count = orange counter. Always pass title.',
-  props: [['icon', 'string', '', 'Lucide id (18px)'], ['tone', "'navy'|'light'", 'navy', 'Surface it sits on'], ['dot', 'boolean', 'false', 'Unread pip'], ['count', 'number|string', '', 'Counter pill'], ['title', 'string', '', 'Required · aria-label']],
-  code: `<IconButton icon="bell" dot title="Notifications" />\n<IconButton icon="shopping-cart" count={2} title="Access cart" />\n<IconButton tone="light" icon="more-horizontal" title="More" />`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h('div', {
-    style: {
-      background: 'var(--hkust-blue)',
-      padding: 12,
-      borderRadius: 4,
-      display: 'flex',
-      gap: 6
-    }
-  }, h(NS.IconButton, {
-    icon: 'search',
-    title: 'Search'
-  }), h(NS.IconButton, {
-    icon: 'bell',
-    dot: true,
-    title: 'Notifications'
-  }), h(NS.IconButton, {
-    icon: 'shopping-cart',
-    count: 2,
-    title: 'Cart'
-  })), h(NS.IconButton, {
-    tone: 'light',
-    icon: 'more-horizontal',
-    title: 'More'
-  }), h(NS.IconButton, {
-    tone: 'light',
-    icon: 'download',
-    title: 'Download'
-  }))
-}, {
-  name: 'Badge',
-  desc: 'Tinted status label, 12px bold, optional 13px icon. Tone by meaning: info automatic · success active · warning pending/sensitive · danger rejected · gold approval · neutral completed.',
-  props: [['tone', "'info'|'success'|'warning'|'danger'|'gold'|'cyan'|'neutral'", 'neutral', ''], ['icon', 'string', '', 'Lucide id (13px)'], ['children', 'ReactNode', '', 'Facts joined by ·']],
-  code: `<Badge tone="success" icon="check">Active</Badge>\n<Badge tone="warning" icon="clock">Sensitive · time-bound</Badge>\n<Badge tone="gold" icon="stamp">By approval</Badge>`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h(NS.Badge, {
-    tone: 'info',
-    icon: 'zap'
-  }, 'Auto · by position'), h(NS.Badge, {
-    tone: 'success',
-    icon: 'check'
-  }, 'Active'), h(NS.Badge, {
-    tone: 'warning',
-    icon: 'clock'
-  }, 'Sensitive · time-bound'), h(NS.Badge, {
-    tone: 'danger',
-    icon: 'x'
-  }, 'Rejected'), h(NS.Badge, {
-    tone: 'gold',
-    icon: 'stamp'
-  }, 'By approval'), h(NS.Badge, {
-    tone: 'cyan'
-  }, 'Cyan'), h(NS.Badge, {
-    tone: 'neutral'
-  }, 'L1 · Basic'))
-}, {
-  name: 'Tag',
-  desc: 'Tiny brand-tinted classifier (11px, 2px radius), e.g. "SSO". Category, not status.',
-  props: [['children', 'ReactNode', '', '']],
-  code: `<Tag>SSO</Tag>`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h(NS.Tag, null, 'SSO'), h(NS.Tag, null, 'Beta'))
-}, {
-  name: 'Chip',
-  desc: 'Filter / mode chip; selected fills navy. Exactly one selected per ChipGroup (8px gaps). Chips are for filters; Tabs are for content panes.',
-  props: [['selected', 'boolean', 'false', ''], ['onClick', 'MouseEventHandler', '', ''], ['disabled', 'boolean', 'false', '']],
-  code: `<ChipGroup>\n  <Chip selected>All (14)</Chip>\n  <Chip>Your reports</Chip>\n</ChipGroup>`,
-  render: ({
-    NS
-  }) => {
-    const [s, set] = React.useState('All (14)');
-    return h(NS.ChipGroup, null, ...['All (14)', 'Your reports', 'Changed'].map(c => h(NS.Chip, {
-      key: c,
-      selected: s === c,
-      onClick: () => set(c)
-    }, c)), h(NS.Chip, {
+(function () {
+  if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page) return;
+  /* Component docs · core + forms. Each entry: name, desc, addition?, col?, props [[name,type,default,desc]], code (JSX), render({NS}) → React element. */
+  const h = React.createElement;
+  const L = ({
+    t
+  }) => h('div', {
+    className: 'ex-lbl'
+  }, t);
+  window.DOCS = window.DOCS || {};
+  window.DOCS.core = [{
+    name: 'Button',
+    desc: 'Primary action control. 14px bold, 4px radius, 40px tall (32px small); presses sink 1px. One primary per section.',
+    props: [['variant', "'primary'|'ghost'|'danger'|'danger-solid'|'success'|'link'", 'primary', 'Visual role'], ['size', "'md'|'sm'", 'md', '40px / 32px'], ['icon', 'string', '', 'Leading Lucide id (16px)'], ['iconRight', 'string', '', 'Trailing Lucide id'], ['block', 'boolean', 'false', 'Full width'], ['disabled', 'boolean', 'false', '50% opacity'], ['onClick', 'MouseEventHandler', '', '']],
+    code: `<Button icon="circle-plus">Request an app</Button>\n<Button variant="ghost" size="sm" icon="eye">View</Button>\n<Button variant="danger-solid" icon="trash-2">Remove access</Button>\n<Button variant="link">Cancel</Button>`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h(L, {
+      t: 'Variants'
+    }), h(NS.Button, {
+      icon: 'circle-plus'
+    }, 'Primary'), h(NS.Button, {
+      variant: 'ghost',
+      icon: 'eye'
+    }, 'Ghost'), h(NS.Button, {
+      variant: 'success',
+      icon: 'check'
+    }, 'Success'), h(NS.Button, {
+      variant: 'danger',
+      icon: 'trash-2'
+    }, 'Danger'), h(NS.Button, {
+      variant: 'danger-solid'
+    }, 'Danger solid'), h(NS.Button, {
+      variant: 'link'
+    }, 'Link'), h(L, {
+      t: 'Small · disabled'
+    }), h(NS.Button, {
+      size: 'sm',
+      icon: 'plus'
+    }, 'Small'), h(NS.Button, {
+      size: 'sm',
+      variant: 'ghost'
+    }, 'Small ghost'), h(NS.Button, {
       disabled: true
-    }, 'Disabled'));
-  }
-}, {
-  name: 'Avatar',
-  desc: 'Square initials avatar, 4px radius. sm 32px · lg 52px. No photos — initials only; persona colour pairs via bg/fg.',
-  props: [['initials', 'string', '', ''], ['size', "'sm'|'lg'|number", 'sm', ''], ['bg', 'string', 'brand light', ''], ['fg', 'string', 'navy', '']],
-  code: `<Avatar initials="FM" />\n<Avatar initials="J" size="lg" />\n<Avatar initials="FA" bg="var(--tint-gold-bg)" fg="var(--hkust-gold)" />`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h(NS.Avatar, {
-    initials: 'FM'
-  }), h(NS.Avatar, {
-    initials: 'FA',
+    }, 'Disabled'))
+  }, {
+    name: 'IconButton',
+    desc: '36px icon-only button. tone navy for the band (pale icon → white), light for white surfaces. dot = orange unread pip; count = orange counter. Always pass title.',
+    props: [['icon', 'string', '', 'Lucide id (18px)'], ['tone', "'navy'|'light'", 'navy', 'Surface it sits on'], ['dot', 'boolean', 'false', 'Unread pip'], ['count', 'number|string', '', 'Counter pill'], ['title', 'string', '', 'Required · aria-label']],
+    code: `<IconButton icon="bell" dot title="Notifications" />\n<IconButton icon="shopping-cart" count={2} title="Access cart" />\n<IconButton tone="light" icon="more-horizontal" title="More" />`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h('div', {
+      style: {
+        background: 'var(--hkust-blue)',
+        padding: 12,
+        borderRadius: 4,
+        display: 'flex',
+        gap: 6
+      }
+    }, h(NS.IconButton, {
+      icon: 'search',
+      title: 'Search'
+    }), h(NS.IconButton, {
+      icon: 'bell',
+      dot: true,
+      title: 'Notifications'
+    }), h(NS.IconButton, {
+      icon: 'shopping-cart',
+      count: 2,
+      title: 'Cart'
+    })), h(NS.IconButton, {
+      tone: 'light',
+      icon: 'more-horizontal',
+      title: 'More'
+    }), h(NS.IconButton, {
+      tone: 'light',
+      icon: 'download',
+      title: 'Download'
+    }))
+  }, {
+    name: 'Badge',
+    desc: 'Tinted status label, 12px bold, optional 13px icon. Tone by meaning: info automatic · success active · warning pending/sensitive · danger rejected · gold approval · neutral completed.',
+    props: [['tone', "'info'|'success'|'warning'|'danger'|'gold'|'cyan'|'neutral'", 'neutral', ''], ['icon', 'string', '', 'Lucide id (13px)'], ['children', 'ReactNode', '', 'Facts joined by ·']],
+    code: `<Badge tone="success" icon="check">Active</Badge>\n<Badge tone="warning" icon="clock">Sensitive · time-bound</Badge>\n<Badge tone="gold" icon="stamp">By approval</Badge>`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h(NS.Badge, {
+      tone: 'info',
+      icon: 'zap'
+    }, 'Auto · by position'), h(NS.Badge, {
+      tone: 'success',
+      icon: 'check'
+    }, 'Active'), h(NS.Badge, {
+      tone: 'warning',
+      icon: 'clock'
+    }, 'Sensitive · time-bound'), h(NS.Badge, {
+      tone: 'danger',
+      icon: 'x'
+    }, 'Rejected'), h(NS.Badge, {
+      tone: 'gold',
+      icon: 'stamp'
+    }, 'By approval'), h(NS.Badge, {
+      tone: 'cyan'
+    }, 'Cyan'), h(NS.Badge, {
+      tone: 'neutral'
+    }, 'L1 · Basic'))
+  }, {
+    name: 'Tag',
+    desc: 'Tiny brand-tinted classifier (11px, 2px radius), e.g. "SSO". Category, not status.',
+    props: [['children', 'ReactNode', '', '']],
+    code: `<Tag>SSO</Tag>`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h(NS.Tag, null, 'SSO'), h(NS.Tag, null, 'Beta'))
+  }, {
+    name: 'Chip',
+    desc: 'Filter / mode chip; selected fills navy. Exactly one selected per ChipGroup (8px gaps). Chips are for filters; Tabs are for content panes.',
+    props: [['selected', 'boolean', 'false', ''], ['onClick', 'MouseEventHandler', '', ''], ['disabled', 'boolean', 'false', '']],
+    code: `<ChipGroup>\n  <Chip selected>All (14)</Chip>\n  <Chip>Your reports</Chip>\n</ChipGroup>`,
+    render: ({
+      NS
+    }) => {
+      const [s, set] = React.useState('All (14)');
+      return h(NS.ChipGroup, null, ...['All (14)', 'Your reports', 'Changed'].map(c => h(NS.Chip, {
+        key: c,
+        selected: s === c,
+        onClick: () => set(c)
+      }, c)), h(NS.Chip, {
+        disabled: true
+      }, 'Disabled'));
+    }
+  }, {
+    name: 'Avatar',
+    desc: 'Square initials avatar, 4px radius. sm 32px · lg 52px. No photos — initials only; persona colour pairs via bg/fg.',
+    props: [['initials', 'string', '', ''], ['size', "'sm'|'lg'|number", 'sm', ''], ['bg', 'string', 'brand light', ''], ['fg', 'string', 'navy', '']],
+    code: `<Avatar initials="FM" />\n<Avatar initials="J" size="lg" />\n<Avatar initials="FA" bg="var(--tint-gold-bg)" fg="var(--hkust-gold)" />`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h(NS.Avatar, {
+      initials: 'FM'
+    }), h(NS.Avatar, {
+      initials: 'FA',
+      bg: 'var(--tint-gold-bg)',
+      fg: 'var(--hkust-gold)'
+    }), h(NS.Avatar, {
+      initials: 'JR',
+      bg: 'var(--tint-cyan-bg)',
+      fg: 'var(--tint-cyan-fg)'
+    }), h(NS.Avatar, {
+      initials: 'J',
+      size: 'lg'
+    }))
+  }, {
+    name: 'IconBox',
+    desc: 'Tinted square holding one icon: 42px (22px icon) or 34/30px (15px icon). Tone is categorical: navy apps · cyan data systems · green people · gold finance/approvals · red destructive · gray not set up.',
+    props: [['icon', 'string', '', 'Lucide id'], ['tone', "'navy'|'gold'|'green'|'red'|'cyan'|'gray'", 'navy', ''], ['size', 'number', '42', '42 · 34 · 30']],
+    code: `<IconBox icon="database" tone="cyan" />\n<IconBox icon="users" tone="green" size={30} />`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h(NS.IconBox, {
+      icon: 'layout-grid'
+    }), h(NS.IconBox, {
+      icon: 'database',
+      tone: 'cyan'
+    }), h(NS.IconBox, {
+      icon: 'users',
+      tone: 'green'
+    }), h(NS.IconBox, {
+      icon: 'wallet',
+      tone: 'gold'
+    }), h(NS.IconBox, {
+      icon: 'triangle-alert',
+      tone: 'red',
+      size: 34
+    }), h(NS.IconBox, {
+      icon: 'key-round',
+      tone: 'gray',
+      size: 30
+    }))
+  }, {
+    name: 'Card',
+    desc: 'The one container: white, 1px border, 8px radius, 22px padding, no shadow at rest. flush removes padding for CardHeader / rows / CardFooter; hoverable lifts 1px when the card is a link. SectionTitle and Divider ship alongside.',
+    col: true,
+    props: [['flush', 'boolean', 'false', 'No padding'], ['hoverable', 'boolean', 'false', 'Lift + shadow on hover'], ['onClick', 'MouseEventHandler', '', ''], ['as', 'string', 'div', 'Render as another tag']],
+    code: `<Card flush>\n  <CardHeader title="Multi-factor authentication" subtitle="Used to confirm it is really you" actions={<Badge tone="success" icon="shield-check">Active</Badge>} />\n  …rows…\n  <CardFooter><Button size="sm" icon="plus">Add a method</Button></CardFooter>\n</Card>`,
+    render: ({
+      NS
+    }) => h('div', {
+      style: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
+        gap: 16
+      }
+    }, h(NS.Card, null, h(NS.SectionTitle, null, 'Password'), h('p', {
+      className: 'muted',
+      style: {
+        fontSize: 12,
+        marginTop: 8
+      }
+    }, 'Last changed 12 Mar 2026 · meets policy')), h(NS.Card, {
+      flush: true
+    }, h(NS.CardHeader, {
+      title: 'Multi-factor authentication',
+      subtitle: 'Used to confirm it is really you',
+      actions: h(NS.Badge, {
+        tone: 'success',
+        icon: 'shield-check'
+      }, 'Active')
+    }), h('div', {
+      style: {
+        padding: '14px 22px',
+        fontSize: 14
+      }
+    }, 'Authenticator app · iPhone'), h(NS.CardFooter, null, h(NS.Button, {
+      size: 'sm',
+      icon: 'plus'
+    }, 'Add a method'))))
+  }, {
+    name: 'Icon',
+    desc: 'Inline Lucide glyph (24 grid, 2px stroke, currentColor). Only ids in ICONS render — the portal\'s 65 glyphs plus additions. Never emoji or hand-drawn SVG.',
+    props: [['name', 'string', '', 'Lucide id'], ['size', "'sm'|'md'|'lg'|'btn'|'badge'|number", 'md', '15 · 18 · 22 · 16 · 13'], ['color', 'string', 'currentColor', '']],
+    code: `<Icon name="shield-check" />\n<Icon name="clock" size={13} style={{ color: 'var(--warning)' }} />`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, ...['shield-check', 'clock', 'stamp', 'clipboard-list', 'key-round', 'users-round', 'fingerprint', 'refresh-cw', 'file-search', 'circle-plus', 'layout-grid', 'database'].map(n => h('span', {
+      key: n,
+      style: {
+        display: 'inline-flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 4,
+        width: 78,
+        fontSize: 10,
+        color: 'var(--fg3)'
+      }
+    }, h(NS.Icon, {
+      name: n,
+      size: 22,
+      style: {
+        color: 'var(--fg1)'
+      }
+    }), n)))
+  }];
+  window.DOCS.forms = [{
+    name: 'Input',
+    desc: 'Text input, 40px tall, 14px text, 1px border, 4px radius. icon adds an 18px leading glyph. Focus = ITSO-blue border + 3px 12% ring; invalid = red.',
+    props: [['icon', 'string', '', 'Leading Lucide id'], ['invalid', 'boolean', 'false', ''], ['type', 'string', 'text', ''], ['placeholder', 'string', '', ''], ['wrapStyle', 'CSSProperties', '', 'Width constraints']],
+    code: `<Field label="Search"><Input icon="search" placeholder="Search systems, business roles, or functions…" /></Field>`,
+    render: ({
+      NS
+    }) => h('div', {
+      style: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
+        gap: 16,
+        width: '100%'
+      }
+    }, h(NS.Field, {
+      label: 'Search',
+      hint: 'Icon variant'
+    }, h(NS.Input, {
+      icon: 'search',
+      placeholder: 'Search systems, business roles, or functions…'
+    })), h(NS.Field, {
+      label: 'Staff ID',
+      required: true,
+      error: 'No record found for this ID.'
+    }, h(NS.Input, {
+      invalid: true,
+      defaultValue: 'UST-P-00'
+    })), h(NS.Field, {
+      label: 'Date'
+    }, h(NS.Input, {
+      type: 'date',
+      defaultValue: '2026-09-15'
+    })))
+  }, {
+    name: 'Textarea',
+    desc: 'Multi-line input matching Input; vertical resize only. Justification fields are always required.',
+    props: [['rows', 'number', '3', ''], ['invalid', 'boolean', 'false', '']],
+    code: `<Field label="Business justification" required>\n  <Textarea rows={3} placeholder="Explain why you need these roles." />\n</Field>`,
+    render: ({
+      NS
+    }) => h('div', {
+      style: {
+        width: '100%',
+        maxWidth: 520
+      }
+    }, h(NS.Field, {
+      label: 'Business justification',
+      required: true
+    }, h(NS.Textarea, {
+      rows: 3,
+      placeholder: 'Explain why you need these roles.'
+    })))
+  }, {
+    name: 'Select',
+    desc: 'Native select styled like Input. size sm is the compact inline variant used in rows. Prefer Chips for ≤5 visible choices.',
+    props: [['options', "Array<string|{value,label}>", '[]', ''], ['size', "'md'|'sm'", 'md', '40px / 32px'], ['invalid', 'boolean', 'false', '']],
+    code: `<Select options={['Finance Office','Research Office','ITSO']} />\n<Select size="sm" options={['30 days','90 days','180 days']} defaultValue="90 days" />`,
+    render: ({
+      NS
+    }) => h(React.Fragment, null, h('div', {
+      style: {
+        width: 220
+      }
+    }, h(NS.Select, {
+      options: ['Finance Office', 'Research Office', 'ITSO']
+    })), h(NS.Select, {
+      size: 'sm',
+      options: ['30 days', '90 days', '180 days'],
+      defaultValue: '90 days'
+    }))
+  }, {
+    name: 'Field',
+    desc: 'Label (12px bold) + control + hint or error line. Required mark is a red asterisk.',
+    props: [['label', 'ReactNode', '', ''], ['required', 'boolean', 'false', ''], ['hint', 'ReactNode', '', 'Muted line below'], ['error', 'ReactNode', '', 'Red line below (wins over hint)']],
+    code: `<Field label="Colleague you are requesting for" required hint="Approvals follow each system's own route.">\n  <Input icon="user" placeholder="Search name or staff ID…" />\n</Field>`,
+    render: ({
+      NS
+    }) => h('div', {
+      style: {
+        width: '100%',
+        maxWidth: 420
+      }
+    }, h(NS.Field, {
+      label: 'Colleague you are requesting for',
+      required: true,
+      hint: "Approvals follow each system's own route."
+    }, h(NS.Input, {
+      icon: 'user',
+      placeholder: 'Search name or staff ID…'
+    })))
+  }, {
+    name: 'Switch',
+    desc: '38×22 toggle, 18px knob; on = ITSO blue. Label 14px semibold on the right.',
+    props: [['checked', 'boolean', 'false', ''], ['onChange', '(checked) => void', '', ''], ['label', 'ReactNode', '', ''], ['disabled', 'boolean', 'false', '']],
+    code: `<Switch checked={on} onChange={setOn} label="Email me when a request is decided" />`,
+    render: ({
+      NS
+    }) => {
+      const [a, sa] = React.useState(true);
+      const [b, sb] = React.useState(false);
+      return h('div', {
+        style: {
+          display: 'grid',
+          gap: 10
+        }
+      }, h(NS.Switch, {
+        checked: a,
+        onChange: sa,
+        label: 'Email me when a request is decided'
+      }), h(NS.Switch, {
+        checked: b,
+        onChange: sb,
+        label: 'Weekly digest'
+      }));
+    }
+  }, {
+    name: 'Checkbox',
+    desc: 'Native checkbox with navy accent; supports indeterminate. Disabled + checked marks items already owned.',
+    props: [['checked', 'boolean', '', ''], ['indeterminate', 'boolean', 'false', ''], ['onChange', '(checked) => void', '', ''], ['label', 'ReactNode', '', '']],
+    code: `<Checkbox checked={sel} onChange={setSel} label="Notify the requester" />`,
+    render: ({
+      NS
+    }) => {
+      const [c, sc] = React.useState(true);
+      return h(React.Fragment, null, h(NS.Checkbox, {
+        checked: c,
+        onChange: sc,
+        label: 'Notify the requester'
+      }), h(NS.Checkbox, {
+        indeterminate: true,
+        label: 'Some selected'
+      }), h(NS.Checkbox, {
+        checked: true,
+        disabled: true,
+        label: 'Already owned'
+      }));
+    }
+  }, {
+    name: 'Radio',
+    desc: 'Native radio with navy accent. Prefer OptionRow for described choices.',
+    props: [['checked', 'boolean', '', ''], ['name', 'string', '', 'Group'], ['value', 'string', '', ''], ['onChange', '(value) => void', '', ''], ['label', 'ReactNode', '', '']],
+    code: `<Radio name="dur" value="90" checked label="90 days" />`,
+    render: ({
+      NS
+    }) => {
+      const [v, sv] = React.useState('90');
+      return h(React.Fragment, null, ...['30', '90', '180'].map(d => h(NS.Radio, {
+        key: d,
+        name: 'd',
+        value: d,
+        checked: v === d,
+        onChange: sv,
+        label: d + ' days'
+      })));
+    }
+  }, {
+    name: 'OptionRow',
+    desc: 'Bordered row wrapping a radio/checkbox with title, description and trailing slot. Hover turns the border blue. 9px between rows built in.',
+    col: true,
+    props: [['type', "'radio'|'checkbox'", 'radio', ''], ['title', 'ReactNode', '', 'Bold navy'], ['description', 'ReactNode', '', '12px muted'], ['trailing', 'ReactNode', '', 'Badge etc.'], ['checked', 'boolean', '', ''], ['onChange', '(checked, value) => void', '', '']],
+    code: `<OptionRow name="mfa" checked title="Security key / passkey" description="Phishing-resistant, fastest" trailing={<Badge tone="success">Recommended</Badge>} />\n<OptionRow name="mfa" title="Authenticator app" description="One-time codes on your phone" />`,
+    render: ({
+      NS
+    }) => {
+      const [v, sv] = React.useState('key');
+      return h('div', {
+        style: {
+          maxWidth: 520
+        }
+      }, h(NS.OptionRow, {
+        name: 'm',
+        value: 'key',
+        checked: v === 'key',
+        onChange: (_, x) => sv(x),
+        title: 'Security key / passkey',
+        description: 'Phishing-resistant, fastest',
+        trailing: h(NS.Badge, {
+          tone: 'success'
+        }, 'Recommended')
+      }), h(NS.OptionRow, {
+        name: 'm',
+        value: 'app',
+        checked: v === 'app',
+        onChange: (_, x) => sv(x),
+        title: 'Authenticator app',
+        description: 'One-time codes on your phone'
+      }));
+    }
+  }, {
+    name: 'SegmentedControl',
+    desc: 'Joined button group for a one-of decision (Keep / Revoke). Each option may colour its selected state.',
+    props: [['options', 'Array<{value,label,tone?}>', '', "tone brand | success | danger"], ['value', 'string', '', ''], ['onChange', '(value) => void', '', ''], ['size', "'md'|'sm'", 'md', '']],
+    code: `<SegmentedControl size="sm" value={d} onChange={setD} options={[{value:'keep',label:'Keep',tone:'success'},{value:'revoke',label:'Revoke',tone:'danger'}]} />`,
+    render: ({
+      NS
+    }) => {
+      const [v, sv] = React.useState('keep');
+      const [w, sw] = React.useState('list');
+      return h(React.Fragment, null, h(NS.SegmentedControl, {
+        size: 'sm',
+        value: v,
+        onChange: sv,
+        options: [{
+          value: 'keep',
+          label: 'Keep',
+          tone: 'success'
+        }, {
+          value: 'revoke',
+          label: 'Revoke',
+          tone: 'danger'
+        }]
+      }), h(NS.SegmentedControl, {
+        value: w,
+        onChange: sw,
+        options: [{
+          value: 'list',
+          label: 'List'
+        }, {
+          value: 'grid',
+          label: 'Grid'
+        }]
+      }));
+    }
+  }, {
+    name: 'Combobox',
+    addition: true,
+    desc: 'Typeahead: 40px field with search icon; list of avatar rows filtered as you type. Arrows + Enter pick, Esc closes; the chosen row shows inside the field with a clear ×.',
+    props: [['options', 'Array<{value,label,meta?,initials?,icon?}>', '[]', ''], ['value', 'string|null', '', ''], ['onChange', '(value, option) => void', '', ''], ['placeholder', 'string', 'Search…', ''], ['icon', 'string', 'search', ''], ['maxItems', 'number', '6', '']],
+    code: `<Combobox value={pi} onChange={setPi} placeholder="Search name or staff ID…" options={[{ value: 'wchan', label: 'Prof. CHAN Wing Hong', meta: 'UST-P-0031277 · Civil Engineering', initials: 'WH' }]} />`,
+    render: ({
+      NS
+    }) => {
+      const [v, sv] = React.useState('wchan');
+      return h('div', {
+        style: {
+          width: '100%',
+          maxWidth: 420
+        }
+      }, h(NS.Field, {
+        label: 'Principal investigator',
+        required: true
+      }, h(NS.Combobox, {
+        value: v,
+        onChange: sv,
+        placeholder: 'Search name or staff ID…',
+        options: window.DOC_PEOPLE
+      })));
+    }
+  }, {
+    name: 'MultiSelect',
+    addition: true,
+    desc: 'Dropdown of checkboxes. The field reads "N selected" with a count pill — never tags. Filter box and Select all / Clear inside.',
+    props: [['options', 'Array<{value,label,meta?}>', '[]', ''], ['value', 'string[]', '[]', ''], ['onChange', '(values) => void', '', ''], ['placeholder', 'string', 'Select…', ''], ['searchable', 'boolean', 'true', '']],
+    code: `<MultiSelect value={ids} onChange={setIds} placeholder="Add members…" options={people.map(p => ({ value: p.id, label: p.n, meta: p.role }))} />`,
+    render: ({
+      NS
+    }) => {
+      const [v, sv] = React.useState(['jhli', 'kyc']);
+      return h('div', {
+        style: {
+          width: '100%',
+          maxWidth: 420
+        }
+      }, h(NS.Field, {
+        label: 'Members'
+      }, h(NS.MultiSelect, {
+        value: v,
+        onChange: sv,
+        placeholder: 'Add members…',
+        options: window.DOC_PEOPLE.map(p => ({
+          value: p.value,
+          label: p.label,
+          meta: p.meta
+        }))
+      })));
+    }
+  }, {
+    name: 'FileUpload',
+    addition: true,
+    desc: 'Dashed drop zone on bg2 (navy tint while dragging) with an accept hint. Rows show name · size, a progress bar while uploading, or a red tinted row with the reason when rejected.',
+    col: true,
+    props: [['files', 'Array<{id,name,size?,progress?,error?}>', '[]', ''], ['onFiles', '(File[]) => void', '', 'Dropped or picked'], ['onRemove', '(file) => void', '', ''], ['accept', 'string', '.pdf,.docx', ''], ['hint', 'ReactNode', 'PDF or DOCX · up to 10 MB each', '']],
+    code: `<FileUpload files={files} onFiles={add} onRemove={remove} hint="PDF or DOCX · up to 10 MB each" />`,
+    render: ({
+      NS
+    }) => {
+      const [f, sf] = React.useState([{
+        id: 1,
+        name: 'Justification-letter.pdf',
+        size: 482000,
+        progress: 100
+      }, {
+        id: 2,
+        name: 'Quotation-A100-nodes.pdf',
+        size: 1240000,
+        progress: 62
+      }, {
+        id: 3,
+        name: 'budget.xlsx',
+        size: 88000,
+        error: 'Wrong type · PDF or DOCX only'
+      }]);
+      return h('div', {
+        style: {
+          maxWidth: 560
+        }
+      }, h(NS.FileUpload, {
+        files: f,
+        onFiles: fs => sf(o => [...o, ...fs.map((x, i) => ({
+          id: Date.now() + i,
+          name: x.name,
+          size: x.size,
+          progress: 100
+        }))]),
+        onRemove: x => sf(o => o.filter(y => y.id !== x.id))
+      }));
+    }
+  }];
+  window.DOC_PEOPLE = [{
+    value: 'wchan',
+    label: 'Prof. CHAN Wing Hong',
+    meta: 'UST-P-0031277 · Civil & Environmental Engineering',
+    initials: 'WH'
+  }, {
+    value: 'jhli',
+    label: 'LI Jia Hao',
+    meta: 'UST-S-2210034 · PhD student',
+    initials: 'LJ',
     bg: 'var(--tint-gold-bg)',
     fg: 'var(--hkust-gold)'
-  }), h(NS.Avatar, {
-    initials: 'JR',
+  }, {
+    value: 'kyc',
+    label: 'CHEUNG Ka Yan',
+    meta: 'UST-P-0090344 · Research assistant',
+    initials: 'KY',
     bg: 'var(--tint-cyan-bg)',
     fg: 'var(--tint-cyan-fg)'
-  }), h(NS.Avatar, {
-    initials: 'J',
-    size: 'lg'
-  }))
-}, {
-  name: 'IconBox',
-  desc: 'Tinted square holding one icon: 42px (22px icon) or 34/30px (15px icon). Tone is categorical: navy apps · cyan data systems · green people · gold finance/approvals · red destructive · gray not set up.',
-  props: [['icon', 'string', '', 'Lucide id'], ['tone', "'navy'|'gold'|'green'|'red'|'cyan'|'gray'", 'navy', ''], ['size', 'number', '42', '42 · 34 · 30']],
-  code: `<IconBox icon="database" tone="cyan" />\n<IconBox icon="users" tone="green" size={30} />`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h(NS.IconBox, {
-    icon: 'layout-grid'
-  }), h(NS.IconBox, {
-    icon: 'database',
-    tone: 'cyan'
-  }), h(NS.IconBox, {
-    icon: 'users',
-    tone: 'green'
-  }), h(NS.IconBox, {
-    icon: 'wallet',
-    tone: 'gold'
-  }), h(NS.IconBox, {
+  }, {
+    value: 'psso',
+    label: 'Dr. SO Pui Shan',
+    meta: 'UST-P-0062119 · Postdoctoral fellow',
+    initials: 'PS',
+    bg: 'var(--tint-success-bg)',
+    fg: 'var(--tint-success-fg)'
+  }];
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "site/_static/docs-data-1.js", error: String((e && e.message) || e) }); }
+
+// site/_static/docs-data-2.js
+try { (() => {
+(function () {
+  if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page) return;
+  /* Component docs · feedback, navigation, data */
+  const h2 = React.createElement;
+  const L2 = ({
+    t
+  }) => h2('div', {
+    className: 'ex-lbl'
+  }, t);
+  window.DOCS = window.DOCS || {};
+  const NOTIFS = [{
+    id: 1,
+    title: 'Request REQ-5120 approved',
+    meta: '2 hours ago · Research Computing',
+    unread: true,
+    icon: 'check',
+    tone: 'green',
+    onView: () => {}
+  }, {
+    id: 2,
+    title: 'RC-2038 passed 95% of its allocation',
+    meta: 'Yesterday · System',
+    unread: true,
     icon: 'triangle-alert',
-    tone: 'red',
-    size: 34
-  }), h(NS.IconBox, {
-    icon: 'key-round',
-    tone: 'gray',
-    size: 30
-  }))
-}, {
-  name: 'Card',
-  desc: 'The one container: white, 1px border, 8px radius, 22px padding, no shadow at rest. flush removes padding for CardHeader / rows / CardFooter; hoverable lifts 1px when the card is a link. SectionTitle and Divider ship alongside.',
-  col: true,
-  props: [['flush', 'boolean', 'false', 'No padding'], ['hoverable', 'boolean', 'false', 'Lift + shadow on hover'], ['onClick', 'MouseEventHandler', '', ''], ['as', 'string', 'div', 'Render as another tag']],
-  code: `<Card flush>\n  <CardHeader title="Multi-factor authentication" subtitle="Used to confirm it is really you" actions={<Badge tone="success" icon="shield-check">Active</Badge>} />\n  …rows…\n  <CardFooter><Button size="sm" icon="plus">Add a method</Button></CardFooter>\n</Card>`,
-  render: ({
-    NS
-  }) => h('div', {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-      gap: 16
-    }
-  }, h(NS.Card, null, h(NS.SectionTitle, null, 'Password'), h('p', {
-    className: 'muted',
-    style: {
-      fontSize: 12,
-      marginTop: 8
-    }
-  }, 'Last changed 12 Mar 2026 · meets policy')), h(NS.Card, {
-    flush: true
-  }, h(NS.CardHeader, {
-    title: 'Multi-factor authentication',
-    subtitle: 'Used to confirm it is really you',
-    actions: h(NS.Badge, {
-      tone: 'success',
-      icon: 'shield-check'
-    }, 'Active')
-  }), h('div', {
-    style: {
-      padding: '14px 22px',
-      fontSize: 14
-    }
-  }, 'Authenticator app · iPhone'), h(NS.CardFooter, null, h(NS.Button, {
-    size: 'sm',
-    icon: 'plus'
-  }, 'Add a method'))))
-}, {
-  name: 'Icon',
-  desc: 'Inline Lucide glyph (24 grid, 2px stroke, currentColor). Only ids in ICONS render — the portal\'s 65 glyphs plus additions. Never emoji or hand-drawn SVG.',
-  props: [['name', 'string', '', 'Lucide id'], ['size', "'sm'|'md'|'lg'|'btn'|'badge'|number", 'md', '15 · 18 · 22 · 16 · 13'], ['color', 'string', 'currentColor', '']],
-  code: `<Icon name="shield-check" />\n<Icon name="clock" size={13} style={{ color: 'var(--warning)' }} />`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, ...['shield-check', 'clock', 'stamp', 'clipboard-list', 'key-round', 'users-round', 'fingerprint', 'refresh-cw', 'file-search', 'circle-plus', 'layout-grid', 'database'].map(n => h('span', {
-    key: n,
-    style: {
-      display: 'inline-flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: 4,
-      width: 78,
-      fontSize: 10,
-      color: 'var(--fg3)'
-    }
-  }, h(NS.Icon, {
-    name: n,
-    size: 22,
-    style: {
-      color: 'var(--fg1)'
-    }
-  }), n)))
-}];
-window.DOCS.forms = [{
-  name: 'Input',
-  desc: 'Text input, 40px tall, 14px text, 1px border, 4px radius. icon adds an 18px leading glyph. Focus = ITSO-blue border + 3px 12% ring; invalid = red.',
-  props: [['icon', 'string', '', 'Leading Lucide id'], ['invalid', 'boolean', 'false', ''], ['type', 'string', 'text', ''], ['placeholder', 'string', '', ''], ['wrapStyle', 'CSSProperties', '', 'Width constraints']],
-  code: `<Field label="Search"><Input icon="search" placeholder="Search systems, business roles, or functions…" /></Field>`,
-  render: ({
-    NS
-  }) => h('div', {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-      gap: 16,
-      width: '100%'
-    }
-  }, h(NS.Field, {
-    label: 'Search',
-    hint: 'Icon variant'
-  }, h(NS.Input, {
-    icon: 'search',
-    placeholder: 'Search systems, business roles, or functions…'
-  })), h(NS.Field, {
-    label: 'Staff ID',
-    required: true,
-    error: 'No record found for this ID.'
-  }, h(NS.Input, {
-    invalid: true,
-    defaultValue: 'UST-P-00'
-  })), h(NS.Field, {
-    label: 'Date'
-  }, h(NS.Input, {
-    type: 'date',
-    defaultValue: '2026-09-15'
-  })))
-}, {
-  name: 'Textarea',
-  desc: 'Multi-line input matching Input; vertical resize only. Justification fields are always required.',
-  props: [['rows', 'number', '3', ''], ['invalid', 'boolean', 'false', '']],
-  code: `<Field label="Business justification" required>\n  <Textarea rows={3} placeholder="Explain why you need these roles." />\n</Field>`,
-  render: ({
-    NS
-  }) => h('div', {
-    style: {
-      width: '100%',
-      maxWidth: 520
-    }
-  }, h(NS.Field, {
-    label: 'Business justification',
-    required: true
-  }, h(NS.Textarea, {
-    rows: 3,
-    placeholder: 'Explain why you need these roles.'
-  })))
-}, {
-  name: 'Select',
-  desc: 'Native select styled like Input. size sm is the compact inline variant used in rows. Prefer Chips for ≤5 visible choices.',
-  props: [['options', "Array<string|{value,label}>", '[]', ''], ['size', "'md'|'sm'", 'md', '40px / 32px'], ['invalid', 'boolean', 'false', '']],
-  code: `<Select options={['Finance Office','Research Office','ITSO']} />\n<Select size="sm" options={['30 days','90 days','180 days']} defaultValue="90 days" />`,
-  render: ({
-    NS
-  }) => h(React.Fragment, null, h('div', {
-    style: {
-      width: 220
-    }
-  }, h(NS.Select, {
-    options: ['Finance Office', 'Research Office', 'ITSO']
-  })), h(NS.Select, {
-    size: 'sm',
-    options: ['30 days', '90 days', '180 days'],
-    defaultValue: '90 days'
-  }))
-}, {
-  name: 'Field',
-  desc: 'Label (12px bold) + control + hint or error line. Required mark is a red asterisk.',
-  props: [['label', 'ReactNode', '', ''], ['required', 'boolean', 'false', ''], ['hint', 'ReactNode', '', 'Muted line below'], ['error', 'ReactNode', '', 'Red line below (wins over hint)']],
-  code: `<Field label="Colleague you are requesting for" required hint="Approvals follow each system's own route.">\n  <Input icon="user" placeholder="Search name or staff ID…" />\n</Field>`,
-  render: ({
-    NS
-  }) => h('div', {
-    style: {
-      width: '100%',
-      maxWidth: 420
-    }
-  }, h(NS.Field, {
-    label: 'Colleague you are requesting for',
-    required: true,
-    hint: "Approvals follow each system's own route."
-  }, h(NS.Input, {
-    icon: 'user',
-    placeholder: 'Search name or staff ID…'
-  })))
-}, {
-  name: 'Switch',
-  desc: '38×22 toggle, 18px knob; on = ITSO blue. Label 14px semibold on the right.',
-  props: [['checked', 'boolean', 'false', ''], ['onChange', '(checked) => void', '', ''], ['label', 'ReactNode', '', ''], ['disabled', 'boolean', 'false', '']],
-  code: `<Switch checked={on} onChange={setOn} label="Email me when a request is decided" />`,
-  render: ({
-    NS
-  }) => {
-    const [a, sa] = React.useState(true);
-    const [b, sb] = React.useState(false);
-    return h('div', {
+    tone: 'gold',
+    onView: () => {}
+  }, {
+    id: 3,
+    title: 'Monthly usage report is ready',
+    meta: '01 Sep · System',
+    icon: 'file-text',
+    tone: 'navy'
+  }];
+  window.DOCS.feedback = [{
+    name: 'Callout',
+    desc: 'Inline tinted message with an 18px icon: the rule and its consequence in one or two sentences. One per card. Shares the Badge tint set.',
+    col: true,
+    props: [['tone', "'info'|'success'|'warning'|'danger'", 'info', ''], ['icon', 'string', 'by tone', 'Override glyph']],
+    code: `<Callout>Self-service reset replaces the helpdesk ticket.</Callout>\n<Callout tone="warning" icon="info">This takes effect immediately and is written to the audit log.</Callout>`,
+    render: ({
+      NS
+    }) => h2('div', {
       style: {
         display: 'grid',
         gap: 10
       }
-    }, h(NS.Switch, {
-      checked: a,
-      onChange: sa,
-      label: 'Email me when a request is decided'
-    }), h(NS.Switch, {
-      checked: b,
-      onChange: sb,
-      label: 'Weekly digest'
-    }));
-  }
-}, {
-  name: 'Checkbox',
-  desc: 'Native checkbox with navy accent; supports indeterminate. Disabled + checked marks items already owned.',
-  props: [['checked', 'boolean', '', ''], ['indeterminate', 'boolean', 'false', ''], ['onChange', '(checked) => void', '', ''], ['label', 'ReactNode', '', '']],
-  code: `<Checkbox checked={sel} onChange={setSel} label="Notify the requester" />`,
-  render: ({
-    NS
-  }) => {
-    const [c, sc] = React.useState(true);
-    return h(React.Fragment, null, h(NS.Checkbox, {
-      checked: c,
-      onChange: sc,
-      label: 'Notify the requester'
-    }), h(NS.Checkbox, {
-      indeterminate: true,
-      label: 'Some selected'
-    }), h(NS.Checkbox, {
-      checked: true,
-      disabled: true,
-      label: 'Already owned'
-    }));
-  }
-}, {
-  name: 'Radio',
-  desc: 'Native radio with navy accent. Prefer OptionRow for described choices.',
-  props: [['checked', 'boolean', '', ''], ['name', 'string', '', 'Group'], ['value', 'string', '', ''], ['onChange', '(value) => void', '', ''], ['label', 'ReactNode', '', '']],
-  code: `<Radio name="dur" value="90" checked label="90 days" />`,
-  render: ({
-    NS
-  }) => {
-    const [v, sv] = React.useState('90');
-    return h(React.Fragment, null, ...['30', '90', '180'].map(d => h(NS.Radio, {
-      key: d,
-      name: 'd',
-      value: d,
-      checked: v === d,
-      onChange: sv,
-      label: d + ' days'
-    })));
-  }
-}, {
-  name: 'OptionRow',
-  desc: 'Bordered row wrapping a radio/checkbox with title, description and trailing slot. Hover turns the border blue. 9px between rows built in.',
-  col: true,
-  props: [['type', "'radio'|'checkbox'", 'radio', ''], ['title', 'ReactNode', '', 'Bold navy'], ['description', 'ReactNode', '', '12px muted'], ['trailing', 'ReactNode', '', 'Badge etc.'], ['checked', 'boolean', '', ''], ['onChange', '(checked, value) => void', '', '']],
-  code: `<OptionRow name="mfa" checked title="Security key / passkey" description="Phishing-resistant, fastest" trailing={<Badge tone="success">Recommended</Badge>} />\n<OptionRow name="mfa" title="Authenticator app" description="One-time codes on your phone" />`,
-  render: ({
-    NS
-  }) => {
-    const [v, sv] = React.useState('key');
-    return h('div', {
+    }, h2(NS.Callout, null, 'Self-service reset replaces the helpdesk ticket. Most resets finish in under a minute once MFA is confirmed.'), h2(NS.Callout, {
+      tone: 'success'
+    }, 'Identity confirmed with your authenticator app.'), h2(NS.Callout, {
+      tone: 'warning',
+      icon: 'info'
+    }, 'This takes effect immediately and is written to the audit log.'), h2(NS.Callout, {
+      tone: 'danger'
+    }, 'Clone window closed · 2 application roles lapsed uncloned.'))
+  }, {
+    name: 'NotificationBanner',
+    addition: true,
+    desc: 'Full-width notice under the band: tint bg, bottom hairline, bold lead-in, optional action, always dismissible. One at a time. Tones: info maintenance · warning expiring · danger outage · success completed.',
+    col: true,
+    props: [['tone', "'info'|'success'|'warning'|'danger'", 'info', ''], ['title', 'ReactNode', '', 'Bold lead-in'], ['action', 'ReactNode', '', 'Link button on the right'], ['onDismiss', '() => void', '', ''], ['open', 'boolean', 'true', '']],
+    code: `<NotificationBanner tone="warning" title="Planned maintenance" action={<Button variant="link" size="sm">Details →</Button>}>\n  ITSO systems will be unavailable on Sun 14 Sep, 02:00–06:00.\n</NotificationBanner>`,
+    render: ({
+      NS
+    }) => h2('div', {
       style: {
-        maxWidth: 520
+        display: 'grid',
+        gap: 8
       }
-    }, h(NS.OptionRow, {
-      name: 'm',
-      value: 'key',
-      checked: v === 'key',
-      onChange: (_, x) => sv(x),
-      title: 'Security key / passkey',
-      description: 'Phishing-resistant, fastest',
-      trailing: h(NS.Badge, {
-        tone: 'success'
-      }, 'Recommended')
-    }), h(NS.OptionRow, {
-      name: 'm',
-      value: 'app',
-      checked: v === 'app',
-      onChange: (_, x) => sv(x),
-      title: 'Authenticator app',
-      description: 'One-time codes on your phone'
-    }));
-  }
-}, {
-  name: 'SegmentedControl',
-  desc: 'Joined button group for a one-of decision (Keep / Revoke). Each option may colour its selected state.',
-  props: [['options', 'Array<{value,label,tone?}>', '', "tone brand | success | danger"], ['value', 'string', '', ''], ['onChange', '(value) => void', '', ''], ['size', "'md'|'sm'", 'md', '']],
-  code: `<SegmentedControl size="sm" value={d} onChange={setD} options={[{value:'keep',label:'Keep',tone:'success'},{value:'revoke',label:'Revoke',tone:'danger'}]} />`,
-  render: ({
-    NS
-  }) => {
-    const [v, sv] = React.useState('keep');
-    const [w, sw] = React.useState('list');
-    return h(React.Fragment, null, h(NS.SegmentedControl, {
-      size: 'sm',
-      value: v,
-      onChange: sv,
-      options: [{
-        value: 'keep',
-        label: 'Keep',
-        tone: 'success'
-      }, {
-        value: 'revoke',
-        label: 'Revoke',
-        tone: 'danger'
-      }]
-    }), h(NS.SegmentedControl, {
-      value: w,
-      onChange: sw,
-      options: [{
-        value: 'list',
-        label: 'List'
-      }, {
-        value: 'grid',
-        label: 'Grid'
-      }]
-    }));
-  }
-}, {
-  name: 'Combobox',
-  addition: true,
-  desc: 'Typeahead: 40px field with search icon; list of avatar rows filtered as you type. Arrows + Enter pick, Esc closes; the chosen row shows inside the field with a clear ×.',
-  props: [['options', 'Array<{value,label,meta?,initials?,icon?}>', '[]', ''], ['value', 'string|null', '', ''], ['onChange', '(value, option) => void', '', ''], ['placeholder', 'string', 'Search…', ''], ['icon', 'string', 'search', ''], ['maxItems', 'number', '6', '']],
-  code: `<Combobox value={pi} onChange={setPi} placeholder="Search name or staff ID…" options={[{ value: 'wchan', label: 'Prof. CHAN Wing Hong', meta: 'UST-P-0031277 · Civil Engineering', initials: 'WH' }]} />`,
-  render: ({
-    NS
-  }) => {
-    const [v, sv] = React.useState('wchan');
-    return h('div', {
-      style: {
-        width: '100%',
-        maxWidth: 420
-      }
-    }, h(NS.Field, {
-      label: 'Principal investigator',
-      required: true
-    }, h(NS.Combobox, {
-      value: v,
-      onChange: sv,
-      placeholder: 'Search name or staff ID…',
-      options: window.DOC_PEOPLE
-    })));
-  }
-}, {
-  name: 'MultiSelect',
-  addition: true,
-  desc: 'Dropdown of checkboxes. The field reads "N selected" with a count pill — never tags. Filter box and Select all / Clear inside.',
-  props: [['options', 'Array<{value,label,meta?}>', '[]', ''], ['value', 'string[]', '[]', ''], ['onChange', '(values) => void', '', ''], ['placeholder', 'string', 'Select…', ''], ['searchable', 'boolean', 'true', '']],
-  code: `<MultiSelect value={ids} onChange={setIds} placeholder="Add members…" options={people.map(p => ({ value: p.id, label: p.n, meta: p.role }))} />`,
-  render: ({
-    NS
-  }) => {
-    const [v, sv] = React.useState(['jhli', 'kyc']);
-    return h('div', {
-      style: {
-        width: '100%',
-        maxWidth: 420
-      }
-    }, h(NS.Field, {
-      label: 'Members'
-    }, h(NS.MultiSelect, {
-      value: v,
-      onChange: sv,
-      placeholder: 'Add members…',
-      options: window.DOC_PEOPLE.map(p => ({
-        value: p.value,
-        label: p.label,
-        meta: p.meta
-      }))
-    })));
-  }
-}, {
-  name: 'FileUpload',
-  addition: true,
-  desc: 'Dashed drop zone on bg2 (navy tint while dragging) with an accept hint. Rows show name · size, a progress bar while uploading, or a red tinted row with the reason when rejected.',
-  col: true,
-  props: [['files', 'Array<{id,name,size?,progress?,error?}>', '[]', ''], ['onFiles', '(File[]) => void', '', 'Dropped or picked'], ['onRemove', '(file) => void', '', ''], ['accept', 'string', '.pdf,.docx', ''], ['hint', 'ReactNode', 'PDF or DOCX · up to 10 MB each', '']],
-  code: `<FileUpload files={files} onFiles={add} onRemove={remove} hint="PDF or DOCX · up to 10 MB each" />`,
-  render: ({
-    NS
-  }) => {
-    const [f, sf] = React.useState([{
-      id: 1,
-      name: 'Justification-letter.pdf',
-      size: 482000,
-      progress: 100
-    }, {
-      id: 2,
-      name: 'Quotation-A100-nodes.pdf',
-      size: 1240000,
-      progress: 62
-    }, {
-      id: 3,
-      name: 'budget.xlsx',
-      size: 88000,
-      error: 'Wrong type · PDF or DOCX only'
-    }]);
-    return h('div', {
-      style: {
-        maxWidth: 560
-      }
-    }, h(NS.FileUpload, {
-      files: f,
-      onFiles: fs => sf(o => [...o, ...fs.map((x, i) => ({
-        id: Date.now() + i,
-        name: x.name,
-        size: x.size,
-        progress: 100
-      }))]),
-      onRemove: x => sf(o => o.filter(y => y.id !== x.id))
-    }));
-  }
-}];
-window.DOC_PEOPLE = [{
-  value: 'wchan',
-  label: 'Prof. CHAN Wing Hong',
-  meta: 'UST-P-0031277 · Civil & Environmental Engineering',
-  initials: 'WH'
-}, {
-  value: 'jhli',
-  label: 'LI Jia Hao',
-  meta: 'UST-S-2210034 · PhD student',
-  initials: 'LJ',
-  bg: 'var(--tint-gold-bg)',
-  fg: 'var(--hkust-gold)'
-}, {
-  value: 'kyc',
-  label: 'CHEUNG Ka Yan',
-  meta: 'UST-P-0090344 · Research assistant',
-  initials: 'KY',
-  bg: 'var(--tint-cyan-bg)',
-  fg: 'var(--tint-cyan-fg)'
-}, {
-  value: 'psso',
-  label: 'Dr. SO Pui Shan',
-  meta: 'UST-P-0062119 · Postdoctoral fellow',
-  initials: 'PS',
-  bg: 'var(--tint-success-bg)',
-  fg: 'var(--tint-success-fg)'
-}];
-})(); } catch (e) { __ds_ns.__errors.push({ path: "site/docs-data-1.js", error: String((e && e.message) || e) }); }
-
-// site/docs-data-2.js
-try { (() => {
-/* Component docs · feedback, navigation, data */
-const h2 = React.createElement;
-const L2 = ({
-  t
-}) => h2('div', {
-  className: 'ex-lbl'
-}, t);
-window.DOCS = window.DOCS || {};
-const NOTIFS = [{
-  id: 1,
-  title: 'Request REQ-5120 approved',
-  meta: '2 hours ago · Research Computing',
-  unread: true,
-  icon: 'check',
-  tone: 'green',
-  onView: () => {}
-}, {
-  id: 2,
-  title: 'RC-2038 passed 95% of its allocation',
-  meta: 'Yesterday · System',
-  unread: true,
-  icon: 'triangle-alert',
-  tone: 'gold',
-  onView: () => {}
-}, {
-  id: 3,
-  title: 'Monthly usage report is ready',
-  meta: '01 Sep · System',
-  icon: 'file-text',
-  tone: 'navy'
-}];
-window.DOCS.feedback = [{
-  name: 'Callout',
-  desc: 'Inline tinted message with an 18px icon: the rule and its consequence in one or two sentences. One per card. Shares the Badge tint set.',
-  col: true,
-  props: [['tone', "'info'|'success'|'warning'|'danger'", 'info', ''], ['icon', 'string', 'by tone', 'Override glyph']],
-  code: `<Callout>Self-service reset replaces the helpdesk ticket.</Callout>\n<Callout tone="warning" icon="info">This takes effect immediately and is written to the audit log.</Callout>`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      display: 'grid',
-      gap: 10
+    }, h2(NS.NotificationBanner, {
+      tone: 'warning',
+      title: 'Planned maintenance',
+      action: h2(NS.Button, {
+        variant: 'link',
+        size: 'sm'
+      }, 'Details →')
+    }, 'ITSO systems will be unavailable on Sun 14 Sep, 02:00–06:00.'), h2(NS.NotificationBanner, {
+      tone: 'danger',
+      title: 'Service outage'
+    }, 'HRMS sign-in is currently failing for some users. We are working on it.'), h2(NS.NotificationBanner, {
+      tone: 'info',
+      title: 'New'
+    }, 'Requests can now be tracked from the bell.'))
+  }, {
+    name: 'NotificationPanel',
+    addition: true,
+    desc: 'The list the bell opens: 340px white card, unread count, "Mark all as read", rows with a 34px IconBox, orange unread dot, 12px meta and a View link.',
+    props: [['items', 'Array<{id,title,meta?,unread?,icon?,tone?,onView?}>', '[]', ''], ['open', 'boolean', 'true', ''], ['onMarkAllRead', '() => void', '', ''], ['onClose', '() => void', '', ''], ['inline', 'boolean', 'false', 'Render in flow'], ['top / right', 'number', '52 / 60', 'Anchor offsets']],
+    code: `<NotificationPanel open={open} onClose={close} onMarkAllRead={markAll} items={[{ id: 1, title: 'Request REQ-5120 approved', meta: '2 hours ago', unread: true, icon: 'check', tone: 'green', onView }]} />`,
+    render: ({
+      NS
+    }) => {
+      const [n, sn] = React.useState(NOTIFS);
+      return h2(NS.NotificationPanel, {
+        inline: true,
+        onClose: () => {},
+        onMarkAllRead: () => sn(x => x.map(i => ({
+          ...i,
+          unread: false
+        }))),
+        items: n
+      });
     }
-  }, h2(NS.Callout, null, 'Self-service reset replaces the helpdesk ticket. Most resets finish in under a minute once MFA is confirmed.'), h2(NS.Callout, {
-    tone: 'success'
-  }, 'Identity confirmed with your authenticator app.'), h2(NS.Callout, {
-    tone: 'warning',
-    icon: 'info'
-  }, 'This takes effect immediately and is written to the audit log.'), h2(NS.Callout, {
-    tone: 'danger'
-  }, 'Clone window closed · 2 application roles lapsed uncloned.'))
-}, {
-  name: 'NotificationBanner',
-  addition: true,
-  desc: 'Full-width notice under the band: tint bg, bottom hairline, bold lead-in, optional action, always dismissible. One at a time. Tones: info maintenance · warning expiring · danger outage · success completed.',
-  col: true,
-  props: [['tone', "'info'|'success'|'warning'|'danger'", 'info', ''], ['title', 'ReactNode', '', 'Bold lead-in'], ['action', 'ReactNode', '', 'Link button on the right'], ['onDismiss', '() => void', '', ''], ['open', 'boolean', 'true', '']],
-  code: `<NotificationBanner tone="warning" title="Planned maintenance" action={<Button variant="link" size="sm">Details →</Button>}>\n  ITSO systems will be unavailable on Sun 14 Sep, 02:00–06:00.\n</NotificationBanner>`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      display: 'grid',
-      gap: 8
-    }
-  }, h2(NS.NotificationBanner, {
-    tone: 'warning',
-    title: 'Planned maintenance',
-    action: h2(NS.Button, {
-      variant: 'link',
-      size: 'sm'
-    }, 'Details →')
-  }, 'ITSO systems will be unavailable on Sun 14 Sep, 02:00–06:00.'), h2(NS.NotificationBanner, {
-    tone: 'danger',
-    title: 'Service outage'
-  }, 'HRMS sign-in is currently failing for some users. We are working on it.'), h2(NS.NotificationBanner, {
-    tone: 'info',
-    title: 'New'
-  }, 'Requests can now be tracked from the bell.'))
-}, {
-  name: 'NotificationPanel',
-  addition: true,
-  desc: 'The list the bell opens: 340px white card, unread count, "Mark all as read", rows with a 34px IconBox, orange unread dot, 12px meta and a View link.',
-  props: [['items', 'Array<{id,title,meta?,unread?,icon?,tone?,onView?}>', '[]', ''], ['open', 'boolean', 'true', ''], ['onMarkAllRead', '() => void', '', ''], ['onClose', '() => void', '', ''], ['inline', 'boolean', 'false', 'Render in flow'], ['top / right', 'number', '52 / 60', 'Anchor offsets']],
-  code: `<NotificationPanel open={open} onClose={close} onMarkAllRead={markAll} items={[{ id: 1, title: 'Request REQ-5120 approved', meta: '2 hours ago', unread: true, icon: 'check', tone: 'green', onView }]} />`,
-  render: ({
-    NS
-  }) => {
-    const [n, sn] = React.useState(NOTIFS);
-    return h2(NS.NotificationPanel, {
-      inline: true,
-      onClose: () => {},
-      onMarkAllRead: () => sn(x => x.map(i => ({
-        ...i,
-        unread: false
-      }))),
-      items: n
-    });
-  }
-}, {
-  name: 'Toast',
-  desc: 'Bottom-centre navy toast, white 14px semibold, no icon or close button; ~3.6s. Past-tense fact + ID.',
-  props: [['open', 'boolean', 'true', ''], ['fixed', 'boolean', 'true', 'false renders in flow']],
-  code: `<Toast open={show}>Request submitted · TRF-1032</Toast>`,
-  render: ({
-    NS
-  }) => h2(NS.Toast, {
-    fixed: false
-  }, 'Request submitted · TRF-1032')
-}, {
-  name: 'EmptyState',
-  desc: 'Centred 30px icon, bold title, one-line body, optional action. Place inside a flush Card.',
-  col: true,
-  props: [['icon', 'string', 'inbox', ''], ['title', 'ReactNode', '', 'States the fact'], ['children', 'ReactNode', '', 'Says what to do'], ['action', 'ReactNode', '', '']],
-  code: `<Card flush><EmptyState icon="users-round" title="No events in this view">Switch filter to see other team events.</EmptyState></Card>`,
-  render: ({
-    NS
-  }) => h2(NS.Card, {
-    flush: true
-  }, h2(NS.EmptyState, {
-    icon: 'users-round',
-    title: 'No events in this view',
-    action: h2(NS.Button, {
-      size: 'sm',
-      variant: 'ghost'
-    }, 'Clear filter')
-  }, 'Switch filter to see other team events.'))
-}, {
-  name: 'Modal',
-  desc: '480px dialog (lg 560) on a 45% navy scrim. Header with optional 34px IconBox (red for destructive), body, footer space-between: link Cancel left, primary or danger-solid right.',
-  col: true,
-  props: [['open', 'boolean', 'true', ''], ['onClose', '() => void', '', ''], ['title', 'ReactNode', '', ''], ['subtitle', 'ReactNode', '', ''], ['leading', 'ReactNode', '', 'IconBox'], ['size', "'md'|'lg'", 'md', ''], ['footer', 'ReactNode', '', ''], ['inline', 'boolean', 'false', 'No scrim (previews)']],
-  code: `<Modal title="Reject request" subtitle="TRF-1027 · ECM" leading={<IconBox icon="x" tone="red" size={34} />} onClose={close}\n  footer={<><Button variant="link" onClick={close}>Cancel</Button><Button variant="danger-solid">Confirm rejection</Button></>}>\n  …\n</Modal>`,
-  render: ({
-    NS
-  }) => h2(NS.Modal, {
-    inline: true,
-    title: 'Confirm removal',
-    leading: h2(NS.IconBox, {
-      icon: 'triangle-alert',
-      tone: 'red',
-      size: 34
-    }),
-    onClose: () => {},
-    footer: h2(React.Fragment, null, h2(NS.Button, {
-      variant: 'link'
-    }, 'Cancel'), h2(NS.Button, {
-      variant: 'danger-solid',
-      icon: 'trash-2'
-    }, 'Remove access'))
-  }, h2('p', {
-    style: {
-      fontSize: 14
-    }
-  }, 'Remove your access to ', h2('b', {
-    style: {
-      color: 'var(--fg1)'
-    }
-  }, 'ECM · Department Admin'), '?'), h2(NS.Callout, {
-    tone: 'warning',
-    icon: 'info',
-    style: {
-      marginTop: 12
-    }
-  }, 'This takes effect immediately and is written to the audit log.'))
-}, {
-  name: 'Drawer',
-  addition: true,
-  desc: 'Right-hand 480px side panel on the navy scrim for details that should not leave the list. Closes only with its × so taps on the scrim never lose the panel.',
-  col: true,
-  props: [['open', 'boolean', 'true', ''], ['onClose', '() => void', '', ''], ['title', 'ReactNode', '', ''], ['subtitle', 'ReactNode', '', ''], ['leading', 'ReactNode', '', 'Avatar / IconBox'], ['footer', 'ReactNode', '', ''], ['width', 'number', '480', ''], ['inline', 'boolean', 'false', '']],
-  code: `<Drawer open={!!member} onClose={() => setMember(null)} title={member.n} subtitle={member.role} leading={<Avatar initials="LJ" size="lg" />}\n  footer={<><Button variant="link">Close</Button><Button variant="danger" icon="user-x">Remove from project</Button></>}>\n  <KeyValueList items={…} />\n</Drawer>`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      maxWidth: 480
-    }
-  }, h2(NS.Drawer, {
-    inline: true,
-    title: 'LI Jia Hao',
-    subtitle: 'PhD student · RC-2041',
-    leading: h2(NS.Avatar, {
-      initials: 'LJ',
-      size: 'lg'
-    }),
-    onClose: () => {},
-    footer: h2(React.Fragment, null, h2(NS.Button, {
-      variant: 'link'
-    }, 'Close'), h2(NS.Button, {
-      variant: 'danger',
-      icon: 'user-x'
-    }, 'Remove from project'))
-  }, h2(NS.KeyValueList, {
-    keyWidth: 120,
-    items: [{
-      k: 'Email',
-      v: 'jhli@connect.ust.hk'
-    }, {
-      k: 'Jobs · 30 days',
-      v: '1,204'
-    }, {
-      k: 'Status',
-      v: h2(NS.Badge, {
-        tone: 'success',
-        icon: 'check'
-      }, 'Active')
-    }]
-  })))
-}, {
-  name: 'Tooltip',
-  addition: true,
-  desc: 'Navy hover tooltip, 12px white text. Names icon-only controls.',
-  props: [['label', 'ReactNode', '', ''], ['side', "'top'|'bottom'", 'top', '']],
-  code: `<Tooltip label="Download CSV"><IconButton tone="light" icon="download" title="Download CSV" /></Tooltip>`,
-  render: ({
-    NS
-  }) => h2(React.Fragment, null, h2(NS.Tooltip, {
-    label: 'Download CSV'
-  }, h2(NS.IconButton, {
-    tone: 'light',
-    icon: 'download',
-    title: 'Download CSV'
-  })), h2(NS.Tooltip, {
-    label: 'More actions',
-    side: 'bottom'
-  }, h2(NS.IconButton, {
-    tone: 'light',
-    icon: 'more-horizontal',
-    title: 'More'
-  })))
-}, {
-  name: 'Progress',
-  desc: 'bar: 6px pill (170px) with ITSO-blue fill. segments: the wizard\'s 4px step strip.',
-  props: [['variant', "'bar'|'segments'", 'bar', ''], ['value', 'number', '0', 'Percent (bar) or completed count (segments)'], ['steps', 'number', '3', 'Segments only'], ['width', 'number', '170', ''], ['tone', "'brand'|'success'|'warning'|'danger'", 'brand', '']],
-  code: `<Progress value={43} />\n<Progress variant="segments" steps={3} value={1} />`,
-  render: ({
-    NS
-  }) => h2(React.Fragment, null, h2(NS.Progress, {
-    value: 43
-  }), h2(NS.Progress, {
-    value: 82,
-    tone: 'warning'
-  }), h2(NS.Progress, {
-    value: 96,
-    tone: 'danger'
-  }), h2('div', {
-    style: {
-      width: 200
-    }
-  }, h2(NS.Progress, {
-    variant: 'segments',
-    steps: 3,
-    value: 2
-  })))
-}, {
-  name: 'Skeleton',
-  addition: true,
-  desc: 'Shimmering placeholder bars (1.6s, off under reduced-motion). SkeletonCard and SkeletonTable mirror the layouts they replace.',
-  col: true,
-  props: [['width', 'number|string', '100%', ''], ['height', 'number|string', '14', ''], ['radius', 'number|string', '4', '']],
-  code: `<SkeletonCard />\n<Card flush><SkeletonTable rows={5} cols={4} /></Card>\n<Skeleton width={120} height={12} />`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))',
-      gap: 16
-    }
-  }, h2(NS.SkeletonCard), h2(NS.Card, {
-    flush: true
-  }, h2(NS.SkeletonTable, {
-    rows: 3,
-    cols: 3
-  })))
-}, {
-  name: 'Spinner',
-  addition: true,
-  desc: 'ITSO-blue ring, 24px. Centre it in the section it blocks; never inside buttons.',
-  props: [['size', 'number', '24', '18 · 24 · 32'], ['center', 'boolean', 'false', 'Padded block + label'], ['label', 'ReactNode', '', '']],
-  code: `<Card flush><Spinner center label="Loading requests…" /></Card>`,
-  render: ({
-    NS
-  }) => h2(React.Fragment, null, h2(NS.Spinner, {
-    size: 18
-  }), h2(NS.Spinner), h2(NS.Spinner, {
-    size: 32
-  }), h2('div', {
-    style: {
-      flex: 1,
-      minWidth: 220
-    }
-  }, h2(NS.Card, {
-    flush: true
-  }, h2(NS.Spinner, {
-    center: true,
-    label: 'Loading requests…'
-  }))))
-}];
-window.DOCS.navigation = [{
-  name: 'TopBand',
-  desc: '60px HKUST-navy band: white lockup (34px) left, unit block after a 1px 40%-white rule, tools and user right. ≤880px hides the unit block and shows ☰ before the logo to open the Sidebar drawer. BandSwitch is the outlined context pill.',
-  col: true,
-  props: [['logoSrc', 'string', '', 'White lockup'], ['unit / unitSub', 'ReactNode', '', 'Bold first line + second line'], ['extra', 'ReactNode', '', 'Left-side extra (BandSwitch)'], ['children', 'ReactNode', '', 'IconButtons'], ['user', '{initials,name,role?,bg?,fg?}', '', ''], ['onUserClick', '() => void', '', ''], ['fixed', 'boolean', 'true', '']],
-  code: `<TopBand logoSrc="assets/logo/hkust-fullname-white.png" unit="Information Technology" unitSub="Services Office (ITSO)" user={{ initials: 'FM', name: 'FO Manager', role: 'Manager · Finance Office' }} onUserClick={openMenu}>\n  <IconButton icon="search" title="Search" />\n  <IconButton icon="bell" dot title="Notifications" />\n</TopBand>`,
-  render: ({
-    NS
-  }) => h2(NS.TopBand, {
-    fixed: false,
-    logoSrc: '../assets/logo/hkust-fullname-white.png',
-    unit: 'Information Technology',
-    unitSub: 'Services Office (ITSO)',
-    extra: h2(NS.BandSwitch, {
-      label: 'Case 1',
-      hint: 'Switch case'
-    }),
-    user: {
-      initials: 'FM',
-      name: 'FO Manager',
-      role: 'Manager · Finance Office'
-    },
-    onUserClick: () => {}
-  }, h2(NS.IconButton, {
-    icon: 'search',
-    title: 'Search'
-  }), h2(NS.IconButton, {
-    icon: 'bell',
-    dot: true,
-    title: 'Notifications'
-  }), h2(NS.IconButton, {
-    icon: 'shopping-cart',
-    count: 2,
-    title: 'Cart'
-  }))
-}, {
-  name: 'Sidebar',
-  desc: '248px white rail under the band. Header row: system name (wraps to two lines) + collapse toggle → 64px icon rail with tooltips. NavLabel groups (11px caps), NavItem rows (active = brand-light fill, 3px blue bar, orange count). Drawer ≤880px.',
-  col: true,
-  props: [['title', 'ReactNode', '', 'System name in the header row'], ['collapsible', 'boolean', 'false', 'Header toggle → 64px rail'], ['footer', 'ReactNode', '', 'Version text'], ['fixed', 'boolean', 'true', ''], ['NavItem.icon / active / count', '', '', ''], ['NavItem.onClick / href', '', '', '']],
-  code: `<Sidebar collapsible title="IAM Self-Service Portal" footer="prototype v4 · staff identity">\n  <NavItem icon="layout-grid" active>Home & Apps</NavItem>\n  <NavLabel>My access</NavLabel>\n  <NavItem icon="clipboard-list" count={2}>My Requests</NavItem>\n</Sidebar>`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      display: 'flex',
-      height: 340,
-      border: '1px solid var(--border)',
-      background: '#fff',
-      borderRadius: 8,
-      overflow: 'hidden'
-    }
-  }, h2(NS.Sidebar, {
-    fixed: false,
-    breakpoint: 0,
-    collapsible: true,
-    title: 'Centralized Approval and Delegation System',
-    footer: 'v2.3 · staff identity'
-  }, h2(NS.NavItem, {
-    icon: 'layout-grid',
-    active: true
-  }, 'Home & Apps'), h2(NS.NavLabel, null, 'My access'), h2(NS.NavItem, {
-    icon: 'circle-plus'
-  }, 'Request Access'), h2(NS.NavItem, {
-    icon: 'clipboard-list',
-    count: 2
-  }, 'My Requests')), h2('div', {
-    style: {
-      flex: 1
-    }
-  }, h2(NS.PageHead, {
-    sticky: false,
-    title: 'Request Access',
-    subtitle: 'Browse the catalogue and request the access you need',
-    actions: h2(NS.Button, {
-      size: 'sm',
-      variant: 'ghost',
-      icon: 'download'
-    }, 'Export')
-  })))
-}, {
-  name: 'PageHead',
-  desc: 'Sticky white header under the band: 20px title, 14px muted subtitle, optional right actions. Title Case for the title, sentence case for the subtitle.',
-  col: true,
-  props: [['title', 'ReactNode', '', ''], ['subtitle', 'ReactNode', '', ''], ['actions', 'ReactNode', '', ''], ['sticky', 'boolean', 'true', '']],
-  code: `<PageHead title="Request Access" subtitle="Browse the catalogue and request the access you need" actions={<Button icon="circle-plus">New request</Button>} />`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      border: '1px solid var(--border)',
-      borderRadius: 8,
-      overflow: 'hidden'
-    }
-  }, h2(NS.PageHead, {
-    sticky: false,
-    title: 'Projects',
-    subtitle: 'All allocations you administer',
-    actions: h2(NS.Button, {
-      icon: 'circle-plus'
-    }, 'New request')
-  }))
-}, {
-  name: 'Tabs',
-  addition: true,
-  desc: 'Underline tabs for switching content panes of one record. Filters stay Chips.',
-  props: [['items', 'Array<{key,label,icon?,count?}>', '', ''], ['value', 'string', '', ''], ['onChange', '(key) => void', '', '']],
-  code: `<Tabs value={tab} onChange={setTab} items={[{key:'o',label:'Overview'},{key:'a',label:'Access',count:9},{key:'h',label:'Activity'}]} />`,
-  render: ({
-    NS
-  }) => {
-    const [t, st] = React.useState('a');
-    return h2('div', {
-      style: {
-        width: '100%'
-      }
-    }, h2(NS.Tabs, {
-      value: t,
-      onChange: st,
-      items: [{
-        key: 'o',
-        label: 'Overview'
-      }, {
-        key: 'a',
-        label: 'Access',
-        count: 9
-      }, {
-        key: 'h',
-        label: 'Activity'
-      }]
-    }));
-  }
-}, {
-  name: 'Breadcrumb',
-  addition: true,
-  desc: '12px trail with 13px chevrons; the current page in navy bold. Sits above the page title on detail pages.',
-  props: [['items', 'Array<{label,href?,onClick?}>', '', 'Last item = current']],
-  code: `<Breadcrumb items={[{label:'Team members',onClick:back},{label:'WONG Ka Ming'}]} />`,
-  render: ({
-    NS
-  }) => h2(NS.Breadcrumb, {
-    items: [{
-      label: 'Projects'
-    }, {
-      label: 'RC-2041'
-    }, {
-      label: 'Members'
-    }]
-  })
-}, {
-  name: 'Pagination',
-  addition: true,
-  desc: 'Numbered pager in ghost-button style, 32px squares; active = brand-light. summary renders "1–20 of 143" on the left.',
-  props: [['page', 'number', '1', ''], ['pages', 'number', '1', ''], ['onChange', '(page) => void', '', ''], ['summary', 'ReactNode', '', '']],
-  code: `<Pagination page={p} pages={8} onChange={setP} summary="1–20 of 143" />`,
-  render: ({
-    NS
-  }) => {
-    const [p, sp] = React.useState(3);
-    return h2('div', {
-      style: {
-        width: '100%'
-      }
-    }, h2(NS.Pagination, {
-      page: p,
-      pages: 8,
-      onChange: sp,
-      summary: '41–60 of 143'
-    }));
-  }
-}, {
-  name: 'DropdownMenu',
-  desc: 'White popover (1px border, 4px radius, shadow-lg, min 250) with an optional uppercase heading. MenuItem rows: leading Avatar/icon, bold label, muted description, green check when selected, danger tone for sign-out.',
-  props: [['open', 'boolean', 'true', ''], ['heading', 'ReactNode', '', '11px caps'], ['inline', 'boolean', 'false', ''], ['top / right', 'number', '52 / 12', 'Anchor under the user chip'], ['MenuItem.leading / icon / label / description / selected / tone', '', '', '']],
-  code: `<DropdownMenu open={open} heading="Switch user · prototype">\n  <MenuItem leading={<Avatar initials="FM" />} label="FO Manager" description="Manager · Finance Office" selected />\n  <MenuItem icon="log-out" label="Sign out" tone="danger" />\n</DropdownMenu>`,
-  render: ({
-    NS
-  }) => h2(NS.DropdownMenu, {
-    inline: true,
-    heading: 'Switch user · prototype'
-  }, h2(NS.MenuItem, {
-    leading: h2(NS.Avatar, {
-      initials: 'FM'
-    }),
-    label: 'FO Manager',
-    description: 'Manager · Finance Office',
-    selected: true
-  }), h2(NS.MenuItem, {
-    leading: h2(NS.Avatar, {
-      initials: 'FA',
-      bg: 'var(--tint-gold-bg)',
-      fg: 'var(--hkust-gold)'
-    }),
-    label: 'FO Department Admin',
-    description: 'Department Admin · Finance Office'
-  }), h2(NS.MenuItem, {
-    icon: 'log-out',
-    label: 'Sign out',
-    tone: 'danger'
-  }))
-}];
-const TROWS = [{
-  sys: 'ECM',
-  role: 'Department Admin',
-  tone: 'success',
-  st: 'Available',
-  ic: 'plus'
-}, {
-  sys: 'HRMS',
-  role: 'Department HR Viewer',
-  tone: 'warning',
-  st: 'Sensitive · time-bound',
-  ic: 'clock'
-}, {
-  sys: 'CADS',
-  role: 'General User Account',
-  tone: 'neutral',
-  st: 'Already owned',
-  ic: 'check'
-}];
-window.DOCS.data = [{
-  name: 'Table',
-  desc: 'Data table: 11px uppercase header on pale grey, 14px cells, hover rows, emphasis column bold navy. Additions: sortable columns (▲▼ always shown), checkbox selection with BulkBar, sub-rows. Rows stack into blocks ≤760px.',
-  col: true,
-  props: [['columns', 'Array<{key,label,align?,width?,render?,muted?,nowrap?,sortable?}>', '', ''], ['rows', 'any[]', '', ''], ['rowKey', '(row, i) => key', 'index', ''], ['emphasis', 'string', '', 'Bold navy column'], ['sort / onSort', "{key,dir} / (key) => void", '', 'With SortRows(rows, sort)'], ['selectable / selected / onSelectionChange', '', '', 'Checkbox column'], ['subRows / expanded', '', '', 'Indented grey rows'], ['onRowClick', '(row) => void', '', '']],
-  code: `<BulkBar count={sel.length} onClear={() => setSel([])}><Button size="sm" variant="success" icon="check">Approve</Button></BulkBar>\n<Card flush>\n  <Table emphasis="sys" selectable selected={sel} onSelectionChange={setSel} rowKey={r => r.sys} sort={sort} onSort={toggleSort}\n    columns={[{ key: 'sys', label: 'System', sortable: true }, { key: 'role', label: 'Business role', sortable: true }, { key: 'st', label: 'Status', render: r => <Badge tone={r.tone} icon={r.ic}>{r.st}</Badge> }, { key: 'a', label: '', align: 'right', render: () => <Button variant="link" size="sm" icon="eye">View</Button> }]}\n    rows={SortRows(rows, sort)} />\n</Card>`,
-  render: ({
-    NS
-  }) => {
-    const [sort, ss] = React.useState({
-      key: 'sys',
-      dir: 'asc'
-    });
-    const [sel, sSel] = React.useState(['ECM']);
-    return h2('div', null, h2(NS.BulkBar, {
-      count: sel.length,
-      onClear: () => sSel([])
-    }, h2(NS.Button, {
-      size: 'sm',
-      variant: 'success',
-      icon: 'check'
-    }, 'Approve'), h2(NS.Button, {
-      size: 'sm',
-      variant: 'ghost',
-      icon: 'x'
-    }, 'Reject')), h2(NS.Card, {
+  }, {
+    name: 'Toast',
+    desc: 'Bottom-centre navy toast, white 14px semibold, no icon or close button; ~3.6s. Past-tense fact + ID.',
+    props: [['open', 'boolean', 'true', ''], ['fixed', 'boolean', 'true', 'false renders in flow']],
+    code: `<Toast open={show}>Request submitted · TRF-1032</Toast>`,
+    render: ({
+      NS
+    }) => h2(NS.Toast, {
+      fixed: false
+    }, 'Request submitted · TRF-1032')
+  }, {
+    name: 'EmptyState',
+    desc: 'Centred 30px icon, bold title, one-line body, optional action. Place inside a flush Card.',
+    col: true,
+    props: [['icon', 'string', 'inbox', ''], ['title', 'ReactNode', '', 'States the fact'], ['children', 'ReactNode', '', 'Says what to do'], ['action', 'ReactNode', '', '']],
+    code: `<Card flush><EmptyState icon="users-round" title="No events in this view">Switch filter to see other team events.</EmptyState></Card>`,
+    render: ({
+      NS
+    }) => h2(NS.Card, {
       flush: true
-    }, h2(NS.Table, {
-      breakpoint: 0,
-      emphasis: 'sys',
-      selectable: true,
-      selected: sel,
-      onSelectionChange: sSel,
-      rowKey: r => r.sys,
-      sort,
-      onSort: k => ss(s => s && s.key === k ? {
-        key: k,
-        dir: s.dir === 'asc' ? 'desc' : 'asc'
-      } : {
-        key: k,
-        dir: 'asc'
-      }),
-      columns: [{
-        key: 'sys',
-        label: 'System',
-        sortable: true
-      }, {
-        key: 'role',
-        label: 'Business role',
-        sortable: true
-      }, {
-        key: 'st',
-        label: 'Status',
-        render: r => h2(NS.Badge, {
-          tone: r.tone,
-          icon: r.ic
-        }, r.st)
-      }, {
-        key: 'a',
-        label: '',
-        align: 'right',
-        render: () => h2(NS.Button, {
-          variant: 'link',
-          size: 'sm',
-          icon: 'eye'
-        }, 'View')
-      }],
-      rows: NS.SortRows(TROWS, sort)
-    })));
-  }
-}, {
-  name: 'KeyValueList',
-  desc: 'Definition rows: 150px muted semibold key, 14px value (may be a Badge), 7px rows with hairlines.',
-  col: true,
-  props: [['items', 'Array<{k, v}>', '', ''], ['keyWidth', 'number', '150', '']],
-  code: `<KeyValueList items={[{k:'Staff ID',v:'UST-P-0045210'},{k:'Status',v:<Badge tone="success" icon="check">Active</Badge>}]} />`,
-  render: ({
-    NS
-  }) => h2(NS.Card, null, h2(NS.KeyValueList, {
-    keyWidth: 130,
-    items: [{
-      k: 'Staff ID',
-      v: 'UST-P-0045210'
-    }, {
-      k: 'Department',
-      v: 'Finance Office'
-    }, {
-      k: 'Status',
-      v: h2(NS.Badge, {
-        tone: 'success',
-        icon: 'check'
-      }, 'Active')
-    }]
-  }))
-}, {
-  name: 'StepTracker',
-  desc: 'Approval route: 30px state dots joined by 3px bars. done green check · active blue clock · error red × · pending grey pip. vertical for narrow layouts.',
-  col: true,
-  props: [['steps', "Array<{label, state:'done'|'active'|'error'|'pending'}>", '', ''], ['vertical', 'boolean', 'false', '']],
-  code: `<StepTracker steps={[{label:'Submitted',state:'done'},{label:'Policy & SoD',state:'done'},{label:'Manager (FO)',state:'active'},{label:'Provisioning',state:'pending'},{label:'Ready',state:'pending'}]} />`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      display: 'grid',
-      gap: 12
-    }
-  }, h2(NS.StepTracker, {
-    steps: [{
-      label: 'Submitted',
-      state: 'done'
-    }, {
-      label: 'Policy & SoD',
-      state: 'done'
-    }, {
-      label: 'Manager (FO)',
-      state: 'active'
-    }, {
-      label: 'Provisioning',
-      state: 'pending'
-    }, {
-      label: 'Ready',
-      state: 'pending'
-    }]
-  }), h2(NS.StepTracker, {
-    steps: [{
-      label: 'Submitted',
-      state: 'done'
-    }, {
-      label: 'Policy & SoD',
-      state: 'done'
-    }, {
-      label: 'JSPM resource owner',
-      state: 'error'
-    }, {
-      label: 'Provisioning',
-      state: 'pending'
-    }]
-  }))
-}, {
-  name: 'ActivityList',
-  desc: 'Audit / activity rows: 150px grey timestamp (DD Mon YYYY HH:MM), 14px body, 12px muted meta.',
-  col: true,
-  props: [['items', 'Array<{time, text, meta?}>', '', ''], ['timeWidth', 'number', '150', '']],
-  code: `<ActivityList items={[{time:'01 Aug 2026 09:01',text:'Identity created · harvey@ust.hk',meta:'IAM platform · JNR-2214'}]} />`,
-  render: ({
-    NS
-  }) => h2(NS.Card, null, h2(NS.ActivityList, {
-    timeWidth: 130,
-    items: [{
-      time: '01 Aug 2026 09:01',
-      text: 'Identity created · harvey@ust.hk',
-      meta: 'IAM platform · JNR-2214'
-    }, {
-      time: '01 Aug 2026 09:00',
-      text: 'HR joiner event received · Harvey',
-      meta: 'HR system'
-    }, {
-      time: '28 Jul 2026 14:13',
-      text: 'Auto-revoke scheduled for 04 Aug 2026 18:00',
-      meta: 'IAM platform · LVR-2213'
-    }]
-  }))
-}, {
-  name: 'StatTile',
-  desc: 'Stat card: gold eyebrow, 32px bold number (unit muted), 12px caption, optional link action, tinted IconBox right. 3–4 per row; children slot for a KpiDelta or Progress.',
-  col: true,
-  props: [['eyebrow', 'ReactNode', '', 'Uppercased by CSS'], ['value', 'ReactNode', '', ''], ['unit', 'ReactNode', '', ''], ['caption', 'ReactNode', '', ''], ['action', 'ReactNode', '', 'Link button'], ['icon / tone', "string / IconBox tone", '', '']],
-  code: `<StatTile eyebrow="Approvals waiting on you" value={2} caption="Review each item individually" icon="stamp" tone="gold" action={<Button variant="link" style={{paddingLeft:0}}>Review approvals →</Button>} />`,
-  render: ({
-    NS
-  }) => h2('div', {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))',
-      gap: 16
-    }
-  }, h2(NS.StatTile, {
-    eyebrow: 'Requests in progress',
-    value: 2,
-    caption: '2 transfer requests active',
-    icon: 'clipboard-list',
-    action: h2(NS.Button, {
-      variant: 'link',
-      style: {
-        paddingLeft: 0
-      }
-    }, 'Track requests →')
-  }), h2(NS.StatTile, {
-    eyebrow: 'MFA adoption',
-    value: '98%',
-    icon: 'shield-check',
-    tone: 'green'
-  }, h2(NS.KpiDelta, {
-    value: '+4 pts',
-    direction: 'up',
-    label: 'vs Q1',
-    style: {
-      margin: '4px 0 6px'
-    }
-  })), h2(NS.StatTile, {
-    eyebrow: 'Allocation used',
-    value: '71%',
-    icon: 'zap',
-    tone: 'gold',
-    caption: 'of 9.6M CPU hours'
-  }, h2(NS.Progress, {
-    value: 71,
-    width: 150,
-    style: {
-      margin: '6px 0 8px'
-    }
-  })))
-}, {
-  name: 'KpiDelta',
-  addition: true,
-  desc: 'KPI change pill with a trending glyph. Colour follows outcome, not direction — invert when down is good.',
-  props: [['value', 'ReactNode', '', 'e.g. "+12%"'], ['direction', "'up'|'down'|'flat'", 'flat', ''], ['invert', 'boolean', 'false', 'Down = good'], ['label', 'ReactNode', '', 'Muted context']],
-  code: `<KpiDelta value="+12%" direction="up" label="vs last month" />\n<KpiDelta value="-8%" direction="down" invert label="open tickets" />`,
-  render: ({
-    NS
-  }) => h2(React.Fragment, null, h2(NS.KpiDelta, {
-    value: '+12%',
-    direction: 'up',
-    label: 'vs last month'
-  }), h2(NS.KpiDelta, {
-    value: '-8%',
-    direction: 'down',
-    invert: true,
-    label: 'open tickets'
-  }), h2(NS.KpiDelta, {
-    value: '-3%',
-    direction: 'down',
-    label: 'sign-ins'
-  }), h2(NS.KpiDelta, {
-    value: '0',
-    direction: 'flat',
-    label: 'no change'
-  }))
-}, {
-  name: 'BarChart',
-  addition: true,
-  desc: 'Dependency-free SVG bars in the brand series with hover tooltips. A second value renders grouped bars. Square corners, 4 grid lines, 11px axis text.',
-  col: true,
-  props: [['data', 'Array<{label, value, value2?, color?}>', '', ''], ['height', 'number', '200', ''], ['max', 'number', 'auto', ''], ['showValues', 'boolean', 'false', ''], ['formatValue', '(v) => ReactNode', '', '']],
-  code: `<BarChart data={[{label:'Mar',value:42},{label:'Apr',value:57}]} showValues />`,
-  render: ({
-    NS
-  }) => h2(NS.Card, null, h2(NS.BarChart, {
-    height: 180,
-    showValues: true,
-    data: [{
-      label: 'Mar',
-      value: 42
-    }, {
-      label: 'Apr',
-      value: 57
-    }, {
-      label: 'May',
-      value: 49
-    }, {
-      label: 'Jun',
-      value: 68
-    }, {
-      label: 'Jul',
-      value: 61
-    }]
-  }))
-}, {
-  name: 'LineChart',
-  addition: true,
-  desc: 'Dependency-free SVG lines: 2px strokes, white-filled dots, faint area under the first series, legend when more than one series. Hover shows a navy tooltip.',
-  col: true,
-  props: [['series', 'Array<{name, values, color?}>', '', ''], ['labels', 'string[]', '', ''], ['height', 'number', '200', ''], ['area', 'boolean', 'true', ''], ['legend', 'boolean', 'true', '']],
-  code: `<LineChart labels={['Mar','Apr','May','Jun']} series={[{name:'Requests',values:[120,140,131,168]},{name:'Approvals',values:[98,121,119,150]}]} />`,
-  render: ({
-    NS
-  }) => h2(NS.Card, null, h2(NS.LineChart, {
-    height: 180,
-    labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul'],
-    series: [{
-      name: 'Requests',
-      values: [120, 140, 131, 168, 155]
-    }, {
-      name: 'Approvals',
-      values: [98, 121, 119, 150, 149]
-    }]
-  }))
-}, {
-  name: 'Accordion',
-  addition: true,
-  desc: 'Bordered card of Disclosure rows, one open at a time; chevron rotates 180° in 150ms. Settings sections, grouped details.',
-  col: true,
-  props: [['items', 'Array<{key, title, meta?, content}>', '', ''], ['defaultOpen', 'string|null', 'first', ''], ['value / onChange', '', '', 'Controlled']],
-  code: `<Accordion items={[{ key: 'profile', title: 'Profile', meta: 'Synced from HR', content: <…/> }, { key: 'notify', title: 'Notifications', content: <…/> }]} />`,
-  render: ({
-    NS
-  }) => h2(NS.Accordion, {
-    items: [{
-      key: 'p',
-      title: 'Profile',
-      meta: 'Synced from the HR record',
-      content: h2('p', {
-        className: 'muted',
-        style: {
-          margin: 0
-        }
-      }, 'Display name, email and department come from HR; changes go through HR.')
-    }, {
-      key: 'n',
-      title: 'Notifications',
-      meta: 'Email to kaming@ust.hk',
-      content: h2(NS.Switch, {
-        checked: true,
-        onChange: () => {},
-        label: 'A request I made is decided'
-      })
-    }, {
-      key: 'd',
-      title: 'Danger zone',
-      content: h2(NS.Button, {
-        variant: 'danger',
+    }, h2(NS.EmptyState, {
+      icon: 'users-round',
+      title: 'No events in this view',
+      action: h2(NS.Button, {
         size: 'sm',
+        variant: 'ghost'
+      }, 'Clear filter')
+    }, 'Switch filter to see other team events.'))
+  }, {
+    name: 'Modal',
+    desc: '480px dialog (lg 560) on a 45% navy scrim. Header with optional 34px IconBox (red for destructive), body, footer space-between: link Cancel left, primary or danger-solid right.',
+    col: true,
+    props: [['open', 'boolean', 'true', ''], ['onClose', '() => void', '', ''], ['title', 'ReactNode', '', ''], ['subtitle', 'ReactNode', '', ''], ['leading', 'ReactNode', '', 'IconBox'], ['size', "'md'|'lg'", 'md', ''], ['footer', 'ReactNode', '', ''], ['inline', 'boolean', 'false', 'No scrim (previews)']],
+    code: `<Modal title="Reject request" subtitle="TRF-1027 · ECM" leading={<IconBox icon="x" tone="red" size={34} />} onClose={close}\n  footer={<><Button variant="link" onClick={close}>Cancel</Button><Button variant="danger-solid">Confirm rejection</Button></>}>\n  …\n</Modal>`,
+    render: ({
+      NS
+    }) => h2(NS.Modal, {
+      inline: true,
+      title: 'Confirm removal',
+      leading: h2(NS.IconBox, {
+        icon: 'triangle-alert',
+        tone: 'red',
+        size: 34
+      }),
+      onClose: () => {},
+      footer: h2(React.Fragment, null, h2(NS.Button, {
+        variant: 'link'
+      }, 'Cancel'), h2(NS.Button, {
+        variant: 'danger-solid',
         icon: 'trash-2'
-      }, 'Close account')
-    }]
-  })
-}];
-})(); } catch (e) { __ds_ns.__errors.push({ path: "site/docs-data-2.js", error: String((e && e.message) || e) }); }
+      }, 'Remove access'))
+    }, h2('p', {
+      style: {
+        fontSize: 14
+      }
+    }, 'Remove your access to ', h2('b', {
+      style: {
+        color: 'var(--fg1)'
+      }
+    }, 'ECM · Department Admin'), '?'), h2(NS.Callout, {
+      tone: 'warning',
+      icon: 'info',
+      style: {
+        marginTop: 12
+      }
+    }, 'This takes effect immediately and is written to the audit log.'))
+  }, {
+    name: 'Drawer',
+    addition: true,
+    desc: 'Right-hand 480px side panel on the navy scrim for details that should not leave the list. Closes only with its × so taps on the scrim never lose the panel.',
+    col: true,
+    props: [['open', 'boolean', 'true', ''], ['onClose', '() => void', '', ''], ['title', 'ReactNode', '', ''], ['subtitle', 'ReactNode', '', ''], ['leading', 'ReactNode', '', 'Avatar / IconBox'], ['footer', 'ReactNode', '', ''], ['width', 'number', '480', ''], ['inline', 'boolean', 'false', '']],
+    code: `<Drawer open={!!member} onClose={() => setMember(null)} title={member.n} subtitle={member.role} leading={<Avatar initials="LJ" size="lg" />}\n  footer={<><Button variant="link">Close</Button><Button variant="danger" icon="user-x">Remove from project</Button></>}>\n  <KeyValueList items={…} />\n</Drawer>`,
+    render: ({
+      NS
+    }) => h2('div', {
+      style: {
+        maxWidth: 480
+      }
+    }, h2(NS.Drawer, {
+      inline: true,
+      title: 'LI Jia Hao',
+      subtitle: 'PhD student · RC-2041',
+      leading: h2(NS.Avatar, {
+        initials: 'LJ',
+        size: 'lg'
+      }),
+      onClose: () => {},
+      footer: h2(React.Fragment, null, h2(NS.Button, {
+        variant: 'link'
+      }, 'Close'), h2(NS.Button, {
+        variant: 'danger',
+        icon: 'user-x'
+      }, 'Remove from project'))
+    }, h2(NS.KeyValueList, {
+      keyWidth: 120,
+      items: [{
+        k: 'Email',
+        v: 'jhli@connect.ust.hk'
+      }, {
+        k: 'Jobs · 30 days',
+        v: '1,204'
+      }, {
+        k: 'Status',
+        v: h2(NS.Badge, {
+          tone: 'success',
+          icon: 'check'
+        }, 'Active')
+      }]
+    })))
+  }, {
+    name: 'Tooltip',
+    addition: true,
+    desc: 'Navy hover tooltip, 12px white text. Names icon-only controls.',
+    props: [['label', 'ReactNode', '', ''], ['side', "'top'|'bottom'", 'top', '']],
+    code: `<Tooltip label="Download CSV"><IconButton tone="light" icon="download" title="Download CSV" /></Tooltip>`,
+    render: ({
+      NS
+    }) => h2(React.Fragment, null, h2(NS.Tooltip, {
+      label: 'Download CSV'
+    }, h2(NS.IconButton, {
+      tone: 'light',
+      icon: 'download',
+      title: 'Download CSV'
+    })), h2(NS.Tooltip, {
+      label: 'More actions',
+      side: 'bottom'
+    }, h2(NS.IconButton, {
+      tone: 'light',
+      icon: 'more-horizontal',
+      title: 'More'
+    })))
+  }, {
+    name: 'Progress',
+    desc: 'bar: 6px pill (170px) with ITSO-blue fill. segments: the wizard\'s 4px step strip.',
+    props: [['variant', "'bar'|'segments'", 'bar', ''], ['value', 'number', '0', 'Percent (bar) or completed count (segments)'], ['steps', 'number', '3', 'Segments only'], ['width', 'number', '170', ''], ['tone', "'brand'|'success'|'warning'|'danger'", 'brand', '']],
+    code: `<Progress value={43} />\n<Progress variant="segments" steps={3} value={1} />`,
+    render: ({
+      NS
+    }) => h2(React.Fragment, null, h2(NS.Progress, {
+      value: 43
+    }), h2(NS.Progress, {
+      value: 82,
+      tone: 'warning'
+    }), h2(NS.Progress, {
+      value: 96,
+      tone: 'danger'
+    }), h2('div', {
+      style: {
+        width: 200
+      }
+    }, h2(NS.Progress, {
+      variant: 'segments',
+      steps: 3,
+      value: 2
+    })))
+  }, {
+    name: 'Skeleton',
+    addition: true,
+    desc: 'Shimmering placeholder bars (1.6s, off under reduced-motion). SkeletonCard and SkeletonTable mirror the layouts they replace.',
+    col: true,
+    props: [['width', 'number|string', '100%', ''], ['height', 'number|string', '14', ''], ['radius', 'number|string', '4', '']],
+    code: `<SkeletonCard />\n<Card flush><SkeletonTable rows={5} cols={4} /></Card>\n<Skeleton width={120} height={12} />`,
+    render: ({
+      NS
+    }) => h2('div', {
+      style: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))',
+        gap: 16
+      }
+    }, h2(NS.SkeletonCard), h2(NS.Card, {
+      flush: true
+    }, h2(NS.SkeletonTable, {
+      rows: 3,
+      cols: 3
+    })))
+  }, {
+    name: 'Spinner',
+    addition: true,
+    desc: 'ITSO-blue ring, 24px. Centre it in the section it blocks; never inside buttons.',
+    props: [['size', 'number', '24', '18 · 24 · 32'], ['center', 'boolean', 'false', 'Padded block + label'], ['label', 'ReactNode', '', '']],
+    code: `<Card flush><Spinner center label="Loading requests…" /></Card>`,
+    render: ({
+      NS
+    }) => h2(React.Fragment, null, h2(NS.Spinner, {
+      size: 18
+    }), h2(NS.Spinner), h2(NS.Spinner, {
+      size: 32
+    }), h2('div', {
+      style: {
+        flex: 1,
+        minWidth: 220
+      }
+    }, h2(NS.Card, {
+      flush: true
+    }, h2(NS.Spinner, {
+      center: true,
+      label: 'Loading requests…'
+    }))))
+  }];
+  window.DOCS.navigation = [{
+    name: 'TopBand',
+    desc: '60px HKUST-navy band: white lockup (34px) left, unit block after a 1px 40%-white rule, tools and user right. ≤880px hides the unit block and shows ☰ before the logo to open the Sidebar drawer. BandSwitch is the outlined context pill.',
+    col: true,
+    props: [['logoSrc', 'string', '', 'White lockup'], ['unit / unitSub', 'ReactNode', '', 'Bold first line + second line'], ['extra', 'ReactNode', '', 'Left-side extra (BandSwitch)'], ['children', 'ReactNode', '', 'IconButtons'], ['user', '{initials,name,role?,bg?,fg?}', '', ''], ['onUserClick', '() => void', '', ''], ['fixed', 'boolean', 'true', '']],
+    code: `<TopBand logoSrc="assets/logo/hkust-fullname-white.png" unit="Information Technology" unitSub="Services Office (ITSO)" user={{ initials: 'FM', name: 'FO Manager', role: 'Manager · Finance Office' }} onUserClick={openMenu}>\n  <IconButton icon="search" title="Search" />\n  <IconButton icon="bell" dot title="Notifications" />\n</TopBand>`,
+    render: ({
+      NS
+    }) => h2(NS.TopBand, {
+      fixed: false,
+      logoSrc: '../assets/logo/hkust-fullname-white.png',
+      unit: 'Information Technology',
+      unitSub: 'Services Office (ITSO)',
+      extra: h2(NS.BandSwitch, {
+        label: 'Case 1',
+        hint: 'Switch case'
+      }),
+      user: {
+        initials: 'FM',
+        name: 'FO Manager',
+        role: 'Manager · Finance Office'
+      },
+      onUserClick: () => {}
+    }, h2(NS.IconButton, {
+      icon: 'search',
+      title: 'Search'
+    }), h2(NS.IconButton, {
+      icon: 'bell',
+      dot: true,
+      title: 'Notifications'
+    }), h2(NS.IconButton, {
+      icon: 'shopping-cart',
+      count: 2,
+      title: 'Cart'
+    }))
+  }, {
+    name: 'Sidebar',
+    desc: '248px white rail under the band. Header row: system name (wraps to two lines) + collapse toggle → 64px icon rail with tooltips. NavLabel groups (11px caps), NavItem rows (active = brand-light fill, 3px blue bar, orange count). Drawer ≤880px.',
+    col: true,
+    props: [['title', 'ReactNode', '', 'System name in the header row'], ['collapsible', 'boolean', 'false', 'Header toggle → 64px rail'], ['footer', 'ReactNode', '', 'Version text'], ['fixed', 'boolean', 'true', ''], ['NavItem.icon / active / count', '', '', ''], ['NavItem.onClick / href', '', '', '']],
+    code: `<Sidebar collapsible title="IAM Self-Service Portal" footer="prototype v4 · staff identity">\n  <NavItem icon="layout-grid" active>Home & Apps</NavItem>\n  <NavLabel>My access</NavLabel>\n  <NavItem icon="clipboard-list" count={2}>My Requests</NavItem>\n</Sidebar>`,
+    render: ({
+      NS
+    }) => h2('div', {
+      style: {
+        display: 'flex',
+        height: 340,
+        border: '1px solid var(--border)',
+        background: '#fff',
+        borderRadius: 8,
+        overflow: 'hidden'
+      }
+    }, h2(NS.Sidebar, {
+      fixed: false,
+      breakpoint: 0,
+      collapsible: true,
+      title: 'Centralized Approval and Delegation System',
+      footer: 'v2.3 · staff identity'
+    }, h2(NS.NavItem, {
+      icon: 'layout-grid',
+      active: true
+    }, 'Home & Apps'), h2(NS.NavLabel, null, 'My access'), h2(NS.NavItem, {
+      icon: 'circle-plus'
+    }, 'Request Access'), h2(NS.NavItem, {
+      icon: 'clipboard-list',
+      count: 2
+    }, 'My Requests')), h2('div', {
+      style: {
+        flex: 1
+      }
+    }, h2(NS.PageHead, {
+      sticky: false,
+      title: 'Request Access',
+      subtitle: 'Browse the catalogue and request the access you need',
+      actions: h2(NS.Button, {
+        size: 'sm',
+        variant: 'ghost',
+        icon: 'download'
+      }, 'Export')
+    })))
+  }, {
+    name: 'PageHead',
+    desc: 'Sticky white header under the band: 20px title, 14px muted subtitle, optional right actions. Title Case for the title, sentence case for the subtitle.',
+    col: true,
+    props: [['title', 'ReactNode', '', ''], ['subtitle', 'ReactNode', '', ''], ['actions', 'ReactNode', '', ''], ['sticky', 'boolean', 'true', '']],
+    code: `<PageHead title="Request Access" subtitle="Browse the catalogue and request the access you need" actions={<Button icon="circle-plus">New request</Button>} />`,
+    render: ({
+      NS
+    }) => h2('div', {
+      style: {
+        border: '1px solid var(--border)',
+        borderRadius: 8,
+        overflow: 'hidden'
+      }
+    }, h2(NS.PageHead, {
+      sticky: false,
+      title: 'Projects',
+      subtitle: 'All allocations you administer',
+      actions: h2(NS.Button, {
+        icon: 'circle-plus'
+      }, 'New request')
+    }))
+  }, {
+    name: 'Tabs',
+    addition: true,
+    desc: 'Underline tabs for switching content panes of one record. Filters stay Chips.',
+    props: [['items', 'Array<{key,label,icon?,count?}>', '', ''], ['value', 'string', '', ''], ['onChange', '(key) => void', '', '']],
+    code: `<Tabs value={tab} onChange={setTab} items={[{key:'o',label:'Overview'},{key:'a',label:'Access',count:9},{key:'h',label:'Activity'}]} />`,
+    render: ({
+      NS
+    }) => {
+      const [t, st] = React.useState('a');
+      return h2('div', {
+        style: {
+          width: '100%'
+        }
+      }, h2(NS.Tabs, {
+        value: t,
+        onChange: st,
+        items: [{
+          key: 'o',
+          label: 'Overview'
+        }, {
+          key: 'a',
+          label: 'Access',
+          count: 9
+        }, {
+          key: 'h',
+          label: 'Activity'
+        }]
+      }));
+    }
+  }, {
+    name: 'Breadcrumb',
+    addition: true,
+    desc: '12px trail with 13px chevrons; the current page in navy bold. Sits above the page title on detail pages.',
+    props: [['items', 'Array<{label,href?,onClick?}>', '', 'Last item = current']],
+    code: `<Breadcrumb items={[{label:'Team members',onClick:back},{label:'WONG Ka Ming'}]} />`,
+    render: ({
+      NS
+    }) => h2(NS.Breadcrumb, {
+      items: [{
+        label: 'Projects'
+      }, {
+        label: 'RC-2041'
+      }, {
+        label: 'Members'
+      }]
+    })
+  }, {
+    name: 'Pagination',
+    addition: true,
+    desc: 'Numbered pager in ghost-button style, 32px squares; active = brand-light. summary renders "1–20 of 143" on the left.',
+    props: [['page', 'number', '1', ''], ['pages', 'number', '1', ''], ['onChange', '(page) => void', '', ''], ['summary', 'ReactNode', '', '']],
+    code: `<Pagination page={p} pages={8} onChange={setP} summary="1–20 of 143" />`,
+    render: ({
+      NS
+    }) => {
+      const [p, sp] = React.useState(3);
+      return h2('div', {
+        style: {
+          width: '100%'
+        }
+      }, h2(NS.Pagination, {
+        page: p,
+        pages: 8,
+        onChange: sp,
+        summary: '41–60 of 143'
+      }));
+    }
+  }, {
+    name: 'DropdownMenu',
+    desc: 'White popover (1px border, 4px radius, shadow-lg, min 250) with an optional uppercase heading. MenuItem rows: leading Avatar/icon, bold label, muted description, green check when selected, danger tone for sign-out.',
+    props: [['open', 'boolean', 'true', ''], ['heading', 'ReactNode', '', '11px caps'], ['inline', 'boolean', 'false', ''], ['top / right', 'number', '52 / 12', 'Anchor under the user chip'], ['MenuItem.leading / icon / label / description / selected / tone', '', '', '']],
+    code: `<DropdownMenu open={open} heading="Switch user · prototype">\n  <MenuItem leading={<Avatar initials="FM" />} label="FO Manager" description="Manager · Finance Office" selected />\n  <MenuItem icon="log-out" label="Sign out" tone="danger" />\n</DropdownMenu>`,
+    render: ({
+      NS
+    }) => h2(NS.DropdownMenu, {
+      inline: true,
+      heading: 'Switch user · prototype'
+    }, h2(NS.MenuItem, {
+      leading: h2(NS.Avatar, {
+        initials: 'FM'
+      }),
+      label: 'FO Manager',
+      description: 'Manager · Finance Office',
+      selected: true
+    }), h2(NS.MenuItem, {
+      leading: h2(NS.Avatar, {
+        initials: 'FA',
+        bg: 'var(--tint-gold-bg)',
+        fg: 'var(--hkust-gold)'
+      }),
+      label: 'FO Department Admin',
+      description: 'Department Admin · Finance Office'
+    }), h2(NS.MenuItem, {
+      icon: 'log-out',
+      label: 'Sign out',
+      tone: 'danger'
+    }))
+  }];
+  const TROWS = [{
+    sys: 'ECM',
+    role: 'Department Admin',
+    tone: 'success',
+    st: 'Available',
+    ic: 'plus'
+  }, {
+    sys: 'HRMS',
+    role: 'Department HR Viewer',
+    tone: 'warning',
+    st: 'Sensitive · time-bound',
+    ic: 'clock'
+  }, {
+    sys: 'CADS',
+    role: 'General User Account',
+    tone: 'neutral',
+    st: 'Already owned',
+    ic: 'check'
+  }];
+  window.DOCS.data = [{
+    name: 'Table',
+    desc: 'Data table: 11px uppercase header on pale grey, 14px cells, hover rows, emphasis column bold navy. Additions: sortable columns (▲▼ always shown), checkbox selection with BulkBar, sub-rows. Rows stack into blocks ≤760px.',
+    col: true,
+    props: [['columns', 'Array<{key,label,align?,width?,render?,muted?,nowrap?,sortable?}>', '', ''], ['rows', 'any[]', '', ''], ['rowKey', '(row, i) => key', 'index', ''], ['emphasis', 'string', '', 'Bold navy column'], ['sort / onSort', "{key,dir} / (key) => void", '', 'With SortRows(rows, sort)'], ['selectable / selected / onSelectionChange', '', '', 'Checkbox column'], ['subRows / expanded', '', '', 'Indented grey rows'], ['onRowClick', '(row) => void', '', '']],
+    code: `<BulkBar count={sel.length} onClear={() => setSel([])}><Button size="sm" variant="success" icon="check">Approve</Button></BulkBar>\n<Card flush>\n  <Table emphasis="sys" selectable selected={sel} onSelectionChange={setSel} rowKey={r => r.sys} sort={sort} onSort={toggleSort}\n    columns={[{ key: 'sys', label: 'System', sortable: true }, { key: 'role', label: 'Business role', sortable: true }, { key: 'st', label: 'Status', render: r => <Badge tone={r.tone} icon={r.ic}>{r.st}</Badge> }, { key: 'a', label: '', align: 'right', render: () => <Button variant="link" size="sm" icon="eye">View</Button> }]}\n    rows={SortRows(rows, sort)} />\n</Card>`,
+    render: ({
+      NS
+    }) => {
+      const [sort, ss] = React.useState({
+        key: 'sys',
+        dir: 'asc'
+      });
+      const [sel, sSel] = React.useState(['ECM']);
+      return h2('div', null, h2(NS.BulkBar, {
+        count: sel.length,
+        onClear: () => sSel([])
+      }, h2(NS.Button, {
+        size: 'sm',
+        variant: 'success',
+        icon: 'check'
+      }, 'Approve'), h2(NS.Button, {
+        size: 'sm',
+        variant: 'ghost',
+        icon: 'x'
+      }, 'Reject')), h2(NS.Card, {
+        flush: true
+      }, h2(NS.Table, {
+        breakpoint: 0,
+        emphasis: 'sys',
+        selectable: true,
+        selected: sel,
+        onSelectionChange: sSel,
+        rowKey: r => r.sys,
+        sort,
+        onSort: k => ss(s => s && s.key === k ? {
+          key: k,
+          dir: s.dir === 'asc' ? 'desc' : 'asc'
+        } : {
+          key: k,
+          dir: 'asc'
+        }),
+        columns: [{
+          key: 'sys',
+          label: 'System',
+          sortable: true
+        }, {
+          key: 'role',
+          label: 'Business role',
+          sortable: true
+        }, {
+          key: 'st',
+          label: 'Status',
+          render: r => h2(NS.Badge, {
+            tone: r.tone,
+            icon: r.ic
+          }, r.st)
+        }, {
+          key: 'a',
+          label: '',
+          align: 'right',
+          render: () => h2(NS.Button, {
+            variant: 'link',
+            size: 'sm',
+            icon: 'eye'
+          }, 'View')
+        }],
+        rows: NS.SortRows(TROWS, sort)
+      })));
+    }
+  }, {
+    name: 'KeyValueList',
+    desc: 'Definition rows: 150px muted semibold key, 14px value (may be a Badge), 7px rows with hairlines.',
+    col: true,
+    props: [['items', 'Array<{k, v}>', '', ''], ['keyWidth', 'number', '150', '']],
+    code: `<KeyValueList items={[{k:'Staff ID',v:'UST-P-0045210'},{k:'Status',v:<Badge tone="success" icon="check">Active</Badge>}]} />`,
+    render: ({
+      NS
+    }) => h2(NS.Card, null, h2(NS.KeyValueList, {
+      keyWidth: 130,
+      items: [{
+        k: 'Staff ID',
+        v: 'UST-P-0045210'
+      }, {
+        k: 'Department',
+        v: 'Finance Office'
+      }, {
+        k: 'Status',
+        v: h2(NS.Badge, {
+          tone: 'success',
+          icon: 'check'
+        }, 'Active')
+      }]
+    }))
+  }, {
+    name: 'StepTracker',
+    desc: 'Approval route: 30px state dots joined by 3px bars. done green check · active blue clock · error red × · pending grey pip. vertical for narrow layouts.',
+    col: true,
+    props: [['steps', "Array<{label, state:'done'|'active'|'error'|'pending'}>", '', ''], ['vertical', 'boolean', 'false', '']],
+    code: `<StepTracker steps={[{label:'Submitted',state:'done'},{label:'Policy & SoD',state:'done'},{label:'Manager (FO)',state:'active'},{label:'Provisioning',state:'pending'},{label:'Ready',state:'pending'}]} />`,
+    render: ({
+      NS
+    }) => h2('div', {
+      style: {
+        display: 'grid',
+        gap: 12
+      }
+    }, h2(NS.StepTracker, {
+      steps: [{
+        label: 'Submitted',
+        state: 'done'
+      }, {
+        label: 'Policy & SoD',
+        state: 'done'
+      }, {
+        label: 'Manager (FO)',
+        state: 'active'
+      }, {
+        label: 'Provisioning',
+        state: 'pending'
+      }, {
+        label: 'Ready',
+        state: 'pending'
+      }]
+    }), h2(NS.StepTracker, {
+      steps: [{
+        label: 'Submitted',
+        state: 'done'
+      }, {
+        label: 'Policy & SoD',
+        state: 'done'
+      }, {
+        label: 'JSPM resource owner',
+        state: 'error'
+      }, {
+        label: 'Provisioning',
+        state: 'pending'
+      }]
+    }))
+  }, {
+    name: 'ActivityList',
+    desc: 'Audit / activity rows: 150px grey timestamp (DD Mon YYYY HH:MM), 14px body, 12px muted meta.',
+    col: true,
+    props: [['items', 'Array<{time, text, meta?}>', '', ''], ['timeWidth', 'number', '150', '']],
+    code: `<ActivityList items={[{time:'01 Aug 2026 09:01',text:'Identity created · harvey@ust.hk',meta:'IAM platform · JNR-2214'}]} />`,
+    render: ({
+      NS
+    }) => h2(NS.Card, null, h2(NS.ActivityList, {
+      timeWidth: 130,
+      items: [{
+        time: '01 Aug 2026 09:01',
+        text: 'Identity created · harvey@ust.hk',
+        meta: 'IAM platform · JNR-2214'
+      }, {
+        time: '01 Aug 2026 09:00',
+        text: 'HR joiner event received · Harvey',
+        meta: 'HR system'
+      }, {
+        time: '28 Jul 2026 14:13',
+        text: 'Auto-revoke scheduled for 04 Aug 2026 18:00',
+        meta: 'IAM platform · LVR-2213'
+      }]
+    }))
+  }, {
+    name: 'StatTile',
+    desc: 'Stat card: gold eyebrow, 32px bold number (unit muted), 12px caption, optional link action, tinted IconBox right. 3–4 per row; children slot for a KpiDelta or Progress.',
+    col: true,
+    props: [['eyebrow', 'ReactNode', '', 'Uppercased by CSS'], ['value', 'ReactNode', '', ''], ['unit', 'ReactNode', '', ''], ['caption', 'ReactNode', '', ''], ['action', 'ReactNode', '', 'Link button'], ['icon / tone', "string / IconBox tone", '', '']],
+    code: `<StatTile eyebrow="Approvals waiting on you" value={2} caption="Review each item individually" icon="stamp" tone="gold" action={<Button variant="link" style={{paddingLeft:0}}>Review approvals →</Button>} />`,
+    render: ({
+      NS
+    }) => h2('div', {
+      style: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))',
+        gap: 16
+      }
+    }, h2(NS.StatTile, {
+      eyebrow: 'Requests in progress',
+      value: 2,
+      caption: '2 transfer requests active',
+      icon: 'clipboard-list',
+      action: h2(NS.Button, {
+        variant: 'link',
+        style: {
+          paddingLeft: 0
+        }
+      }, 'Track requests →')
+    }), h2(NS.StatTile, {
+      eyebrow: 'MFA adoption',
+      value: '98%',
+      icon: 'shield-check',
+      tone: 'green'
+    }, h2(NS.KpiDelta, {
+      value: '+4 pts',
+      direction: 'up',
+      label: 'vs Q1',
+      style: {
+        margin: '4px 0 6px'
+      }
+    })), h2(NS.StatTile, {
+      eyebrow: 'Allocation used',
+      value: '71%',
+      icon: 'zap',
+      tone: 'gold',
+      caption: 'of 9.6M CPU hours'
+    }, h2(NS.Progress, {
+      value: 71,
+      width: 150,
+      style: {
+        margin: '6px 0 8px'
+      }
+    })))
+  }, {
+    name: 'KpiDelta',
+    addition: true,
+    desc: 'KPI change pill with a trending glyph. Colour follows outcome, not direction — invert when down is good.',
+    props: [['value', 'ReactNode', '', 'e.g. "+12%"'], ['direction', "'up'|'down'|'flat'", 'flat', ''], ['invert', 'boolean', 'false', 'Down = good'], ['label', 'ReactNode', '', 'Muted context']],
+    code: `<KpiDelta value="+12%" direction="up" label="vs last month" />\n<KpiDelta value="-8%" direction="down" invert label="open tickets" />`,
+    render: ({
+      NS
+    }) => h2(React.Fragment, null, h2(NS.KpiDelta, {
+      value: '+12%',
+      direction: 'up',
+      label: 'vs last month'
+    }), h2(NS.KpiDelta, {
+      value: '-8%',
+      direction: 'down',
+      invert: true,
+      label: 'open tickets'
+    }), h2(NS.KpiDelta, {
+      value: '-3%',
+      direction: 'down',
+      label: 'sign-ins'
+    }), h2(NS.KpiDelta, {
+      value: '0',
+      direction: 'flat',
+      label: 'no change'
+    }))
+  }, {
+    name: 'BarChart',
+    addition: true,
+    desc: 'Dependency-free SVG bars in the brand series with hover tooltips. A second value renders grouped bars. Square corners, 4 grid lines, 11px axis text.',
+    col: true,
+    props: [['data', 'Array<{label, value, value2?, color?}>', '', ''], ['height', 'number', '200', ''], ['max', 'number', 'auto', ''], ['showValues', 'boolean', 'false', ''], ['formatValue', '(v) => ReactNode', '', '']],
+    code: `<BarChart data={[{label:'Mar',value:42},{label:'Apr',value:57}]} showValues />`,
+    render: ({
+      NS
+    }) => h2(NS.Card, null, h2(NS.BarChart, {
+      height: 180,
+      showValues: true,
+      data: [{
+        label: 'Mar',
+        value: 42
+      }, {
+        label: 'Apr',
+        value: 57
+      }, {
+        label: 'May',
+        value: 49
+      }, {
+        label: 'Jun',
+        value: 68
+      }, {
+        label: 'Jul',
+        value: 61
+      }]
+    }))
+  }, {
+    name: 'LineChart',
+    addition: true,
+    desc: 'Dependency-free SVG lines: 2px strokes, white-filled dots, faint area under the first series, legend when more than one series. Hover shows a navy tooltip.',
+    col: true,
+    props: [['series', 'Array<{name, values, color?}>', '', ''], ['labels', 'string[]', '', ''], ['height', 'number', '200', ''], ['area', 'boolean', 'true', ''], ['legend', 'boolean', 'true', '']],
+    code: `<LineChart labels={['Mar','Apr','May','Jun']} series={[{name:'Requests',values:[120,140,131,168]},{name:'Approvals',values:[98,121,119,150]}]} />`,
+    render: ({
+      NS
+    }) => h2(NS.Card, null, h2(NS.LineChart, {
+      height: 180,
+      labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      series: [{
+        name: 'Requests',
+        values: [120, 140, 131, 168, 155]
+      }, {
+        name: 'Approvals',
+        values: [98, 121, 119, 150, 149]
+      }]
+    }))
+  }, {
+    name: 'Accordion',
+    addition: true,
+    desc: 'Bordered card of Disclosure rows, one open at a time; chevron rotates 180° in 150ms. Settings sections, grouped details.',
+    col: true,
+    props: [['items', 'Array<{key, title, meta?, content}>', '', ''], ['defaultOpen', 'string|null', 'first', ''], ['value / onChange', '', '', 'Controlled']],
+    code: `<Accordion items={[{ key: 'profile', title: 'Profile', meta: 'Synced from HR', content: <…/> }, { key: 'notify', title: 'Notifications', content: <…/> }]} />`,
+    render: ({
+      NS
+    }) => h2(NS.Accordion, {
+      items: [{
+        key: 'p',
+        title: 'Profile',
+        meta: 'Synced from the HR record',
+        content: h2('p', {
+          className: 'muted',
+          style: {
+            margin: 0
+          }
+        }, 'Display name, email and department come from HR; changes go through HR.')
+      }, {
+        key: 'n',
+        title: 'Notifications',
+        meta: 'Email to kaming@ust.hk',
+        content: h2(NS.Switch, {
+          checked: true,
+          onChange: () => {},
+          label: 'A request I made is decided'
+        })
+      }, {
+        key: 'd',
+        title: 'Danger zone',
+        content: h2(NS.Button, {
+          variant: 'danger',
+          size: 'sm',
+          icon: 'trash-2'
+        }, 'Close account')
+      }]
+    })
+  }];
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "site/_static/docs-data-2.js", error: String((e && e.message) || e) }); }
 
-// site/docs.js
+// site/_static/docs.js
 try { (() => {
 /* Renders component docs: for each entry in window.DOCS[group] → header, live stage (with mobile toggle), tabs for Props / JSX. Also builds the page's own anchor list. */
 (function () {
+  if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page) return;
   const I = window.SITE_ICONS;
   const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const el = h => {
@@ -6355,12 +6362,13 @@ try { (() => {
     }
   };
 })();
-})(); } catch (e) { __ds_ns.__errors.push({ path: "site/docs.js", error: String((e && e.message) || e) }); }
+})(); } catch (e) { __ds_ns.__errors.push({ path: "site/_static/docs.js", error: String((e && e.message) || e) }); }
 
-// site/site.js
+// site/_static/site.js
 try { (() => {
 /* HKUST Web docs · shell: band, sidebar, search, copy buttons, mobile preview. Each page sets <body data-page="…">. */
 (function () {
+  if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page || !document.querySelector('link[href$="_static/site.css"]')) return;
   const I = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>',
@@ -6461,7 +6469,7 @@ try { (() => {
   // band
   document.body.prepend(el(`<header class="sb">
     <div class="sb-l"><button class="sb-ib sb-menu" aria-label="Menu" id="sbMenu">${I.menu}</button><a href="index.html" style="display:flex"><img src="../assets/logo/hkust-fullname-white.png" alt="HKUST"></a><div class="sb-unit"><b>HKUST Web Design System</b><span class="sb-ver">v1.0</span><br>Information Technology Services Office (ITSO)</div></div>
-    <div class="sb-r"><div class="sb-search"><input id="sbQ" type="search" placeholder="Search components…" autocomplete="off" aria-label="Search components">${I.search}<div class="sb-results" id="sbRes" role="listbox"></div></div><a class="sb-ib" href="../hkust-web-design-skill.zip" title="Download Claude skill (zip)" download>${I.download}</a><a class="sb-ib" href="https://github.com/ecthink/iam-business-case" title="IAM prototype source on GitHub" target="_blank" rel="noopener">${I.ext}</a></div>
+    <div class="sb-r"><div class="sb-search"><input id="sbQ" type="search" placeholder="Search components…" autocomplete="off" aria-label="Search components">${I.search}<div class="sb-results" id="sbRes" role="listbox"></div></div><a class="sb-ib" href="../hkust-web-design-skill.zip" title="Download Claude skill (zip)" download>${I.download}</a></div>
   </header>`));
   // sidebar
   const side = el(`<nav class="sn" id="sn" aria-label="Documentation"></nav>`);
@@ -6488,7 +6496,7 @@ try { (() => {
     res = document.getElementById('sbRes');
   let idx = null,
     act = 0;
-  const load = () => idx || fetch('search-index.json').then(r => r.json()).then(j => idx = j);
+  const load = () => idx || fetch('_static/search-index.json').then(r => r.json()).then(j => idx = j);
   const render = list => {
     res.innerHTML = list.length ? list.map((x, i) => `<a href="${x.href}" class="${i === act ? 'act' : ''}"><b>${x.name}</b><span>${x.desc}</span><em>${x.group}</em></a>`).join('') : '<div class="none">No components match</div>';
     res.classList.add('on');
@@ -6568,13 +6576,13 @@ try { (() => {
   };
   window.siteEnhance();
 })();
-})(); } catch (e) { __ds_ns.__errors.push({ path: "site/site.js", error: String((e && e.message) || e) }); }
+})(); } catch (e) { __ds_ns.__errors.push({ path: "site/_static/site.js", error: String((e && e.message) || e) }); }
 
 // ui_kits/hkust-web-app/app.jsx
 try { (() => {
 const {
   Button: XButton
-} = window.HKUSTWebDesignSystem_46d20c;
+} = window.HKUSTWebDesignSystem_46d20c || {};
 function RcApp() {
   const [page, setPage] = React.useState('dashboard');
   const [toast, setToast] = React.useState('');
@@ -6622,7 +6630,13 @@ function RcApp() {
     actions: actions
   }, body);
 }
-ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(RcApp, null));
+{
+  const r = document.getElementById('root');
+  if (r && !r.dataset.mounted) {
+    r.dataset.mounted = '1';
+    ReactDOM.createRoot(r).render(/*#__PURE__*/React.createElement(RcApp, null));
+  }
+}
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/hkust-web-app/app.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/hkust-web-app/dashboard.jsx
@@ -6639,7 +6653,7 @@ const {
   Button: DButton,
   ActivityList: DActivityList,
   Progress: DProgress
-} = window.HKUSTWebDesignSystem_46d20c;
+} = window.HKUSTWebDesignSystem_46d20c || {};
 function Dashboard({
   go
 }) {
@@ -7070,8 +7084,8 @@ const {
   Progress: PProgress,
   StatTile: PStatTile,
   KpiDelta: PKpiDelta
-} = window.HKUSTWebDesignSystem_46d20c;
-const PDrawer = window.HKUSTWebDesignSystem_46d20c.Drawer || (() => null);
+} = window.HKUSTWebDesignSystem_46d20c || {};
+const PDrawer = (window.HKUSTWebDesignSystem_46d20c || {}).Drawer || (() => null);
 function ProjectDetail({
   go
 }) {
@@ -7370,9 +7384,9 @@ const {
   Tooltip: LTooltip,
   IconButton: LIconButton,
   EmptyState: LEmptyState
-} = window.HKUSTWebDesignSystem_46d20c;
-const LBulkBar = window.HKUSTWebDesignSystem_46d20c.BulkBar || (() => null),
-  lSortRows = window.HKUSTWebDesignSystem_46d20c.SortRows || (rows => rows);
+} = window.HKUSTWebDesignSystem_46d20c || {};
+const LBulkBar = (window.HKUSTWebDesignSystem_46d20c || {}).BulkBar || (() => null),
+  lSortRows = (window.HKUSTWebDesignSystem_46d20c || {}).SortRows || (rows => rows);
 const statusTone = s => s === 'Active' ? ['success', 'check'] : s === 'Expiring' ? ['warning', 'calendar-clock'] : ['danger', 'ban'];
 function ProjectsList({
   go
@@ -7647,10 +7661,10 @@ const {
   Badge: WBadge,
   Chip: WChip,
   ChipGroup: WChipGroup
-} = window.HKUSTWebDesignSystem_46d20c;
-const WCombobox = window.HKUSTWebDesignSystem_46d20c.Combobox || (() => null),
-  WMultiSelect = window.HKUSTWebDesignSystem_46d20c.MultiSelect || (() => null),
-  WFileUpload = window.HKUSTWebDesignSystem_46d20c.FileUpload || (() => null);
+} = window.HKUSTWebDesignSystem_46d20c || {};
+const WCombobox = (window.HKUSTWebDesignSystem_46d20c || {}).Combobox || (() => null),
+  WMultiSelect = (window.HKUSTWebDesignSystem_46d20c || {}).MultiSelect || (() => null),
+  WFileUpload = (window.HKUSTWebDesignSystem_46d20c || {}).FileUpload || (() => null);
 function RequestWizard({
   onDone
 }) {
@@ -7911,8 +7925,8 @@ const {
   Avatar: GAvatar,
   Badge: GBadge,
   KeyValueList: GKeyValueList
-} = window.HKUSTWebDesignSystem_46d20c;
-const GAccordion = window.HKUSTWebDesignSystem_46d20c.Accordion || (({
+} = window.HKUSTWebDesignSystem_46d20c || {};
+const GAccordion = (window.HKUSTWebDesignSystem_46d20c || {}).Accordion || (({
   items = []
 }) => /*#__PURE__*/React.createElement("div", {
   style: {
@@ -8134,9 +8148,9 @@ const {
   MenuItem: SMenuItem,
   Toast: SToast,
   Button: SButton
-} = window.HKUSTWebDesignSystem_46d20c;
-const SBanner = window.HKUSTWebDesignSystem_46d20c.NotificationBanner || (() => null),
-  SPanel = window.HKUSTWebDesignSystem_46d20c.NotificationPanel || (() => null);
+} = window.HKUSTWebDesignSystem_46d20c || {};
+const SBanner = (window.HKUSTWebDesignSystem_46d20c || {}).NotificationBanner || (() => null),
+  SPanel = (window.HKUSTWebDesignSystem_46d20c || {}).NotificationPanel || (() => null);
 const RC_NOTIFS = [{
   id: 1,
   title: 'Request REQ-5115 approved · storage increase',
@@ -8310,10 +8324,10 @@ const {
   Button: EButton,
   Callout: ECallout,
   IconBox: EIconBox
-} = window.HKUSTWebDesignSystem_46d20c;
-const ESkeletonCard = window.HKUSTWebDesignSystem_46d20c.SkeletonCard || (() => null),
-  ESkeletonTable = window.HKUSTWebDesignSystem_46d20c.SkeletonTable || (() => null),
-  ESpinner = window.HKUSTWebDesignSystem_46d20c.Spinner || (() => null);
+} = window.HKUSTWebDesignSystem_46d20c || {};
+const ESkeletonCard = (window.HKUSTWebDesignSystem_46d20c || {}).SkeletonCard || (() => null),
+  ESkeletonTable = (window.HKUSTWebDesignSystem_46d20c || {}).SkeletonTable || (() => null),
+  ESpinner = (window.HKUSTWebDesignSystem_46d20c || {}).Spinner || (() => null);
 function StatesPage({
   go
 }) {
@@ -8491,7 +8505,7 @@ const {
   Card: ACard,
   EmptyState: AEmptyState,
   Button: AButton
-} = window.HKUSTWebDesignSystem_46d20c;
+} = window.HKUSTWebDesignSystem_46d20c || {};
 function NotRecreated({
   page,
   go
@@ -8577,7 +8591,13 @@ function IamApp() {
     subtitle: custom && custom[1]
   }, body);
 }
-ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(IamApp, null));
+{
+  const r = document.getElementById('root');
+  if (r && !r.dataset.mounted) {
+    r.dataset.mounted = '1';
+    ReactDOM.createRoot(r).render(/*#__PURE__*/React.createElement(IamApp, null));
+  }
+}
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/iam-portal/app.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/iam-portal/case-selector.jsx
@@ -9002,7 +9022,7 @@ const {
   Tag,
   Callout,
   SectionTitle
-} = window.HKUSTWebDesignSystem_46d20c;
+} = window.HKUSTWebDesignSystem_46d20c || {};
 function HomePage({
   persona,
   go,
@@ -9153,7 +9173,7 @@ const {
   Select: RSelect,
   Divider: RDivider,
   SectionTitle: RSectionTitle
-} = window.HKUSTWebDesignSystem_46d20c;
+} = window.HKUSTWebDesignSystem_46d20c || {};
 function SystemCard({
   s,
   onOpen
@@ -9508,7 +9528,7 @@ Object.assign(window, {
 
 // ui_kits/iam-portal/shell.jsx
 try { (() => {
-const DS = window.HKUSTWebDesignSystem_46d20c;
+const DS = window.HKUSTWebDesignSystem_46d20c || {};
 const {
   TopBand,
   BandSwitch,
@@ -9730,7 +9750,7 @@ const {
   Table: TTable,
   EmptyState: TEmptyState,
   StatTile: TStatTile
-} = window.HKUSTWebDesignSystem_46d20c;
+} = window.HKUSTWebDesignSystem_46d20c || {};
 function TeamPage({
   go
 }) {

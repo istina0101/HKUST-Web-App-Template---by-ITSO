@@ -11,7 +11,7 @@ A general design system for HKUST staff-facing web applications, derived from th
 - **Audience:** HKUST staff and faculty using internal tools; ITSO teams building them.
 
 ### Sources
-- GitHub: https://github.com/ecthink/iam-business-case (`index.html`, single-file prototype; live at https://iam-business-case.vercel.app). See `github.md`.
+- IAM Portal prototype v4 (`index.html`, single-file prototype) — source repository and live URL held by ITSO.
 - Attached codebase: `deploy/index.html` — identical to the repo file (2,021 lines; CSS tokens, layout, 65 embedded Lucide glyphs, seed data).
 - Logos supplied by the user (4 PNGs) → `assets/logo/`.
 - HKUST brand (Dec 2025) as encoded in the prototype's `:root`: navy `#003366`, gold `#996600`, yellow `#cc9900`; ITSO blue `#0054a6` / `#29abe2`, orange `#f7941d`; Muli/Mulish typeface.

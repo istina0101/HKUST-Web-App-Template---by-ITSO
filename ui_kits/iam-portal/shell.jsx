@@ -1,4 +1,4 @@
-const DS = window.HKUSTWebDesignSystem_46d20c;
+const DS = window.HKUSTWebDesignSystem_46d20c || {};
 const { TopBand, BandSwitch, IconButton, Sidebar, NavLabel, NavItem, PageHead, DropdownMenu, MenuItem, Avatar, Toast } = DS;
 function iamNav(persona) {
   const s = IAM_PERSONAS[persona].seats;

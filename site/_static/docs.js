@@ -1,5 +1,6 @@
 /* Renders component docs: for each entry in window.DOCS[group] → header, live stage (with mobile toggle), tabs for Props / JSX. Also builds the page's own anchor list. */
 (function () {
+  if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page) return;
   const I = window.SITE_ICONS;
   const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const el = h => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content.firstChild; };

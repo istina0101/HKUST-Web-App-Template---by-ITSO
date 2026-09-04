@@ -1,4 +1,4 @@
-const { Card, StatTile, Badge, Button, IconBox, Tag, Callout, SectionTitle } = window.HKUSTWebDesignSystem_46d20c;
+const { Card, StatTile, Badge, Button, IconBox, Tag, Callout, SectionTitle } = (window.HKUSTWebDesignSystem_46d20c || {});
 function HomePage({ persona, go, requestCount = 0 }) {
   const s = IAM_PERSONAS[persona].seats;
   const link = (label, pg) => <Button variant="link" style={{ paddingLeft: 0 }} onClick={() => go(pg)}>{label} →</Button>;

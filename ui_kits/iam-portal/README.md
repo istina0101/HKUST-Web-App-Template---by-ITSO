@@ -1,6 +1,6 @@
 # UI kit · IAM self-service portal (HKUST ITSO)
 
-Recreation of the IAM Portal prototype v4 (`ecthink/iam-business-case` · `deploy/index.html`), rebuilt from the HKUST Web components.
+Recreation of the IAM Portal prototype v4 (single-file `index.html`), rebuilt from the HKUST Web components.
 
 Screens: Case selector → Home & Apps · Request Access (browse catalogue, copy a colleague, role modal, cart modal, toast) · Team lifecycle · Team members. Other pages show a clearly-marked "not recreated" placeholder. The persona switcher in the band (FO Manager · FO Department Admin · JSPM Resource Owner · Identity Admin; Case 2 adds ITSO Manager · ITSO Department Admin · RO Manager) gates the sidebar exactly as the source does.
 

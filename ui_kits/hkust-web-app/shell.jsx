@@ -1,5 +1,5 @@
-const { TopBand: STopBand, IconButton: SIconButton, Sidebar: SSidebar, NavLabel: SNavLabel, NavItem: SNavItem, PageHead: SPageHead, DropdownMenu: SDropdownMenu, MenuItem: SMenuItem, Toast: SToast, Button: SButton } = window.HKUSTWebDesignSystem_46d20c;
-const SBanner = window.HKUSTWebDesignSystem_46d20c.NotificationBanner || (() => null), SPanel = window.HKUSTWebDesignSystem_46d20c.NotificationPanel || (() => null);
+const { TopBand: STopBand, IconButton: SIconButton, Sidebar: SSidebar, NavLabel: SNavLabel, NavItem: SNavItem, PageHead: SPageHead, DropdownMenu: SDropdownMenu, MenuItem: SMenuItem, Toast: SToast, Button: SButton } = (window.HKUSTWebDesignSystem_46d20c || {});
+const SBanner = (window.HKUSTWebDesignSystem_46d20c || {}).NotificationBanner || (() => null), SPanel = (window.HKUSTWebDesignSystem_46d20c || {}).NotificationPanel || (() => null);
 const RC_NOTIFS = [{ id: 1, title: 'Request REQ-5115 approved · storage increase', meta: '2 hours ago · Research Computing', unread: true, icon: 'check', tone: 'green' }, { id: 2, title: 'RC-2038 passed 95% of its allocation', meta: 'Yesterday · System', unread: true, icon: 'triangle-alert', tone: 'gold' }, { id: 3, title: 'Monthly usage report is ready', meta: '01 Sep · System', icon: 'file-text', tone: 'navy' }];
 function RcShell({ page, go, title, subtitle, actions, toast, children }) {
   const [menu, setMenu] = React.useState(false);

@@ -1,5 +1,5 @@
-const { Card: PCard, CardHeader: PCardHeader, Breadcrumb: PBreadcrumb, Tabs: PTabs, KeyValueList: PKeyValueList, Table: PTable, Badge: PBadge, Button: PButton, ActivityList: PActivityList, Callout: PCallout, Avatar: PAvatar, Progress: PProgress, StatTile: PStatTile, KpiDelta: PKpiDelta } = window.HKUSTWebDesignSystem_46d20c;
-const PDrawer = window.HKUSTWebDesignSystem_46d20c.Drawer || (() => null);
+const { Card: PCard, CardHeader: PCardHeader, Breadcrumb: PBreadcrumb, Tabs: PTabs, KeyValueList: PKeyValueList, Table: PTable, Badge: PBadge, Button: PButton, ActivityList: PActivityList, Callout: PCallout, Avatar: PAvatar, Progress: PProgress, StatTile: PStatTile, KpiDelta: PKpiDelta } = (window.HKUSTWebDesignSystem_46d20c || {});
+const PDrawer = (window.HKUSTWebDesignSystem_46d20c || {}).Drawer || (() => null);
 function ProjectDetail({ go }) {
   const p = RC_PROJECTS[0];
   const [tab, setTab] = React.useState('overview');

@@ -1,3 +1,5 @@
+(function(){
+if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page) return;
 /* Component docs · feedback, navigation, data */
 const h2 = React.createElement;
 const L2 = ({ t }) => h2('div', { className: 'ex-lbl' }, t);
@@ -37,3 +39,5 @@ window.DOCS.data = [
   { name: 'LineChart', addition: true, desc: 'Dependency-free SVG lines: 2px strokes, white-filled dots, faint area under the first series, legend when more than one series. Hover shows a navy tooltip.', col: true, props: [['series', 'Array<{name, values, color?}>', '', ''], ['labels', 'string[]', '', ''], ['height', 'number', '200', ''], ['area', 'boolean', 'true', ''], ['legend', 'boolean', 'true', '']], code: `<LineChart labels={['Mar','Apr','May','Jun']} series={[{name:'Requests',values:[120,140,131,168]},{name:'Approvals',values:[98,121,119,150]}]} />`, render: ({ NS }) => h2(NS.Card, null, h2(NS.LineChart, { height: 180, labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul'], series: [{ name: 'Requests', values: [120, 140, 131, 168, 155] }, { name: 'Approvals', values: [98, 121, 119, 150, 149] }] })) },
   { name: 'Accordion', addition: true, desc: 'Bordered card of Disclosure rows, one open at a time; chevron rotates 180° in 150ms. Settings sections, grouped details.', col: true, props: [['items', 'Array<{key, title, meta?, content}>', '', ''], ['defaultOpen', 'string|null', 'first', ''], ['value / onChange', '', '', 'Controlled']], code: `<Accordion items={[{ key: 'profile', title: 'Profile', meta: 'Synced from HR', content: <…/> }, { key: 'notify', title: 'Notifications', content: <…/> }]} />`, render: ({ NS }) => h2(NS.Accordion, { items: [{ key: 'p', title: 'Profile', meta: 'Synced from the HR record', content: h2('p', { className: 'muted', style: { margin: 0 } }, 'Display name, email and department come from HR; changes go through HR.') }, { key: 'n', title: 'Notifications', meta: 'Email to kaming@ust.hk', content: h2(NS.Switch, { checked: true, onChange: () => {}, label: 'A request I made is decided' }) }, { key: 'd', title: 'Danger zone', content: h2(NS.Button, { variant: 'danger', size: 'sm', icon: 'trash-2' }, 'Close account') }] }) },
 ];
+
+})();

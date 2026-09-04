@@ -1,5 +1,5 @@
-const { Card: WCard, CardHeader: WCardHeader, CardFooter: WCardFooter, Progress: WProgress, StepTracker: WStepTracker, Field: WField, Input: WInput, Select: WSelect, Textarea: WTextarea, OptionRow: WOptionRow, Button: WButton, Callout: WCallout, KeyValueList: WKeyValueList, Badge: WBadge, Chip: WChip, ChipGroup: WChipGroup } = window.HKUSTWebDesignSystem_46d20c;
-const WCombobox = window.HKUSTWebDesignSystem_46d20c.Combobox || (() => null), WMultiSelect = window.HKUSTWebDesignSystem_46d20c.MultiSelect || (() => null), WFileUpload = window.HKUSTWebDesignSystem_46d20c.FileUpload || (() => null);
+const { Card: WCard, CardHeader: WCardHeader, CardFooter: WCardFooter, Progress: WProgress, StepTracker: WStepTracker, Field: WField, Input: WInput, Select: WSelect, Textarea: WTextarea, OptionRow: WOptionRow, Button: WButton, Callout: WCallout, KeyValueList: WKeyValueList, Badge: WBadge, Chip: WChip, ChipGroup: WChipGroup } = (window.HKUSTWebDesignSystem_46d20c || {});
+const WCombobox = (window.HKUSTWebDesignSystem_46d20c || {}).Combobox || (() => null), WMultiSelect = (window.HKUSTWebDesignSystem_46d20c || {}).MultiSelect || (() => null), WFileUpload = (window.HKUSTWebDesignSystem_46d20c || {}).FileUpload || (() => null);
 function RequestWizard({ onDone }) {
   const [step, setStep] = React.useState(1);
   const [kind, setKind] = React.useState('cpu');

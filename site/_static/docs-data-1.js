@@ -1,3 +1,5 @@
+(function(){
+if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page) return;
 /* Component docs · core + forms. Each entry: name, desc, addition?, col?, props [[name,type,default,desc]], code (JSX), render({NS}) → React element. */
 const h = React.createElement;
 const L = ({ t }) => h('div', { className: 'ex-lbl' }, t);
@@ -46,3 +48,5 @@ window.DOCS.forms = [
   { name: 'FileUpload', addition: true, desc: 'Dashed drop zone on bg2 (navy tint while dragging) with an accept hint. Rows show name · size, a progress bar while uploading, or a red tinted row with the reason when rejected.', col: true, props: [['files', 'Array<{id,name,size?,progress?,error?}>', '[]', ''], ['onFiles', '(File[]) => void', '', 'Dropped or picked'], ['onRemove', '(file) => void', '', ''], ['accept', 'string', '.pdf,.docx', ''], ['hint', 'ReactNode', 'PDF or DOCX · up to 10 MB each', '']], code: `<FileUpload files={files} onFiles={add} onRemove={remove} hint="PDF or DOCX · up to 10 MB each" />`, render: ({ NS }) => { const [f, sf] = React.useState([{ id: 1, name: 'Justification-letter.pdf', size: 482000, progress: 100 }, { id: 2, name: 'Quotation-A100-nodes.pdf', size: 1240000, progress: 62 }, { id: 3, name: 'budget.xlsx', size: 88000, error: 'Wrong type · PDF or DOCX only' }]); return h('div', { style: { maxWidth: 560 } }, h(NS.FileUpload, { files: f, onFiles: fs => sf(o => [...o, ...fs.map((x, i) => ({ id: Date.now() + i, name: x.name, size: x.size, progress: 100 }))]), onRemove: x => sf(o => o.filter(y => y.id !== x.id)) })); } },
 ];
 window.DOC_PEOPLE = [{ value: 'wchan', label: 'Prof. CHAN Wing Hong', meta: 'UST-P-0031277 · Civil & Environmental Engineering', initials: 'WH' }, { value: 'jhli', label: 'LI Jia Hao', meta: 'UST-S-2210034 · PhD student', initials: 'LJ', bg: 'var(--tint-gold-bg)', fg: 'var(--hkust-gold)' }, { value: 'kyc', label: 'CHEUNG Ka Yan', meta: 'UST-P-0090344 · Research assistant', initials: 'KY', bg: 'var(--tint-cyan-bg)', fg: 'var(--tint-cyan-fg)' }, { value: 'psso', label: 'Dr. SO Pui Shan', meta: 'UST-P-0062119 · Postdoctoral fellow', initials: 'PS', bg: 'var(--tint-success-bg)', fg: 'var(--tint-success-fg)' }];
+
+})();

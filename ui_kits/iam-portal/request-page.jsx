@@ -1,4 +1,4 @@
-const { Card: RCard, CardHeader: RCardHeader, Chip: RChip, ChipGroup: RChipGroup, Field: RField, Input: RInput, Badge: RBadge, Button: RButton, IconBox: RIconBox, Table: RTable, Checkbox: RCheckbox, Textarea: RTextarea, Modal: RModal, OptionRow: ROptionRow, Callout: RCallout, Select: RSelect, Divider: RDivider, SectionTitle: RSectionTitle } = window.HKUSTWebDesignSystem_46d20c;
+const { Card: RCard, CardHeader: RCardHeader, Chip: RChip, ChipGroup: RChipGroup, Field: RField, Input: RInput, Badge: RBadge, Button: RButton, IconBox: RIconBox, Table: RTable, Checkbox: RCheckbox, Textarea: RTextarea, Modal: RModal, OptionRow: ROptionRow, Callout: RCallout, Select: RSelect, Divider: RDivider, SectionTitle: RSectionTitle } = (window.HKUSTWebDesignSystem_46d20c || {});
 function SystemCard({ s, onOpen }) {
   return (
     <RCard hoverable onClick={onOpen} style={{ display: 'flex', flexDirection: 'column', minHeight: 150 }}>

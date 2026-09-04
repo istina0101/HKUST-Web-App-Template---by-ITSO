@@ -1,5 +1,6 @@
 /* HKUST Web docs · shell: band, sidebar, search, copy buttons, mobile preview. Each page sets <body data-page="…">. */
 (function () {
+  if (typeof document === 'undefined' || !document.body || !document.body.dataset || !document.body.dataset.page || !document.querySelector('link[href$="_static/site.css"]')) return;
   const I = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>',
@@ -33,7 +34,7 @@
   // band
   document.body.prepend(el(`<header class="sb">
     <div class="sb-l"><button class="sb-ib sb-menu" aria-label="Menu" id="sbMenu">${I.menu}</button><a href="index.html" style="display:flex"><img src="../assets/logo/hkust-fullname-white.png" alt="HKUST"></a><div class="sb-unit"><b>HKUST Web Design System</b><span class="sb-ver">v1.0</span><br>Information Technology Services Office (ITSO)</div></div>
-    <div class="sb-r"><div class="sb-search"><input id="sbQ" type="search" placeholder="Search components…" autocomplete="off" aria-label="Search components">${I.search}<div class="sb-results" id="sbRes" role="listbox"></div></div><a class="sb-ib" href="../hkust-web-design-skill.zip" title="Download Claude skill (zip)" download>${I.download}</a><a class="sb-ib" href="https://github.com/ecthink/iam-business-case" title="IAM prototype source on GitHub" target="_blank" rel="noopener">${I.ext}</a></div>
+    <div class="sb-r"><div class="sb-search"><input id="sbQ" type="search" placeholder="Search components…" autocomplete="off" aria-label="Search components">${I.search}<div class="sb-results" id="sbRes" role="listbox"></div></div><a class="sb-ib" href="../hkust-web-design-skill.zip" title="Download Claude skill (zip)" download>${I.download}</a></div>
   </header>`));
   // sidebar
   const side = el(`<nav class="sn" id="sn" aria-label="Documentation"></nav>`);
@@ -48,7 +49,7 @@
   // search
   const q = document.getElementById('sbQ'), res = document.getElementById('sbRes');
   let idx = null, act = 0;
-  const load = () => idx || fetch('search-index.json').then(r => r.json()).then(j => (idx = j));
+  const load = () => idx || fetch('_static/search-index.json').then(r => r.json()).then(j => (idx = j));
   const render = (list) => {
     res.innerHTML = list.length ? list.map((x, i) => `<a href="${x.href}" class="${i === act ? 'act' : ''}"><b>${x.name}</b><span>${x.desc}</span><em>${x.group}</em></a>`).join('') : '<div class="none">No components match</div>';
     res.classList.add('on');

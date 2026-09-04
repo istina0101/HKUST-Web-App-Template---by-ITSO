@@ -1,4 +1,4 @@
-const { Card: TCard, Chip: TChip, ChipGroup: TChipGroup, Badge: TBadge, Button: TButton, IconBox: TIconBox, Table: TTable, EmptyState: TEmptyState, StatTile: TStatTile } = window.HKUSTWebDesignSystem_46d20c;
+const { Card: TCard, Chip: TChip, ChipGroup: TChipGroup, Badge: TBadge, Button: TButton, IconBox: TIconBox, Table: TTable, EmptyState: TEmptyState, StatTile: TStatTile } = (window.HKUSTWebDesignSystem_46d20c || {});
 function TeamPage({ go }) {
   const [f, setF] = React.useState('all');
   const counts = { all: IAM_EVENTS.length, needs: IAM_EVENTS.filter(e => e.bucket === 'needs').length, progress: IAM_EVENTS.filter(e => e.bucket === 'progress').length, completed: IAM_EVENTS.filter(e => e.bucket === 'completed').length };

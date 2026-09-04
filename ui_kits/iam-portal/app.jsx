@@ -1,4 +1,4 @@
-const { Card: ACard, EmptyState: AEmptyState, Button: AButton } = window.HKUSTWebDesignSystem_46d20c;
+const { Card: ACard, EmptyState: AEmptyState, Button: AButton } = (window.HKUSTWebDesignSystem_46d20c || {});
 function NotRecreated({ page, go }) {
   return <ACard flush><AEmptyState icon="file-text" title={`${IAM_META[page] ? IAM_META[page][0] : page} is not recreated in this kit`} action={<AButton variant="ghost" size="sm" icon="arrow-left" onClick={() => go('home')}>Back to Home &amp; Apps</AButton>}>Only Case selector, Home &amp; Apps, Request Access, Team lifecycle and Team members were rebuilt. The live prototype has the rest.</AEmptyState></ACard>;
 }
@@ -27,4 +27,4 @@ function IamApp() {
     </IamShell>
   );
 }
-ReactDOM.createRoot(document.getElementById('root')).render(<IamApp />);
+{ const r = document.getElementById('root'); if (r && !r.dataset.mounted) { r.dataset.mounted = '1'; ReactDOM.createRoot(r).render(<IamApp />); } }

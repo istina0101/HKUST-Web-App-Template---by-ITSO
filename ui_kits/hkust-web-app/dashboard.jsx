@@ -1,4 +1,4 @@
-const { Card: DCard, CardHeader: DCardHeader, StatTile: DStatTile, KpiDelta: DKpiDelta, BarChart: DBarChart, LineChart: DLineChart, Table: DTable, Badge: DBadge, Button: DButton, ActivityList: DActivityList, Progress: DProgress } = window.HKUSTWebDesignSystem_46d20c;
+const { Card: DCard, CardHeader: DCardHeader, StatTile: DStatTile, KpiDelta: DKpiDelta, BarChart: DBarChart, LineChart: DLineChart, Table: DTable, Badge: DBadge, Button: DButton, ActivityList: DActivityList, Progress: DProgress } = (window.HKUSTWebDesignSystem_46d20c || {});
 function Dashboard({ go }) {
   return (
     <div>

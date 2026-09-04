@@ -1,5 +1,5 @@
-const { Card: ECard, CardHeader: ECardHeader, EmptyState: EEmptyState, Button: EButton, Callout: ECallout, IconBox: EIconBox } = window.HKUSTWebDesignSystem_46d20c;
-const ESkeletonCard = window.HKUSTWebDesignSystem_46d20c.SkeletonCard || (() => null), ESkeletonTable = window.HKUSTWebDesignSystem_46d20c.SkeletonTable || (() => null), ESpinner = window.HKUSTWebDesignSystem_46d20c.Spinner || (() => null);
+const { Card: ECard, CardHeader: ECardHeader, EmptyState: EEmptyState, Button: EButton, Callout: ECallout, IconBox: EIconBox } = (window.HKUSTWebDesignSystem_46d20c || {});
+const ESkeletonCard = (window.HKUSTWebDesignSystem_46d20c || {}).SkeletonCard || (() => null), ESkeletonTable = (window.HKUSTWebDesignSystem_46d20c || {}).SkeletonTable || (() => null), ESpinner = (window.HKUSTWebDesignSystem_46d20c || {}).Spinner || (() => null);
 function StatesPage({ go }) {
   return (
     <div style={{ display: 'grid', gap: 16 }}>

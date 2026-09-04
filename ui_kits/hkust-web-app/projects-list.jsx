@@ -1,5 +1,5 @@
-const { Card: LCard, Chip: LChip, ChipGroup: LChipGroup, Input: LInput, Select: LSelect, Table: LTable, Badge: LBadge, Button: LButton, Pagination: LPagination, Progress: LProgress, Tooltip: LTooltip, IconButton: LIconButton, EmptyState: LEmptyState } = window.HKUSTWebDesignSystem_46d20c;
-const LBulkBar = window.HKUSTWebDesignSystem_46d20c.BulkBar || (() => null), lSortRows = window.HKUSTWebDesignSystem_46d20c.SortRows || (rows => rows);
+const { Card: LCard, Chip: LChip, ChipGroup: LChipGroup, Input: LInput, Select: LSelect, Table: LTable, Badge: LBadge, Button: LButton, Pagination: LPagination, Progress: LProgress, Tooltip: LTooltip, IconButton: LIconButton, EmptyState: LEmptyState } = (window.HKUSTWebDesignSystem_46d20c || {});
+const LBulkBar = (window.HKUSTWebDesignSystem_46d20c || {}).BulkBar || (() => null), lSortRows = (window.HKUSTWebDesignSystem_46d20c || {}).SortRows || (rows => rows);
 const statusTone = s => s === 'Active' ? ['success', 'check'] : s === 'Expiring' ? ['warning', 'calendar-clock'] : ['danger', 'ban'];
 function ProjectsList({ go }) {
   const [f, setF] = React.useState('All');

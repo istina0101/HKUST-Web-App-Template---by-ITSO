@@ -1,5 +1,5 @@
-const { Card: GCard, CardHeader: GCardHeader, CardFooter: GCardFooter, Field: GField, Input: GInput, Select: GSelect, Switch: GSwitch, Button: GButton, Callout: GCallout, Modal: GModal, IconBox: GIconBox, Divider: GDivider, Avatar: GAvatar, Badge: GBadge, KeyValueList: GKeyValueList } = window.HKUSTWebDesignSystem_46d20c;
-const GAccordion = window.HKUSTWebDesignSystem_46d20c.Accordion || (({ items = [] }) => <div style={{ display: 'grid', gap: 16 }}>{items.map(it => <GCard key={it.key}><div style={{ fontWeight: 700, color: 'var(--fg1)', marginBottom: 12 }}>{it.title}</div>{it.content}</GCard>)}</div>);
+const { Card: GCard, CardHeader: GCardHeader, CardFooter: GCardFooter, Field: GField, Input: GInput, Select: GSelect, Switch: GSwitch, Button: GButton, Callout: GCallout, Modal: GModal, IconBox: GIconBox, Divider: GDivider, Avatar: GAvatar, Badge: GBadge, KeyValueList: GKeyValueList } = (window.HKUSTWebDesignSystem_46d20c || {});
+const GAccordion = (window.HKUSTWebDesignSystem_46d20c || {}).Accordion || (({ items = [] }) => <div style={{ display: 'grid', gap: 16 }}>{items.map(it => <GCard key={it.key}><div style={{ fontWeight: 700, color: 'var(--fg1)', marginBottom: 12 }}>{it.title}</div>{it.content}</GCard>)}</div>);
 function SettingsPage({ say }) {
   const [n, setN] = React.useState({ decided: true, weekly: false, quota: true, failures: true });
   const [confirm, setConfirm] = React.useState(false);
