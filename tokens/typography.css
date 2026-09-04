@@ -1,0 +1,17 @@
+/* HKUST Web · type tokens. Weights top out at 700 — the official Muli set has no ExtraBold. Sizes are the portal's 16 ad-hoc sizes snapped to one ramp:
+   11 · 12 · 14 · 16 · 20 · 24 · 32 (4px steps from 16 up; 11/12/14 keep admin density below).
+   Mapping: 10–11→11 · 11.5–13→12 (13→14 for message bodies) · 13.5–15→14 · 16–18→16 · 20–21→20 · 24–26→24 · 30→32 */
+:root{
+  --text-2xs:11px; --text-xs:12px; --text-sm:14px; --text-md:16px; --text-lg:20px; --text-xl:24px; --text-2xl:32px;
+  --weight-light:300; --weight-regular:400; --weight-medium:500; --weight-semibold:600; --weight-bold:700; --weight-extrabold:700; /* Muli ships no 800 face; alias kept for compatibility */
+  --leading-tight:1.2; --leading-snug:1.3; --leading-normal:1.5;
+  --tracking-caps-wide:.16em; --tracking-caps:.12em; --tracking-table:.04em; --tracking-tight:.02em;
+  /* roles */
+  --type-body-size:var(--text-sm); --type-body-weight:var(--weight-regular);
+  --type-prose-size:var(--text-md);
+  --type-page-title-size:var(--text-lg); --type-page-title-weight:var(--weight-bold);
+  --type-section-title-size:var(--text-md); --type-section-title-weight:var(--weight-bold);
+  --type-hero-title-size:var(--text-xl); --type-hero-title-weight:var(--weight-extrabold);
+  --type-stat-size:var(--text-2xl); --type-stat-weight:var(--weight-extrabold);
+  --type-meta-size:var(--text-xs); --type-caps-size:var(--text-2xs);
+}

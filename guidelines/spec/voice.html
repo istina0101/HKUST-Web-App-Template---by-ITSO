@@ -1,0 +1,30 @@
+<!-- @dsCard group="Spec Pages" viewport="1100x700" name="Voice & copy" subtitle="Plain, concrete, institutional. The interface explains what happens and why, in as few words as the fact needs." -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Voice & copy · HKUST Web spec</title><link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="spec.css"></head><body>
+<header class="band"><div style="display:flex;align-items:center;gap:16px"><img src="../../assets/logo/hkust-fullname-white.png" alt="HKUST"><div class="unit"><b>HKUST Web</b><br>design system · spec</div></div><nav><a href="index.html">Overview</a><a href="foundations.html">Colour & type</a><a href="spacing.html">Spacing & effects</a><a href="layout.html">Layout grid</a><a href="components.html">Components</a><a href="dos-donts.html">Do & don't</a><a href="voice.html" class="on">Voice & copy</a></nav></header>
+<main class="page"><div class="eyebrow">HKUST Web · v0.1 draft</div><h1>Voice & copy</h1><p class="lead">Plain, concrete, institutional. The interface explains what happens and why, in as few words as the fact needs.</p>
+
+<h2>Tone</h2>
+<p>The HKUST brand voice is <b>passionate · intelligent · confident · inspiring · friendly</b>. In an admin app that becomes: direct sentences, real names of systems and people, no hedging, no cheer. The product addresses the user as <b>you</b> and says what the system will do: "Revokes take effect automatically."</p>
+<div class="grid g2" style="margin-top:16px"><div class="do"><b>Sounds right</b>"Self-service reset replaces the helpdesk ticket. Most resets finish in under a minute once MFA is confirmed."</div><div class="dont"><b>Sounds wrong</b>"Great news! You can now reset your password super quickly without bothering anyone 🎉"</div></div>
+<h2>Casing</h2>
+<table><thead><tr><th>Element</th><th>Case</th><th>Examples</th></tr></thead><tbody>
+<tr><td>Page titles, nav labels</td><td>Title Case</td><td>Request Access · My Current Access · Sign-in &amp; Security · Team lifecycle*</td></tr>
+<tr><td>Section and card titles</td><td>Sentence case</td><td>Multi-factor authentication · Copy a colleague's access · Your apps</td></tr>
+<tr><td>Buttons</td><td>Sentence-case verb phrase</td><td>Request an app · Reset my password · Add selected (2) to cart · Submit my decisions</td></tr>
+<tr><td>Eyebrows, table headers, nav groups</td><td>Typed in sentence case, uppercased by CSS</td><td>Sign-in security · Business role · My access</td></tr>
+<tr><td>Badges</td><td>Sentence case, facts joined by ·</td><td>Sensitive · time-bound · Auto · by position · Window closed · roles lapsed</td></tr></tbody></table>
+<p style="font-size:13px;color:var(--fg3)">*The prototype lower-cases the second word of "Team lifecycle" and "Team members"; either is acceptable, but be consistent within one product.</p>
+<h2>Punctuation</h2>
+<ul style="max-width:72ch"><li><b>Middle dot</b> <code> · </code> (spaced) joins facts: "Manager · Finance Office", "iPhone · added 12 Jan 2025", "6 of 14 reviewed".</li><li><b>Arrow</b> <code> →</code> ends inline links that navigate: "Manage sign-in →", "View roles →".</li><li><b>Ampersand</b> in titles where the pairing is a name: "Home &amp; Apps", "Sign-in &amp; Security", "Policy &amp; SoD".</li><li><b>No exclamation marks.</b> No emoji. Ellipsis "…" only in placeholders ("Search name or staff ID…").</li></ul>
+<h2>Formats</h2>
+<table><tbody><tr><td style="width:180px"><b>Dates</b></td><td>DD Mon YYYY — 04 Aug 2026 · with time: 04 Aug 2026 18:00 (24-hour)</td></tr><tr><td><b>Relative time</b></td><td>2 days ago · 21 days ago · Not used · 64 days</td></tr><tr><td><b>IDs</b></td><td>Uppercase prefix-number: LVR-2213, JNR-2214, TRF-1027, UST-P-0045210</td></tr><tr><td><b>People</b></td><td>SURNAME Given Name (WONG Ka Ming) · roles as "Title · Department"</td></tr><tr><td><b>Counts</b></td><td>"All (14)" in chips; bare numbers in stat tiles; "6 of 14 reviewed" for progress</td></tr><tr><td><b>Phone / masked</b></td><td>+852 ••• ••27</td></tr></tbody></table>
+<h2>Naming</h2>
+<ul style="max-width:72ch"><li>First mention: <b>The Hong Kong University of Science and Technology</b>; after that <b>HKUST</b> — never "THKUST", never "the HKUST".</li><li><b>ITSO</b> = Information Technology Services Office; spell out on first mention.</li><li>System names as their owners write them: HRMS, ECM, CADS, PeopleSoft SIS, Microsoft 365, ServiceNow.</li></ul>
+<h2>Patterns</h2>
+<table><thead><tr><th>Situation</th><th>Pattern</th><th>Example</th></tr></thead><tbody>
+<tr><td>Page subtitle</td><td>What this page is, in one clause</td><td>"Everything you hold today, with expiry where it applies"</td></tr>
+<tr><td>Consequence</td><td>What happens, then who is told</td><td>"This takes effect immediately and is written to the audit log. Your manager is notified for the record."</td></tr>
+<tr><td>Empty state</td><td>Title states the fact; line says what to do</td><td>"No events in this view" / "Switch filter to see other team events."</td></tr>
+<tr><td>Toast</td><td>Past-tense fact + ID</td><td>"Request submitted · TRF-1032"</td></tr>
+<tr><td>Destructive confirm</td><td>Question with the object in bold, then consequence callout</td><td>"Remove your access to <b>ECM · Department Admin</b>?"</td></tr></tbody></table>
+<div class="foot"><span>Information Technology Services Office (ITSO) · itso.hkust.edu.hk</span><span>© 2026 The Hong Kong University of Science and Technology</span></div></main></body></html>

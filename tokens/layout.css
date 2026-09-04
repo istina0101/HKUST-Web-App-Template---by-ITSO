@@ -1,0 +1,14 @@
+/* HKUST Web · app-shell layout constants */
+:root{
+  --band-h:60px; --side-w:248px; --side-w-mobile:264px;
+  --content-max:1320px; --content-pad:26px 32px 64px; --pagehead-pad:18px 32px;
+  --bp-lg:1080px; --bp-md:880px; --bp-sm:760px;
+  --z-pagehead:20; /* @kind other */
+  --z-nav-backdrop:25; /* @kind other */
+  --z-sidebar:30; /* @kind other */
+  --z-band:40; /* @kind other */
+  --z-menu:60; /* @kind other */
+  --z-modal:60; /* @kind other */
+  --z-toast:80; /* @kind other */
+  --z-cover:200; /* @kind other */
+}

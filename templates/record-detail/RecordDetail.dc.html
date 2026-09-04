@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Record detail" description="HKUST Web app shell with a breadcrumb, header card (avatar, status, actions, tabs), key-value facts, stat tiles, a callout and recent activity" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="min-height:100vh;background:var(--bg2);font-family:var(--font-body);color:var(--fg2);font-size:14px;line-height:1.5">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.TopBand" logo-src="../../assets/logo/hkust-fullname-white.png" unit="Information Technology" unit-sub="Services Office (ITSO)" user="{{ bandUser }}" hint-size="100%,60px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="search" title="Search" hint-size="36px,36px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="bell" dot="{{ true }}" title="Notifications" hint-size="36px,36px"></x-import>
+</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Sidebar" collapsible="{{ true }}" title="Research Computing Portal" footer="HKUST Web · v0.1" hint-size="248px,600px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="layout-grid" hint-size="100%,40px">Dashboard</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Research computing</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="briefcase" active="{{ true }}" hint-size="100%,40px">Projects</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="clipboard-list" count="2" hint-size="100%,40px">Requests</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="circle-plus" hint-size="100%,40px">New request</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Account</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="settings" hint-size="100%,40px">Settings</x-import>
+</x-import>
+<div style="margin-left:var(--side-w-current,var(--side-w));padding-top:60px;transition:margin-left .2s ease">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.PageHead" title="Coastal wind-field modelling" subtitle="RC-2041 · Civil &amp; Environmental Engineering · SENG" hint-size="100%,72px"></x-import>
+<div style="padding:clamp(18px,2.5vw,26px) clamp(16px,3.5vw,32px) 64px;max-width:1320px">
+<div style="margin-bottom:14px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Breadcrumb" items="{{ crumbs }}" hint-size="200px,20px"></x-import></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:22px 22px 0;margin-bottom:16px">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap">
+<div style="display:flex;gap:14px;align-items:center">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Avatar" initials="WH" size="lg" hint-size="52px,52px"></x-import>
+<div><div style="font-size:16px;font-weight:700;color:var(--fg1);display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span>Coastal wind-field modelling</span><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Badge" tone="success" icon="check" hint-size="60px,22px">Active</x-import></div><div style="color:var(--fg3);font-size:12px;margin-top:3px">RC-2041 · Prof. CHAN Wing Hong · Civil &amp; Environmental Engineering</div></div>
+</div>
+<div style="display:flex;gap:8px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" variant="ghost" icon="user-plus" hint-size="130px,40px">Add member</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" icon="circle-plus" hint-size="140px,40px">Request more</x-import>
+</div>
+</div>
+<div style="margin-top:18px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Tabs" items="{{ tabs }}" value="{{ tab }}" on-change="{{ setTab }}" hint-size="100%,44px"></x-import></div>
+</div>
+<sc-if value="{{ isOverview }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+<div style="display:grid;gap:16px;align-content:start">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="CPU hours used" value="412k" caption="of 500k allocated" hint-size="100%,110px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="Storage" value="18 TB" caption="of 25 TB" hint-size="100%,110px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="Jobs · 30 days" value="1,603" caption="+14% vs previous 30 days" hint-size="100%,110px"></x-import>
+</div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border)"><div style="font-size:16px;font-weight:700;color:var(--fg1)">Project details</div></div>
+<div style="padding:6px 22px 10px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.KeyValueList" items="{{ facts }}" hint-size="100%,260px"></x-import></div>
+</div>
+</div>
+<div style="display:grid;gap:16px;align-content:start">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Callout" tone="warning" hint-size="100%,80px">82% of this year's CPU hours are used with four months left. Ask for an extension before usage reaches 95%, when new jobs queue at low priority.</x-import>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border)"><div style="font-size:16px;font-weight:700;color:var(--fg1)">Recent activity</div></div>
+<div style="padding:4px 22px 8px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.ActivityList" items="{{ activity }}" time-width="{{ 110 }}" hint-size="100%,180px"></x-import></div>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ isMembers }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Table" columns="{{ memberColumns }}" rows="{{ members }}" emphasis="n" hint-size="100%,240px"></x-import></div>
+</sc-if>
+<sc-if value="{{ isActivity }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:22px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.ActivityList" items="{{ activity }}" hint-size="100%,240px"></x-import></div>
+</sc-if>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startTab&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;overview&quot;,&quot;members&quot;,&quot;activity&quot;],&quot;default&quot;:&quot;overview&quot;,&quot;tsType&quot;:&quot;'overview' | 'members' | 'activity'&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 'overview' };
+  renderVals() {
+    const DS = window.HKUSTWebDesignSystem_46d20c || {};
+    const { Badge, Button } = DS;
+    const tab = this.props.startTab && !this._touched ? this.props.startTab : this.state.tab;
+    const members = [
+      { n: 'Prof. CHAN Wing Hong', role: 'Principal investigator', email: 'wchan@ust.hk', jobs: 312, status: 'Active' },
+      { n: 'LI Jia Hao', role: 'PhD student', email: 'jhli@connect.ust.hk', jobs: 1204, status: 'Active' },
+      { n: 'CHEUNG Ka Yan', role: 'Research assistant', email: 'kycheung@ust.hk', jobs: 87, status: 'Active' },
+      { n: 'Dr. SO Pui Shan', role: 'Postdoctoral fellow', email: 'psso@ust.hk', jobs: 0, status: 'Pending' },
+    ];
+    return {
+      bandUser: { initials: 'KM', name: 'WONG Ka Ming', role: 'Research Computing · ITSO' },
+      crumbs: [{ label: 'Projects', href: '#' }, { label: 'RC-2041' }],
+      tabs: [{ key: 'overview', label: 'Overview' }, { key: 'members', label: 'Members', count: members.length }, { key: 'activity', label: 'Activity' }],
+      tab, setTab: k => { this._touched = true; this.setState({ tab: k }); },
+      isOverview: tab === 'overview', isMembers: tab === 'members', isActivity: tab === 'activity',
+      facts: [
+        { k: 'Project ID', v: 'RC-2041' }, { k: 'Principal investigator', v: 'Prof. CHAN Wing Hong' }, { k: 'Department', v: 'Civil & Environmental Engineering' }, { k: 'School', v: 'SENG' },
+        { k: 'Funding', v: 'RGC General Research Fund · 16205826' }, { k: 'Allocation period', v: '01 Jan 2026 – 31 Dec 2026' },
+        { k: 'Queue', v: Badge ? React.createElement(Badge, { tone: 'info' }, 'standard · 64 cores max') : 'standard · 64 cores max' },
+      ],
+      activity: [
+        { time: '03 Sep 2026 09:12', text: 'Allocation extended · +40 TB storage', meta: 'ITSO Research Computing · REQ-5115' },
+        { time: '02 Sep 2026 17:40', text: 'Member added · CHEUNG Ka Yan (RA)', meta: 'Prof. CHAN Wing Hong' },
+        { time: '28 Aug 2026 11:05', text: 'Monthly usage report sent', meta: 'System' },
+      ],
+      memberColumns: [
+        { key: 'n', label: 'Member', nowrap: true }, { key: 'role', label: 'Role', nowrap: true }, { key: 'email', label: 'Email', muted: true, nowrap: true }, { key: 'jobs', label: 'Jobs · 30 days', align: 'right', nowrap: true },
+        { key: 'status', label: 'Status', render: r => Badge ? React.createElement(Badge, { tone: r.status === 'Active' ? 'success' : 'warning', icon: r.status === 'Active' ? 'check' : 'clock' }, r.status) : r.status },
+        { key: 'a', label: '', align: 'right', render: () => Button ? React.createElement(Button, { variant: 'link', size: 'sm', icon: 'trash-2', style: { color: 'var(--danger)' } }, 'Remove') : 'Remove' },
+      ],
+      members,
+    };
+  }
+}
+</script>
+</body>
+</html>

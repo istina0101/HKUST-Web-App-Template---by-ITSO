@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Form wizard" description="HKUST Web app shell with a three-step request wizard: option rows and fields, chips and justification, review with an approval-route tracker" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="min-height:100vh;background:var(--bg2);font-family:var(--font-body);color:var(--fg2);font-size:14px;line-height:1.5">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.TopBand" logo-src="../../assets/logo/hkust-fullname-white.png" unit="Information Technology" unit-sub="Services Office (ITSO)" user="{{ bandUser }}" hint-size="100%,60px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="search" title="Search" hint-size="36px,36px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="bell" dot="{{ true }}" title="Notifications" hint-size="36px,36px"></x-import>
+</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Sidebar" collapsible="{{ true }}" title="Research Computing Portal" footer="HKUST Web · v0.1" hint-size="248px,600px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="layout-grid" hint-size="100%,40px">Dashboard</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Research computing</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="briefcase" hint-size="100%,40px">Projects</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="clipboard-list" count="2" hint-size="100%,40px">Requests</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="circle-plus" active="{{ true }}" hint-size="100%,40px">New request</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Account</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="settings" hint-size="100%,40px">Settings</x-import>
+</x-import>
+<div style="margin-left:var(--side-w-current,var(--side-w));padding-top:60px;transition:margin-left .2s ease">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.PageHead" title="New request" subtitle="Ask for compute, GPU or storage on an existing project" hint-size="100%,72px"></x-import>
+<div style="padding:clamp(18px,2.5vw,26px) clamp(16px,3.5vw,32px) 64px;max-width:760px">
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border)"><div style="font-size:16px;font-weight:700;color:var(--fg1)">{{ stepTitle }}</div><p style="color:var(--fg3);font-size:12px;margin:2px 0 0">Step {{ step }} of 3 · RC-2041 · Coastal wind-field modelling</p></div>
+<div style="padding:18px 22px">
+<div style="margin-bottom:20px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Progress" variant="segments" steps="{{ 3 }}" value="{{ step }}" hint-size="100%,4px"></x-import></div>
+<sc-if value="{{ isStep1 }}" hint-placeholder-val="{{ true }}">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Field" label="What do you need more of?" required="{{ true }}" hint-size="100%,200px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.OptionRow" name="kind" value="cpu" checked="{{ kindCpu }}" on-change="{{ pickKind }}" title="CPU hours" description="Standard queue · approved by the Research Computing team" trailing="{{ badgeSameDay }}" hint-size="100%,60px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.OptionRow" name="kind" value="gpu" checked="{{ kindGpu }}" on-change="{{ pickKind }}" title="GPU nodes" description="A100 partition · time-bound · reviewed weekly" trailing="{{ badgeTimeBound }}" hint-size="100%,60px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.OptionRow" name="kind" value="storage" checked="{{ kindStorage }}" on-change="{{ pickKind }}" title="Storage" description="Project scratch and archive · charged to the department" hint-size="100%,60px"></x-import>
+</x-import>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:6px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Field" label="Amount" required="{{ true }}" hint-size="100%,66px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Input" default-value="{{ amountDefault }}" hint-size="100%,40px"></x-import></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Field" label="Needed from" hint-size="100%,66px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Input" type="date" default-value="2026-09-15" hint-size="100%,40px"></x-import></x-import>
+</div>
+</sc-if>
+<sc-if value="{{ isStep2 }}" hint-placeholder-val="{{ false }}">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Field" label="Duration" hint="Time-bound allocations expire automatically and are logged." hint-size="100%,80px">
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<sc-for list="{{ durations }}" as="d" hint-placeholder-count="4">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Chip" selected="{{ d.on }}" on-click="{{ d.pick }}" hint-size="90px,32px">{{ d.label }}</x-import>
+</sc-for>
+</div>
+</x-import>
+<div style="margin-top:16px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Field" label="Charge to" hint-size="100%,66px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Select" options="{{ funds }}" hint-size="100%,40px"></x-import></x-import></div>
+<div style="margin-top:16px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Field" label="Business justification" required="{{ true }}" hint-size="100%,110px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Textarea" rows="{{ 3 }}" default-value="Ensemble runs for the typhoon-season paper (submission 30 Nov) need roughly 200k extra core-hours; current allocation is 82% used." hint-size="100%,90px"></x-import></x-import></div>
+<div style="margin-top:16px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Callout" hint-size="100%,70px">Requests over 100k hours are also seen by the school's research computing coordinator. You will be emailed at each step.</x-import></div>
+</sc-if>
+<sc-if value="{{ isStep3 }}" hint-placeholder-val="{{ false }}">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.KeyValueList" items="{{ review }}" hint-size="100%,200px"></x-import>
+<div style="margin-top:18px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StepTracker" steps="{{ route }}" hint-size="100%,70px"></x-import></div>
+</sc-if>
+</div>
+<div style="padding:14px 22px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:10px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" variant="link" icon="arrow-left" disabled="{{ isStep1 }}" on-click="{{ back }}" hint-size="80px,40px">Back</x-import>
+<div style="display:flex;gap:8px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" variant="link" hint-size="80px,40px">Cancel</x-import>
+<sc-if value="{{ notLast }}" hint-placeholder-val="{{ true }}"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" icon-right="arrow-right" on-click="{{ next }}" hint-size="110px,40px">Continue</x-import></sc-if>
+<sc-if value="{{ isStep3 }}" hint-placeholder-val="{{ false }}"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" icon="send" on-click="{{ submit }}" hint-size="140px,40px">Submit request</x-import></sc-if>
+</div>
+</div>
+</div>
+</div>
+</div>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Toast" open="{{ toastOpen }}" hint-size="0px,0px">Request REQ-5121 submitted</x-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;longRoute&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Review step&quot;}}">
+class Component extends DCLogic {
+  state = { step: 1, kind: 'cpu', dur: '90 days', toast: false };
+  renderVals() {
+    const DS = window.HKUSTWebDesignSystem_46d20c || {};
+    const { Badge } = DS;
+    const { step, kind, dur } = this.state;
+    const kinds = { cpu: 'CPU hours · +200k', gpu: 'GPU nodes · 8 × A100 for 30 days', storage: 'Storage · 25 → 40 TB' };
+    const amounts = { cpu: '200,000 hours', gpu: '8 nodes', storage: '40 TB' };
+    const reviewRoute = this.props.longRoute ?? true;
+    return {
+      bandUser: { initials: 'KM', name: 'WONG Ka Ming', role: 'Research Computing · ITSO' },
+      step, stepTitle: ['Choose the change', 'Justify and set duration', 'Review and submit'][step - 1],
+      isStep1: step === 1, isStep2: step === 2, isStep3: step === 3, notLast: step < 3,
+      kindCpu: kind === 'cpu', kindGpu: kind === 'gpu', kindStorage: kind === 'storage',
+      pickKind: (_, v) => this.setState({ kind: v }),
+      amountDefault: amounts[kind],
+      badgeSameDay: Badge ? React.createElement(Badge, { tone: 'success' }, 'Usually same day') : null,
+      badgeTimeBound: Badge ? React.createElement(Badge, { tone: 'warning', icon: 'clock' }, 'Time-bound') : null,
+      durations: ['30 days', '90 days', '180 days', 'Rest of period'].map(d => ({ label: d, on: dur === d, pick: () => this.setState({ dur: d }) })),
+      funds: ['RGC General Research Fund · 16205826', 'Departmental research fund · CIVL', 'Start-up grant · R9321'],
+      review: [
+        { k: 'Project', v: 'RC-2041 · Coastal wind-field modelling' }, { k: 'Change', v: kinds[kind] }, { k: 'Duration', v: dur }, { k: 'Charge to', v: 'RGC General Research Fund · 16205826' },
+        { k: 'Route', v: Badge ? React.createElement(Badge, { tone: 'info', icon: 'zap', style: { whiteSpace: 'normal', textAlign: 'left', alignItems: 'flex-start' } }, reviewRoute ? 'Research Computing team → SENG coordinator' : 'Research Computing team') : '' },
+      ],
+      route: reviewRoute
+        ? [{ label: 'Submitted', state: 'active' }, { label: 'Policy check', state: 'pending' }, { label: 'RC team', state: 'pending' }, { label: 'SENG coordinator', state: 'pending' }, { label: 'Provisioned', state: 'pending' }]
+        : [{ label: 'Submitted', state: 'active' }, { label: 'Policy check', state: 'pending' }, { label: 'RC team', state: 'pending' }, { label: 'Provisioned', state: 'pending' }],
+      back: () => this.setState(s => ({ step: Math.max(1, s.step - 1) })),
+      next: () => this.setState(s => ({ step: Math.min(3, s.step + 1) })),
+      submit: () => { this.setState({ toast: true }); clearTimeout(this._t); this._t = setTimeout(() => this.setState({ toast: false, step: 1 }), 3600); },
+      toastOpen: this.state.toast,
+    };
+  }
+}
+</script>
+</body>
+</html>

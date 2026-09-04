@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Getting started · HKUST Web Design System · ITSO</title>
+<link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="site.css"></head>
+<body data-page="index">
+<div class="main">
+<div class="ph"><div><h1>Getting started</h1><p>Install the tokens and fonts, then compose screens from the components.</p></div><a class="btn ghost sm" href="../hkust-web-design-skill.zip" download>Download skill.zip</a></div>
+<div class="content">
+<p class="lead">HKUST Web is a design system for HKUST staff-facing web applications, derived from the ITSO IAM self-service portal. Navy carries the brand, ITSO blue carries action, Muli sets the type, Lucide draws the icons. One CSS entry file ships every token and font; 65 React components implement the patterns.</p>
+
+<h2>Plain HTML + CSS</h2>
+<div class="card flush"><div class="steps" style="padding:4px 22px">
+<div class="step"><div><b>Copy the system folder</b>Take <code>styles.css</code>, <code>tokens/</code> and <code>assets/</code> into your project. <code>styles.css</code> is only <code>@import</code> lines; everything else hangs off it.</div></div>
+<div class="step"><div><b>Link the entry stylesheet</b><pre><code>&lt;link rel="stylesheet" href="/styles.css"&gt;</code></pre></div></div>
+<div class="step"><div><b>Use the tokens</b>Every colour, size, radius and shadow is a CSS custom property on <code>:root</code>. Never hard-code the hex.<pre><code>.card { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--r-lg); padding: var(--card-pad); }
+.btn-primary { background: var(--action-primary); color: #fff; font: var(--weight-bold) var(--text-sm) var(--font-body); padding: var(--btn-pad); border-radius: var(--r-md); }</code></pre></div></div>
+</div></div>
+
+<h2>React project</h2>
+<div class="card flush"><div class="steps" style="padding:4px 22px">
+<div class="step"><div><b>Copy <code>components/</code></b>Each component is one <code>.jsx</code> with a sibling <code>.d.ts</code> (props) and <code>.prompt.md</code> (usage). The only dependency is React; styling is inline and token-driven, so the entry stylesheet must be loaded.</div></div>
+<div class="step"><div><b>Import and compose</b><pre><code>import { TopBand, Sidebar, NavItem, PageHead } from './components/navigation';
+import { Card, Button, Badge } from './components/core';
+
+&lt;TopBand logoSrc="/assets/logo/hkust-fullname-white.png" unit="Information Technology" unitSub="Services Office (ITSO)" user={{ initials: 'KM', name: 'WONG Ka Ming', role: 'ITSO' }} /&gt;
+&lt;Sidebar collapsible title="Research Computing Portal"&gt;
+  &lt;NavItem icon="layout-grid" active&gt;Dashboard&lt;/NavItem&gt;
+&lt;/Sidebar&gt;</code></pre></div></div>
+<div class="step"><div><b>Follow the shell</b>Band 60px · sidebar 248px (64px collapsed, drawer ≤880px) · sticky page head · content inset 26px 32px 64px, max 1320px. See <a href="layout.html">Layout &amp; motion</a>.</div></div>
+</div></div>
+
+<h2>Claude Code skill</h2>
+<div class="card"><p>The whole system is packaged as an Agent Skill: <code>SKILL.md</code>, the readme, tokens, fonts, logos, all component sources and the four templates (82 files).</p>
+<div class="steps"><div class="step"><div><b>Download and unzip</b><a href="../hkust-web-design-skill.zip" download>hkust-web-design-skill.zip</a> → unzip into <code>~/.claude/skills/</code> (or a project's <code>.claude/skills/</code>). The archive already contains the <code>hkust-web-design/</code> folder.</div></div>
+<div class="step"><div><b>Invoke</b><pre><code>/hkust-web-design  build a staff leave-approval dashboard</code></pre>Claude reads the readme and component sources and designs on-brand HTML or production code.</div></div></div></div>
+
+<h2>Fonts</h2>
+<div class="card"><p><b>Muli</b> is self-hosted in <code>assets/fonts/</code> (10 faces, 200–700 upright and italic) and declared in <code>tokens/fonts.css</code>. The set has no 800 face; nothing in the system is set heavier than 700 and <code>font-synthesis: none</code> stops browsers faking one. Mulish from Google Fonts is the network fallback.</p>
+<p><b>Chinese</b> text uses the brand 黑體: 蘋果儷黑體 (LiHei Pro) on macOS, 微軟正黑體 (Microsoft JhengHei) on Windows, PingFang TC, then Noto Sans TC from Google Fonts. These are system fonts and are named, not shipped. <code>--font-tc</code> is the Chinese-only stack.</p>
+<div class="note warn">The Muli files are licensed to HKUST. Keep the repository private or remove <code>assets/fonts/</code> before publishing publicly (the Mulish fallback takes over).</div></div>
+
+<h2>Sources</h2>
+<div class="card"><ul><li>IAM Portal prototype v4 — <a href="https://github.com/ecthink/iam-business-case" target="_blank" rel="noopener">ecthink/iam-business-case</a> (single-file prototype; live at iam-business-case.vercel.app)</li><li>HKUST brand, December 2025: navy #003366, gold #996600, Muli</li><li>Live demos built with this system: <a href="../ui_kits/iam-portal/index.html">IAM portal recreation</a> · <a href="../ui_kits/hkust-web-app/index.html">Research Computing sample app</a></li></ul></div>
+</div></div>
+<script src="site.js"></script>
+</body></html>

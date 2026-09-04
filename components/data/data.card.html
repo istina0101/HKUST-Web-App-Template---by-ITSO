@@ -1,0 +1,46 @@
+<!-- @dsCard group="Components" viewport="700x900" name="Data" subtitle="Table (sort, select, BulkBar), KeyValueList, StepTracker, ActivityList, StatTile, KpiDelta, BarChart, LineChart, Accordion" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:16px;background:var(--bg2)}.lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg4);margin:14px 0 8px}.lbl:first-child{margin-top:0}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Table, KeyValueList, StepTracker, ActivityList, StatTile, KpiDelta, BarChart, LineChart, Card, Badge, Button, IconBox, Switch } = window.HKUSTWebDesignSystem_46d20c;
+const NS = window.HKUSTWebDesignSystem_46d20c; const SortRows = NS.SortRows || (r => r); const BulkBar = NS.BulkBar || (() => null); const Accordion = NS.Accordion || (() => null);
+const rows=[{sys:'CADS',role:'General User Account',tone:'neutral',st:'Already owned',ic:'check'},{sys:'ECM',role:'Department Admin',tone:'success',st:'Available',ic:'plus'},{sys:'HRMS',role:'Department HR Viewer',tone:'warning',st:'Sensitive · time-bound',ic:'clock'}];
+function App(){
+  const [sort,setSort]=React.useState({key:'sys',dir:'asc'});const [sel,setSel]=React.useState(['ECM']);
+  const onSort=k=>setSort(s=>s&&s.key===k?{key:k,dir:s.dir==='asc'?'desc':'asc'}:{key:k,dir:'asc'});
+  return <div>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(3,minmax(0,1fr))',gap:16}}>
+      <StatTile eyebrow="Requests in progress" value={2} caption="2 transfer requests active" icon="clipboard-list" action={<Button variant="link" style={{paddingLeft:0}}>Track requests →</Button>}/>
+      <StatTile eyebrow="Approvals waiting on you" value={1} caption="Review each item individually" icon="stamp" tone="gold"/>
+      <StatTile eyebrow="MFA adoption" value="98%" icon="shield-check" tone="green"><KpiDelta value="+4 pts" direction="up" label="vs Q1" style={{margin:'4px 0 6px'}}/></StatTile>
+    </div>
+    <div className="lbl">Table · sortable headers, row selection, BulkBar</div>
+    <BulkBar count={sel.length} onClear={()=>setSel([])}><Button size="sm" variant="success" icon="check">Approve</Button><Button size="sm" variant="ghost" icon="x">Reject</Button></BulkBar>
+    <Card flush><Table breakpoint={0} emphasis="sys" selectable selected={sel} onSelectionChange={setSel} rowKey={r=>r.sys} sort={sort} onSort={onSort} columns={[{key:'sys',label:'System',sortable:true},{key:'role',label:'Business role',sortable:true},{key:'st',label:'Status',render:r=><Badge tone={r.tone} icon={r.ic}>{r.st}</Badge>},{key:'a',label:'',align:'right',render:()=><Button variant="link" size="sm" icon="eye">View</Button>}]} rows={SortRows(rows,sort)}/></Card>
+    <div className="lbl">StepTracker</div>
+    <StepTracker steps={[{label:'Submitted',state:'done'},{label:'Policy & SoD',state:'done'},{label:'Manager (FO)',state:'active'},{label:'Provisioning',state:'pending'},{label:'Ready',state:'pending'}]}/>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:20,marginTop:6}}>
+      <div>
+        <div className="lbl">KeyValueList</div>
+        <KeyValueList keyWidth={120} items={[{k:'Staff ID',v:'UST-P-0045210'},{k:'Department',v:'Finance Office'},{k:'Status',v:<Badge tone="success" icon="check">Active</Badge>}]}/>
+      </div>
+      <div>
+        <div className="lbl">ActivityList</div>
+        <ActivityList timeWidth={120} items={[{time:'01 Aug 2026 09:01',text:'Identity created · harvey@ust.hk',meta:'IAM platform · JNR-2214'},{time:'01 Aug 2026 09:00',text:'HR joiner event received · Harvey',meta:'HR system'},{time:'28 Jul 2026 14:13',text:'Auto-revoke scheduled for 04 Aug 2026 18:00',meta:'IAM platform · LVR-2213'}]}/>
+      </div>
+    </div>
+    <div className="lbl">Accordion · one open at a time</div>
+    <Accordion items={[{key:'p',title:'Profile',meta:'Synced from the HR record',content:<p className="muted">Display name, email and department come from HR; changes go through HR.</p>},{key:'n',title:'Notifications',meta:'Email to kaming@ust.hk',content:<div style={{display:'grid',gap:10}}><Switch checked onChange={()=>{}} label="A request I made is decided"/><Switch checked={false} onChange={()=>{}} label="Weekly usage digest"/></div>},{key:'d',title:'Danger zone',content:<Button variant="danger" size="sm" icon="trash-2">Close account</Button>}]}/>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:16,marginTop:14}}>
+      <Card><div className="lbl" style={{marginTop:0}}>BarChart</div><BarChart height={160} showValues data={[{label:'Mar',value:42},{label:'Apr',value:57},{label:'May',value:49},{label:'Jun',value:68},{label:'Jul',value:61}]}/></Card>
+      <Card><div className="lbl" style={{marginTop:0}}>LineChart</div><LineChart height={160} labels={['Mar','Apr','May','Jun','Jul']} series={[{name:'Requests',values:[120,140,131,168,155]},{name:'Approvals',values:[98,121,119,150,149]}]}/></Card>
+    </div>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

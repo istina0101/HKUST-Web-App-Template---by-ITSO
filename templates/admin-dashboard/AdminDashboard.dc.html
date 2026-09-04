@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Admin dashboard" description="HKUST Web app shell (band, sidebar, page head) with stat tiles, two charts, a table and an activity list" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="min-height:100vh;background:var(--bg2);font-family:var(--font-body);color:var(--fg2);font-size:14px;line-height:1.5">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.TopBand" logo-src="../../assets/logo/hkust-fullname-white.png" unit="Information Technology" unit-sub="Services Office (ITSO)" user="{{ bandUser }}" hint-size="100%,60px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="search" title="Search" hint-size="36px,36px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="bell" dot="{{ true }}" title="Notifications" hint-size="36px,36px"></x-import>
+</x-import>
+<div style="padding-top:60px;min-height:100vh">
+<sc-if value="{{ showSidebar }}" hint-placeholder-val="{{ true }}">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Sidebar" collapsible="{{ true }}" title="Centralized Approval and Delegation System" footer="HKUST Web · v0.1" hint-size="248px,600px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="layout-grid" active="{{ true }}" hint-size="100%,40px">Dashboard</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Research computing</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="briefcase" hint-size="100%,40px">Projects</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="clipboard-list" count="2" hint-size="100%,40px">Requests</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="circle-plus" hint-size="100%,40px">New request</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Account</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="settings" hint-size="100%,40px">Settings</x-import>
+</x-import>
+</sc-if>
+<div style="margin-left:var(--side-w-current,0px);min-width:0;transition:margin-left .2s ease">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.PageHead" title="Dashboard" subtitle="Research computing at a glance · September 2026" hint-size="100%,72px"></x-import>
+<div style="padding:clamp(18px,2.5vw,26px) clamp(16px,3.5vw,32px) 64px;max-width:1320px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:16px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="Active projects" value="38" caption="+3 this quarter" icon="briefcase" tone="navy" hint-size="100%,120px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="Allocation used" value="71%" caption="of 9.6M CPU hours · FY26" icon="zap" tone="gold" hint-size="100%,120px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="Pending requests" value="2" caption="Oldest waiting 2 hours" icon="clipboard-list" tone="cyan" hint-size="100%,120px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.StatTile" eyebrow="Job failures · 7 days" value="1.8%" caption="-0.6 pts vs previous week" icon="triangle-alert" tone="red" hint-size="100%,120px"></x-import>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:16px">
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border)"><div style="font-size:16px;font-weight:700;color:var(--fg1)">CPU hours by school</div><p style="color:var(--fg3);font-size:12px;margin:2px 0 0">Thousands of core-hours · last five months</p></div>
+<div style="padding:14px 22px 18px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.BarChart" data="{{ barData }}" height="{{ 210 }}" hint-size="100%,210px"></x-import></div>
+</div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border)"><div style="font-size:16px;font-weight:700;color:var(--fg1)">Jobs per day</div><p style="color:var(--fg3);font-size:12px;margin:2px 0 0">Completed vs failed · this week</p></div>
+<div style="padding:14px 22px 18px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.LineChart" series="{{ lineSeries }}" labels="{{ lineLabels }}" height="{{ 210 }}" hint-size="100%,210px"></x-import></div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px"><div style="font-size:16px;font-weight:700;color:var(--fg1)">Requests waiting on you</div><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Button" variant="ghost" size="sm" hint-size="100px,32px">All requests</x-import></div>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Table" columns="{{ tableColumns }}" rows="{{ tableRows }}" emphasis="id" hint-size="100%,200px"></x-import>
+</div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<div style="padding:18px 22px;border-bottom:1px solid var(--border)"><div style="font-size:16px;font-weight:700;color:var(--fg1)">Recent activity</div></div>
+<div style="padding:4px 22px 8px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.ActivityList" items="{{ activity }}" time-width="{{ 124 }}" hint-size="100%,200px"></x-import></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSidebar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const showSidebar = this.props.showSidebar ?? true;
+    const DS = window.HKUSTWebDesignSystem_46d20c || {};
+    const Badge = DS.Badge;
+    const tone = r => r.st === 'Approved' ? 'success' : r.st === 'Rejected' ? 'danger' : 'warning';
+    const icon = r => r.st === 'Approved' ? 'check' : r.st === 'Rejected' ? 'x' : 'clock';
+    return {
+      showSidebar,
+      bandUser: { initials: 'KM', name: 'WONG Ka Ming', role: 'Research Computing · ITSO' },
+      barData: [{ label: 'SENG', value: 1420 }, { label: 'SSCI', value: 640 }, { label: 'SBM', value: 96 }, { label: 'SHSS', value: 150 }, { label: 'IPO', value: 380 }],
+      lineLabels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      lineSeries: [{ name: 'Completed', values: [2140, 2380, 2510, 2290, 2620, 1410, 980] }, { name: 'Failed', values: [61, 48, 39, 52, 44, 21, 12], color: 'var(--danger)' }],
+      tableColumns: [
+        { key: 'id', label: 'Request', nowrap: true }, { key: 'what', label: 'Change' }, { key: 'by', label: 'Requested by', muted: true },
+        { key: 'st', label: 'Status', render: r => Badge ? React.createElement(Badge, { tone: tone(r), icon: icon(r) }, r.st) : r.st },
+      ],
+      tableRows: [
+        { id: 'REQ-5120', what: 'Extend allocation · +400k CPU hours', by: 'Prof. LEUNG Mei Ling', st: 'Pending review' },
+        { id: 'REQ-5118', what: 'Add 8 GPU nodes for 30 days', by: 'Dr. WONG Ka Fai', st: 'Pending review' },
+        { id: 'REQ-5115', what: 'Storage increase · 22 → 40 TB', by: 'Prof. TAM Siu Ming', st: 'Approved' },
+      ],
+      activity: [
+        { time: '03 Sep 2026 09:12', text: 'Allocation extended · RC-2027 · +40 TB storage', meta: 'ITSO Research Computing · REQ-5115' },
+        { time: '02 Sep 2026 17:40', text: 'Member added · CHEUNG Ka Yan (RA) · RC-2031', meta: 'Dr. WONG Ka Fai' },
+        { time: '02 Sep 2026 08:05', text: 'Project suspended · RC-2019 · allocation exhausted', meta: 'System · policy RC-07' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

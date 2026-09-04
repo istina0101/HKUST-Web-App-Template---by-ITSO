@@ -1,0 +1,49 @@
+<!-- @dsCard group="Components" viewport="700x900" name="Forms" subtitle="Input, Textarea, Select, Field, Switch, OptionRow, Checkbox, Radio, SegmentedControl, Combobox, MultiSelect, FileUpload" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:16px;background:var(--bg2)}.lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg4);margin:14px 0 8px}.lbl:first-child{margin-top:0}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Input, Textarea, Select, Field, Switch, OptionRow, Checkbox, Radio, SegmentedControl, Badge } = window.HKUSTWebDesignSystem_46d20c;
+const __n = k => window.HKUSTWebDesignSystem_46d20c[k] || (() => null); const Combobox = __n('Combobox'), MultiSelect = __n('MultiSelect'), FileUpload = __n('FileUpload');
+const PEOPLE=[{value:'wchan',label:'Prof. CHAN Wing Hong',meta:'UST-P-0031277 · Civil & Environmental Engineering',initials:'WH'},{value:'jhli',label:'LI Jia Hao',meta:'UST-S-2210034 · PhD student',initials:'LJ',bg:'var(--tint-gold-bg)',fg:'var(--hkust-gold)'},{value:'kyc',label:'CHEUNG Ka Yan',meta:'UST-P-0090344 · Research assistant',initials:'KY',bg:'var(--tint-cyan-bg)',fg:'var(--tint-cyan-fg)'},{value:'psso',label:'Dr. SO Pui Shan',meta:'UST-P-0062119 · Postdoctoral fellow',initials:'PS',bg:'var(--tint-success-bg)',fg:'var(--tint-success-fg)'}];
+function App(){
+  const [on,setOn]=React.useState(true);const [seg,setSeg]=React.useState('keep');const [mfa,setMfa]=React.useState('key');const [cb,setCb]=React.useState(true);
+  const [who,setWho]=React.useState('wchan');const [ids,setIds]=React.useState(['jhli','kyc']);
+  const [files,setFiles]=React.useState([{id:1,name:'Justification-letter.pdf',size:482000,progress:100},{id:2,name:'Quotation-A100-nodes.pdf',size:1240000,progress:62},{id:3,name:'budget.xlsx',size:88000,error:'Wrong type · PDF or DOCX only'}]);
+  return <div><div style={{display:'grid',gridTemplateColumns:'minmax(0,1fr) minmax(0,1fr)',gap:20}}>
+    <div>
+      <div className="lbl">Input · Field</div>
+      <Field label="Colleague you are requesting for" required><Input icon="user" placeholder="Search name or staff ID…"/></Field>
+      <Field label="New password" hint="At least 12 characters, with a mix of letters, numbers, and symbols." style={{marginTop:14}}><Input type="password" defaultValue="************"/></Field>
+      <Field label="Staff ID" error="No record found for this ID." style={{marginTop:14}}><Input invalid defaultValue="UST-P-00"/></Field>
+      <div className="lbl">Mixed controls in one row · all 40px</div>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:16}}><Field label="Amount" required><Input defaultValue="200,000 hours"/></Field><Field label="Needed from"><Input type="date" defaultValue="2026-09-15"/></Field><Field label="Charge to"><Select options={['RGC GRF · 16205826','Departmental fund']}/></Field></div>
+      <div className="lbl">Textarea</div>
+      <Field label="Business justification" required><Textarea rows={2} defaultValue="Taking over document-management duties for the UX team during Q3."/></Field>
+      <div className="lbl">Select</div>
+      <div style={{display:'flex',gap:10,alignItems:'center'}}><Select options={['Finance Office','Research Office','ITSO']} style={{width:200}}/><Badge tone="warning" icon="clock">Sensitive</Badge><Select size="sm" options={['30 days','90 days','180 days']} defaultValue="90 days"/></div>
+    </div>
+    <div>
+      <div className="lbl">Switch · Checkbox · Radio</div>
+      <div style={{display:'flex',flexDirection:'column',gap:10}}><Switch checked={on} onChange={setOn} label="Email me when a request is decided"/><Switch checked={false} onChange={()=>{}} label="Weekly digest"/><div style={{display:'flex',gap:18}}><Checkbox checked={cb} onChange={setCb} label="Notify the requester"/><Checkbox checked disabled label="Already owned"/></div><div style={{display:'flex',gap:18}}><Radio name="d" value="30" label="30 days"/><Radio name="d" value="90" checked label="90 days"/><Radio name="d" value="180" label="180 days"/></div></div>
+      <div className="lbl">OptionRow</div>
+      <OptionRow name="mfa" value="key" checked={mfa==='key'} onChange={(_,v)=>setMfa(v)} title="Security key / passkey" description="Phishing-resistant, fastest" trailing={<Badge tone="success">Recommended</Badge>}/>
+      <OptionRow name="mfa" value="app" checked={mfa==='app'} onChange={(_,v)=>setMfa(v)} title="Authenticator app" description="One-time codes on your phone"/>
+      <OptionRow type="checkbox" checked title="Too much access · request a lower role"/>
+      <div className="lbl">SegmentedControl</div>
+      <div style={{display:'flex',gap:12,alignItems:'center'}}><SegmentedControl size="sm" value={seg} onChange={setSeg} options={[{value:'keep',label:'Keep',tone:'success'},{value:'revoke',label:'Revoke',tone:'danger'}]}/><SegmentedControl value="list" options={[{value:'list',label:'List'},{value:'grid',label:'Grid'}]}/></div>
+    </div>
+  </div>
+  <div style={{display:'grid',gridTemplateColumns:'minmax(0,1fr) minmax(0,1fr)',gap:20,marginTop:14}}>
+    <div><div className="lbl" style={{marginTop:0}}>Combobox (typeahead)</div><Field label="Principal investigator" required><Combobox value={who} onChange={setWho} placeholder="Search name or staff ID…" options={PEOPLE}/></Field>
+      <div className="lbl">MultiSelect</div><Field label="Members" hint="The field shows a count, never tags."><MultiSelect value={ids} onChange={setIds} placeholder="Add members…" options={PEOPLE.map(p=>({value:p.value,label:p.label,meta:p.meta}))}/></Field></div>
+    <div><div className="lbl" style={{marginTop:0}}>FileUpload</div><FileUpload files={files} onFiles={fs=>setFiles(f=>[...f,...fs.map((x,i)=>({id:Date.now()+i,name:x.name,size:x.size,progress:100}))])} onRemove={f=>setFiles(fs=>fs.filter(x=>x.id!==f.id))}/></div>
+  </div>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>
