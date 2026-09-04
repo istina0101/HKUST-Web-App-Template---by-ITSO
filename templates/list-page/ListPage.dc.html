@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="List page" description="HKUST Web app shell with a filter row (chips, search) and a data table with status badges, row actions and pagination" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="min-height:100vh;background:var(--bg2);font-family:var(--font-body);color:var(--fg2);font-size:14px;line-height:1.5">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.TopBand" logo-src="../../assets/logo/hkust-fullname-white.png" unit="Information Technology" unit-sub="Services Office (ITSO)" user="{{ bandUser }}" hint-size="100%,60px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="search" title="Search" hint-size="36px,36px"></x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.IconButton" icon="bell" dot="{{ true }}" title="Notifications" hint-size="36px,36px"></x-import>
+</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Sidebar" collapsible="{{ true }}" title="Research Computing Portal" footer="HKUST Web · v0.1" hint-size="248px,600px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="layout-grid" hint-size="100%,40px">Dashboard</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Research computing</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="briefcase" active="{{ true }}" hint-size="100%,40px">Projects</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="clipboard-list" count="2" hint-size="100%,40px">Requests</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="circle-plus" hint-size="100%,40px">New request</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavLabel" hint-size="100%,32px">Account</x-import>
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.NavItem" icon="settings" hint-size="100%,40px">Settings</x-import>
+</x-import>
+<div style="margin-left:var(--side-w-current,var(--side-w));padding-top:60px;transition:margin-left .2s ease">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.PageHead" title="Projects" subtitle="All allocations you administer" actions="{{ headActions }}" hint-size="100%,72px"></x-import>
+<div style="padding:clamp(18px,2.5vw,26px) clamp(16px,3.5vw,32px) 64px;max-width:1320px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Chip" selected="{{ f.on }}" on-click="{{ f.pick }}" hint-size="90px,32px">{{ f.label }}</x-import>
+</sc-for>
+</div>
+<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;flex:1 1 320px">
+<div style="flex:1 1 240px;min-width:0"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Input" icon="search" placeholder="Search project, PI or ID…" hint-size="300px,40px"></x-import></div>
+<div style="display:flex;gap:10px;align-items:center;flex:0 0 auto"><div style="width:150px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Select" options="{{ schoolOptions }}" hint-size="150px,40px"></x-import></div></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px">
+<x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Table" columns="{{ columns }}" rows="{{ rows }}" emphasis="name" hint-size="100%,360px"></x-import>
+</div>
+<div style="margin-top:16px"><x-import component-from-global-scope="HKUSTWebDesignSystem_46d20c.Pagination" page="{{ page }}" pages="{{ 4 }}" on-change="{{ setPage }}" summary="{{ summary }}" hint-size="100%,48px"></x-import></div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;dense&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Table&quot;}}">
+class Component extends DCLogic {
+  state = { filter: 'All', page: 1 };
+  renderVals() {
+    const DS = window.HKUSTWebDesignSystem_46d20c || {};
+    const { Badge, Button, Progress } = DS;
+    const all = [
+      { id: 'RC-2041', name: 'Coastal wind-field modelling', pi: 'Prof. CHAN Wing Hong', school: 'SENG', used: 82, status: 'Active', expires: '31 Dec 2026' },
+      { id: 'RC-2038', name: 'Protein folding ensembles', pi: 'Prof. LEUNG Mei Ling', school: 'SENG', used: 96, status: 'Expiring', expires: '30 Sep 2026' },
+      { id: 'RC-2031', name: 'Large-language-model evaluation', pi: 'Dr. WONG Ka Fai', school: 'SENG', used: 41, status: 'Active', expires: '28 Feb 2027' },
+      { id: 'RC-2027', name: 'Pearl River Delta air quality', pi: 'Prof. TAM Siu Ming', school: 'IPO', used: 67, status: 'Active', expires: '31 Oct 2026' },
+      { id: 'RC-2019', name: 'Quantum many-body dynamics', pi: 'Prof. LAU Yuen Ting', school: 'SSCI', used: 100, status: 'Suspended', expires: '15 Aug 2026' },
+      { id: 'RC-2012', name: 'Market microstructure simulation', pi: 'Dr. HO Chi Keung', school: 'SBM', used: 23, status: 'Active', expires: '30 Jun 2027' },
+    ];
+    const f = this.state.filter;
+    const rows = all.filter(r => f === 'All' || r.status === f);
+    const count = s => s === 'All' ? all.length : all.filter(r => r.status === s).length;
+    const tone = s => s === 'Active' ? ['success', 'check'] : s === 'Expiring' ? ['warning', 'calendar-clock'] : ['danger', 'ban'];
+    const dense = this.props.dense ?? false;
+    return {
+      bandUser: { initials: 'KM', name: 'WONG Ka Ming', role: 'Research Computing · ITSO' },
+      headActions: Button ? React.createElement(Button, { icon: 'circle-plus' }, 'New request') : null,
+      filters: ['All', 'Active', 'Expiring', 'Suspended'].map(s => ({ label: `${s} (${count(s)})`, on: f === s, pick: () => this.setState({ filter: s, page: 1 }) })),
+      schoolOptions: ['All schools', 'SENG', 'SSCI', 'SBM', 'SHSS', 'IPO'],
+      columns: [
+        { key: 'id', label: 'ID', muted: true, nowrap: true }, { key: 'name', label: 'Project' }, { key: 'pi', label: 'Principal investigator' }, { key: 'school', label: 'School', muted: true },
+        { key: 'used', label: 'Allocation used', render: r => Progress ? React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 10 } }, React.createElement(Progress, { value: r.used, width: 90, tone: r.used >= 95 ? 'danger' : r.used >= 80 ? 'warning' : 'brand' }), React.createElement('span', { style: { fontSize: 12, color: 'var(--fg3)', width: 34 } }, r.used + '%')) : r.used + '%' },
+        { key: 'status', label: 'Status', render: r => { const [t, i] = tone(r.status); return Badge ? React.createElement(Badge, { tone: t, icon: i }, r.status) : r.status; } },
+        { key: 'expires', label: 'Expires', muted: true, nowrap: true },
+        { key: 'a', label: '', align: 'right', render: () => Button ? React.createElement(Button, { variant: 'link', size: 'sm', icon: 'eye' }, 'View') : 'View' },
+      ].filter(c => !dense || !['pi', 'expires'].includes(c.key)),
+      rows,
+      page: this.state.page, setPage: p => this.setState({ page: p }),
+      summary: `1–${rows.length} of 38 projects`,
+    };
+  }
+}
+</script>
+</body>
+</html>

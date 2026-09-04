@@ -1,0 +1,42 @@
+<!-- @dsCard group="Components" viewport="700x560" name="Navigation" subtitle="TopBand, Sidebar, PageHead, Tabs, Breadcrumb, Pagination, DropdownMenu" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:0;background:var(--bg2)}.lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg4);margin:14px 0 8px}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { TopBand, BandSwitch, IconButton, Sidebar, NavLabel, NavItem, PageHead, Tabs, Breadcrumb, Pagination, DropdownMenu, MenuItem, Avatar, Button } = window.HKUSTWebDesignSystem_46d20c;
+function App(){
+  const [tab,setTab]=React.useState('a');const [pg,setPg]=React.useState(3);
+  return <div>
+    <TopBand fixed={false} breakpoint={0} logoSrc="../../assets/logo/hkust-fullname-white.png" unit="Information Technology" unitSub="Services Office (ITSO)" user={{initials:'FM',name:'FO Manager',role:'Manager · Finance Office'}} onUserClick={()=>{}}>
+      <IconButton icon="search" title="Search"/><IconButton icon="bell" dot title="Notifications"/><IconButton icon="shopping-cart" count={2} title="Access cart"/>
+    </TopBand>
+    <div style={{display:'flex',height:500}}>
+      <Sidebar fixed={false} breakpoint={0} collapsible title="IAM Self-Service Portal" footer={<>IAM Self-Service Portal<br/>prototype v4 · staff identity</>}>
+        <NavItem icon="layout-grid" active>Home & Apps</NavItem>
+        <NavLabel>My account</NavLabel><NavItem icon="shield-check">Sign-in & Security</NavItem>
+        <NavLabel>My access</NavLabel><NavItem icon="circle-plus">Request Access</NavItem><NavItem icon="clipboard-list" count={2}>My Requests</NavItem><NavItem icon="key-round">My Current Access</NavItem>
+        <NavLabel>Approvals & reviews</NavLabel><NavItem icon="stamp" count={1}>Approvals</NavItem><NavItem icon="clipboard-check" count={8}>Certifications</NavItem>
+      </Sidebar>
+      <div style={{flex:1,minWidth:0,position:'relative'}}>
+        <PageHead sticky={false} title="Team members" subtitle="Your direct reports: what they hold, and any active lifecycle event" actions={<Button size="sm" variant="ghost" icon="download">Export</Button>}/>
+        <div style={{padding:'18px 22px'}}>
+          <Breadcrumb items={[{label:'Team members'},{label:'WONG Ka Ming'}]}/>
+          <Tabs style={{marginTop:14}} value={tab} onChange={setTab} items={[{key:'o',label:'Overview'},{key:'a',label:'Access',count:9},{key:'h',label:'Activity'}]}/>
+          <Pagination style={{marginTop:18}} page={pg} pages={8} onChange={setPg} summary="41–60 of 143"/>
+          <div className="lbl">DropdownMenu</div>
+          <DropdownMenu inline heading="Switch user · prototype">
+            <MenuItem leading={<Avatar initials="FM"/>} label="FO Manager" description="Manager · Finance Office" selected/>
+            <MenuItem leading={<Avatar initials="FA" bg="var(--tint-gold-bg)" fg="var(--hkust-gold)"/>} label="FO Department Admin" description="Department Admin · Finance Office"/>
+            <MenuItem icon="log-out" label="Sign out" tone="danger"/>
+          </DropdownMenu>
+        </div>
+      </div>
+    </div>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

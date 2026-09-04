@@ -1,0 +1,12 @@
+/* HKUST Web · minimal base (mirrors the portal's resets) */
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--surface-page);color:var(--text-body);font-family:var(--font-body);font-size:var(--type-body-size);line-height:var(--leading-normal);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{color:var(--text-heading);margin:0;line-height:var(--leading-tight);font-weight:var(--weight-bold);text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--text-link);text-decoration:none}
+a:hover{color:var(--hkust-blue);text-decoration:underline}
+button,input,select,textarea{font-family:inherit}
+input[type=checkbox],input[type=radio]{accent-color:var(--action-primary)}
+.eyebrow{color:var(--text-eyebrow);font-size:var(--type-caps-size);font-weight:var(--weight-bold);letter-spacing:var(--tracking-caps-wide);text-transform:uppercase}
+.muted{color:var(--text-muted)}

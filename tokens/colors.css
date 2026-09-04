@@ -1,0 +1,36 @@
+/* HKUST Web · colour tokens. Base values come from the IAM portal :root (HKUST brand, Dec 2025). Semantic tints are the unified badge + callout set. */
+:root{
+  /* brand */
+  --hkust-blue:#003366; --hkust-gold:#996600; --hkust-yellow:#cc9900;
+  --itso-blue-dark:#0054a6; --itso-blue-light:#29abe2; --itso-orange:#f7941d;
+  /* foreground */
+  --fg1:#003366; --fg2:#1f2a44; --fg3:#5a6478; --fg4:#8c8f90; --fg-inverse:#fff;
+  /* background */
+  --bg1:#fff; --bg2:#f6f8fb; --bg3:#ebf0f5; --bg-brand:#003366; --bg-brand-light:#e6ecf3;
+  /* border */
+  --border:#d8dee8; --border-strong:#9aa6b8;
+  /* status */
+  --success:#009a61; --warning:#faa61a; --danger:#ed1b2f; --info:#0074bc;
+  /* unified tints: bg / border / fg — used by Badge, Callout, IconBox, Chip states, segmented decisions */
+  --tint-info-bg:#e6ecf3; --tint-info-border:#cfe1f1; --tint-info-fg:#0054a6;
+  --tint-success-bg:#e1f3ec; --tint-success-border:#bfe6d4; --tint-success-fg:#067a4e;
+  --tint-warning-bg:#fdf0db; --tint-warning-border:#f3dcad; --tint-warning-fg:#9a6300;
+  --tint-danger-bg:#fdecec; --tint-danger-border:#f3c4c4; --tint-danger-fg:#c01122;
+  --tint-gold-bg:#f3ecdd; --tint-gold-border:#e6d5b0; --tint-gold-fg:#996600;
+  --tint-cyan-bg:#e2f4fa; --tint-cyan-border:#bfe3f1; --tint-cyan-fg:#1d7fb0;
+  --tint-neutral-bg:#ebf0f5; --tint-neutral-border:#d8dee8; --tint-neutral-fg:#5a6478;
+  /* semantic aliases */
+  --text-heading:var(--fg1); --text-body:var(--fg2); --text-muted:var(--fg3); --text-subtle:var(--fg4);
+  --text-link:var(--itso-blue-dark); --text-eyebrow:var(--hkust-gold);
+  --surface-page:var(--bg2); --surface-card:var(--bg1); --surface-sunken:var(--bg3);
+  --action-primary:var(--itso-blue-dark); --action-primary-hover:var(--hkust-blue);
+  --action-danger:var(--danger); --action-success:var(--success);
+  --focus-ring:rgba(0,84,166,.12);
+  /* on-navy (band, hero, case selector) */
+  --on-navy-text:#fff; --on-navy-muted:#aebfd4; --on-navy-icon:#cdd8e6;
+  --on-navy-border:rgba(255,255,255,.35); --on-navy-divider:rgba(255,255,255,.25); --on-navy-hover:rgba(255,255,255,.10);
+  --overlay:rgba(0,51,102,.45); --overlay-nav:rgba(0,51,102,.42);
+  /* data-viz series (brand-derived, in order of use) */
+  --viz-1:#0054a6; --viz-2:#29abe2; --viz-3:#996600; --viz-4:#f7941d; --viz-5:#009a61; --viz-6:#9aa6b8;
+  --viz-grid:#ebf0f5; --viz-axis:#8c8f90;
+}

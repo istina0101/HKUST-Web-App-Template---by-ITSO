@@ -1,0 +1,26 @@
+/* HKUST Web · fonts
+   Muli — HKUST's official content typeface, self-hosted from the files ITSO supplied (assets/fonts/, 10 faces: 200–700 upright + italic).
+   No 800 face exists in the set: stat numbers and hero titles use 700; a synthesised 800 is prevented with font-synthesis.
+   Chinese — the brand names 黑體 (蘋果儷黑體 on macOS / 微軟正黑體 on Windows). Both are OS-bundled and not redistributable, so the stack
+   names them and lets the system supply them; Noto Sans TC (Google Fonts) is the fallback for Linux, Android and locked-down machines.
+   Mulish (Google Fonts) remains only as a network fallback for Muli.
+   The Chinese families below are intentionally NOT declared with @font-face: they are system fonts. */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700&display=swap");
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-ExtraLight.ttf") format("truetype");font-weight:200;font-style:normal;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-ExtraLightItalic.ttf") format("truetype");font-weight:200;font-style:italic;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-Light.ttf") format("truetype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-SemiBoldItalic.ttf") format("truetype");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Muli";src:url("../assets/fonts/Muli-BoldItalic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}
+/* Brand Chinese face 黑體 — OS-bundled, not redistributable: declared via local() so the user's installed copy is used and nothing is shipped. */
+@font-face{font-family:"LiHei Pro";src:local("LiHei Pro"),local("蘋果儷黑體"),local("Microsoft JhengHei"),local("微軟正黑體"),local("PingFang TC");font-weight:100 900;font-display:swap}
+:root{
+  --font-body:"Muli","Mulish","LiHei Pro","蘋果儷黑體","Microsoft JhengHei","微軟正黑體","PingFang TC","Noto Sans TC","Arial","Helvetica Neue",sans-serif;
+  --font-tc:"LiHei Pro","蘋果儷黑體","Microsoft JhengHei","微軟正黑體","PingFang TC","Noto Sans TC",sans-serif;
+  --font-mono:ui-monospace,"SF Mono","Menlo","Consolas",monospace;
+}
+body{font-synthesis:none}

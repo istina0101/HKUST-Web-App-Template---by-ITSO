@@ -1,0 +1,55 @@
+<!-- @dsCard group="Components" viewport="700x980" name="Feedback" subtitle="Callout, Toast, EmptyState, Modal, Tooltip, Progress, NotificationBanner, NotificationPanel, Skeleton, Spinner, Drawer" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:16px;background:var(--bg2)}.lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg4);margin:14px 0 8px}.lbl:first-child{margin-top:0}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Callout, Toast, EmptyState, Modal, Tooltip, Progress, Card, Button, IconButton, IconBox, OptionRow, Field, Textarea, Avatar, KeyValueList, Badge } = window.HKUSTWebDesignSystem_46d20c;
+const __n = k => window.HKUSTWebDesignSystem_46d20c[k] || (() => null); const NotificationBanner = __n('NotificationBanner'), NotificationPanel = __n('NotificationPanel'), Skeleton = __n('Skeleton'), SkeletonTable = __n('SkeletonTable'), SkeletonCard = __n('SkeletonCard'), Spinner = __n('Spinner'), Drawer = __n('Drawer');
+function App(){
+  return <div>
+    <div className="lbl" style={{marginTop:0}}>NotificationBanner</div>
+    <div style={{display:'grid',gap:8,marginBottom:6}}><NotificationBanner tone="warning" title="Planned maintenance" action={<Button variant="link" size="sm">Details →</Button>}>ITSO systems will be unavailable on Sun 14 Sep, 02:00–06:00.</NotificationBanner><NotificationBanner tone="danger" title="Service outage">HRMS sign-in is currently failing for some users. We are working on it.</NotificationBanner></div>
+    <div style={{display:'grid',gridTemplateColumns:'minmax(0,1fr) minmax(0,1fr)',gap:20}}>
+    <div>
+      <div className="lbl">Callout</div>
+      <div style={{display:'grid',gap:10}}>
+        <Callout>Self-service reset replaces the helpdesk ticket. Most resets finish in under a minute once MFA is confirmed.</Callout>
+        <Callout tone="success">Identity confirmed with your authenticator app.</Callout>
+        <Callout tone="warning" icon="info">This takes effect immediately and is written to the audit log.</Callout>
+        <Callout tone="danger">Clone window closed · 2 application roles lapsed uncloned.</Callout>
+      </div>
+      <div className="lbl">Progress</div>
+      <div style={{display:'flex',gap:20,alignItems:'center'}}><Progress value={43}/><span className="muted" style={{fontSize:12}}>6 of 14 reviewed</span></div>
+      <Progress variant="segments" steps={3} value={1} style={{marginTop:12,maxWidth:300}}/>
+      <div className="lbl">Toast · Tooltip</div>
+      <div style={{display:'flex',gap:16,alignItems:'center'}}><Toast fixed={false}>Request submitted · TRF-1032</Toast><Tooltip label="Download CSV"><IconButton tone="light" icon="download" title="Download CSV"/></Tooltip></div>
+      <div className="lbl">EmptyState</div>
+      <Card flush><EmptyState icon="users-round" title="No events in this view">Switch filter to see other team events.</EmptyState></Card>
+    </div>
+    <div>
+      <div className="lbl">Modal</div>
+      <Modal inline title="Reject request" subtitle="TRF-1027 · ECM · Department Admin" leading={<IconBox icon="x" tone="red" size={34}/>} onClose={()=>{}}
+        footer={<><Button variant="link">Cancel</Button><Button variant="danger-solid">Confirm rejection</Button></>}>
+        <Field label="Reason for rejection" required>
+          <OptionRow name="rj" checked title="Role does not match the job requirements"/>
+          <OptionRow name="rj" title="Required training not yet completed"/>
+          <OptionRow name="rj" title="Other (explain below)"/>
+        </Field>
+        <Field label="Comments to the requester" style={{marginTop:12}}><Textarea rows={2} defaultValue="You only need the read-only Viewer role, not Admin. Please re-submit."/></Field>
+      </Modal>
+      <div className="lbl">NotificationPanel</div>
+      <NotificationPanel inline onClose={()=>{}} onMarkAllRead={()=>{}} items={[{id:1,title:'Request REQ-5120 approved',meta:'2 hours ago · Research Computing',unread:true,icon:'check',tone:'green',onView:()=>{}},{id:2,title:'RC-2038 passed 95% of its allocation',meta:'Yesterday · System',unread:true,icon:'triangle-alert',tone:'gold',onView:()=>{}},{id:3,title:'Monthly usage report is ready',meta:'01 Sep · System',icon:'file-text',tone:'navy'}]}/>
+    </div>
+    </div>
+    <div className="lbl">Skeleton · Spinner</div>
+    <div style={{display:'grid',gridTemplateColumns:'minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)',gap:16}}><SkeletonCard/><Card flush><SkeletonTable rows={3} cols={3}/></Card><Card flush><Spinner center label="Loading requests…"/></Card></div>
+    <div className="lbl">Drawer (inline preview)</div>
+    <Drawer inline title="LI Jia Hao" subtitle="PhD student · RC-2041" leading={<Avatar initials="LJ" size="lg"/>} onClose={()=>{}} footer={<><Button variant="link">Close</Button><Button variant="danger" icon="user-x">Remove from project</Button></>}><KeyValueList keyWidth={120} items={[{k:'Email',v:'jhli@connect.ust.hk'},{k:'Jobs · 30 days',v:'1,204'},{k:'Status',v:<Badge tone="success" icon="check">Active</Badge>}]}/></Drawer>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

@@ -1,0 +1,15 @@
+<!-- @dsCard group="Data Viz" viewport="700x300" name="Chart.js theme" subtitle="assets/chartjs/hkust-chartjs-theme.js applied to a bar and a line chart" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="../assets/chartjs/hkust-chartjs-theme.js"></script>
+<style>body{margin:0;padding:16px;background:var(--bg2)}.g{display:grid;grid-template-columns:1fr 1fr;gap:16px}.c{background:#fff;border:1px solid var(--border);border-radius:8px;padding:18px 22px}.t{font-size:16px;font-weight:700;color:var(--fg1);margin-bottom:10px}.cv{position:relative;height:170px;width:100%}</style>
+</head><body>
+<div class="g">
+<div class="c"><div class="t">Requests by month</div><div class="cv"><canvas id="bar"></canvas></div></div>
+<div class="c"><div class="t">MFA adoption</div><div class="cv"><canvas id="line"></canvas></div></div>
+</div>
+<script>
+HKUSTChartTheme.apply(Chart);
+new Chart(document.getElementById('bar'),{type:'bar',data:{labels:['Mar','Apr','May','Jun','Jul'],datasets:[{label:'Submitted',data:[42,57,49,68,61]},{label:'Approved',data:[38,51,46,60,58]}]},options:{responsive:true,maintainAspectRatio:false,animation:false,scales:{x:HKUSTChartTheme.scale({grid:{display:false}}),y:HKUSTChartTheme.scale({beginAtZero:true})}}});
+new Chart(document.getElementById('line'),{type:'line',data:{labels:['Q3 25','Q4 25','Q1 26','Q2 26','Q3 26'],datasets:[{label:'Staff',data:[71,79,88,94,98]},{label:'Faculty',data:[64,70,81,90,95]}]},options:{responsive:true,maintainAspectRatio:false,animation:false,scales:{x:HKUSTChartTheme.scale({grid:{display:false}}),y:HKUSTChartTheme.scale({min:50,max:100,ticks:{callback:v=>v+'%'}})}}});
+</script></body></html>

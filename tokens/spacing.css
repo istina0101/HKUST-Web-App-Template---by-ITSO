@@ -1,0 +1,16 @@
+/* HKUST Web · spacing, radius. 4px grid for layout; component insets keep the portal's exact values. */
+:root{
+  --sp-0:0px; /* @kind spacing */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:20px; --sp-6:24px; --sp-7:28px; --sp-8:32px; --sp-10:40px; --sp-12:48px; --sp-16:64px;
+  /* component insets (exact, from source) */
+  --card-pad:22px; --card-head-pad:18px 22px; --card-gap:16px;
+  --btn-pad:9px 16px; --btn-pad-sm:6px 11px; --btn-gap:7px; /* vertical values are a fallback; Button fixes height to --control-h / --control-h-sm */
+  --input-pad:0 13px; --input-pad-icon:38px;
+  --badge-pad:3px 9px; --chip-pad:6px 13px; --tag-pad:1px 7px;
+  --callout-pad:12px 15px; --table-cell-pad:13px 14px; --table-head-pad:11px 14px;
+  --nav-item-pad:9px 10px; --modal-pad:18px 22px;
+  /* radius */
+  --r-sm:2px; --r-md:4px; --r-lg:8px; --r-pill:999px;
+  /* control heights */
+  --control-h:40px; --control-h-sm:32px; --icon-btn:36px;
+}

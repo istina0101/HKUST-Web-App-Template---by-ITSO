@@ -1,0 +1,38 @@
+<!-- @dsCard group="Components" viewport="700x680" name="Core" subtitle="Button, IconButton, Badge, Tag, Chip, Avatar, IconBox, Card" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:16px;background:var(--bg2)}.lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fg4);margin:14px 0 8px}.lbl:first-child{margin-top:0}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Button, IconButton, Badge, Tag, Chip, ChipGroup, Avatar, IconBox, Card, CardHeader, CardFooter, SectionTitle } = window.HKUSTWebDesignSystem_46d20c;
+function App(){
+  const [chip,setChip]=React.useState('All');
+  return <div>
+    <div className="lbl">Button · medium 40px</div>
+    <div className="row"><Button icon="circle-plus">Request an app</Button><Button variant="ghost" icon="eye">View</Button><Button variant="success" icon="check">Approve</Button><Button variant="danger" icon="trash-2">Remove</Button><Button variant="danger-solid">Confirm rejection</Button><Button variant="link">Cancel</Button><Button disabled>Disabled</Button></div>
+    <div className="lbl">Button · small 32px (table and card rows)</div>
+    <div className="row"><Button size="sm" icon="circle-plus">Request an app</Button><Button size="sm" variant="ghost" icon="eye">View</Button><Button size="sm" variant="success" icon="check">Approve</Button><Button size="sm" variant="danger" icon="trash-2">Remove</Button><Button size="sm" variant="danger-solid">Confirm rejection</Button><Button size="sm" variant="link">Cancel</Button><Button size="sm" disabled>Disabled</Button></div>
+    <div className="lbl">IconButton · 36px</div>
+    <div className="row"><span style={{background:'var(--hkust-blue)',padding:'6px 8px',borderRadius:4,display:'inline-flex',gap:4}}><IconButton icon="search" title="Search"/><IconButton icon="bell" dot title="Notifications"/><IconButton icon="shopping-cart" count={2} title="Access cart"/></span><IconButton tone="light" icon="more-horizontal" title="More"/><IconButton tone="light" icon="download" title="Download"/></div>
+    <div className="lbl">Badge · Tag</div>
+    <div className="row"><Badge tone="success" icon="check">Active</Badge><Badge tone="info" icon="zap">Auto · by position</Badge><Badge tone="warning" icon="clock">Sensitive · time-bound</Badge><Badge tone="danger" icon="x">Rejected</Badge><Badge tone="gold" icon="stamp">By approval</Badge><Badge tone="cyan">Cyan</Badge><Badge tone="neutral">L1 · Basic</Badge><Tag>SSO</Tag></div>
+    <div className="lbl">Chip</div>
+    <ChipGroup>{['All','HR systems','IT tools','Finance','Student admin'].map(c=><Chip key={c} selected={chip===c} onClick={()=>setChip(c)}>{c}</Chip>)}<Chip disabled>Disabled</Chip></ChipGroup>
+    <div className="lbl">Avatar · sm 32px (band, menus)</div>
+    <div className="row"><Avatar initials="FM"/><Avatar initials="FA" bg="var(--tint-gold-bg)" fg="var(--hkust-gold)"/><Avatar initials="JR" bg="var(--tint-cyan-bg)" fg="var(--tint-cyan-fg)"/><Avatar initials="IA" bg="var(--tint-success-bg)" fg="var(--tint-success-fg)"/></div>
+    <div className="lbl">Avatar · lg 52px (person header)</div>
+    <div className="row"><Avatar initials="J" size="lg"/><Avatar initials="WH" size="lg" bg="var(--tint-gold-bg)" fg="var(--hkust-gold)"/></div>
+    <div className="lbl">IconBox · 42px (22px icon) · 30px (15px icon)</div>
+    <div className="row"><IconBox icon="layout-grid"/><IconBox icon="wallet" tone="gold"/><IconBox icon="users" tone="green"/><IconBox icon="triangle-alert" tone="red"/><IconBox icon="database" tone="cyan"/><IconBox icon="key-round" tone="gray"/><IconBox icon="building-2" size={30}/></div>
+    <div className="lbl">Card</div>
+    <div style={{display:'grid',gridTemplateColumns:'minmax(0,1fr) minmax(0,1fr)',gap:16}}>
+      <Card><SectionTitle>Password</SectionTitle><p className="muted" style={{fontSize:12,marginTop:8}}>Last changed 12 Mar 2026 · meets policy</p><Button variant="ghost" block icon="refresh-cw" style={{marginTop:14}}>Reset my password</Button></Card>
+      <Card flush><CardHeader title="Multi-factor authentication" subtitle="Used to confirm it is really you" actions={<Badge tone="success" icon="shield-check">Active</Badge>}/><div style={{padding:'12px 22px',display:'flex',gap:12,alignItems:'center'}}><IconBox icon="smartphone"/><div><div style={{fontWeight:700,color:'var(--fg1)'}}>Authenticator app</div><div className="muted" style={{fontSize:12}}>iPhone · added 12 Jan 2025</div></div></div><CardFooter><Button size="sm" icon="plus">Add a method</Button></CardFooter></Card>
+    </div>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>
